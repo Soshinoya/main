@@ -231,7 +231,7 @@ $(document).ready(function () {
 			filter: 'course',
 			backgroundImage: 'images/magnificpopup/image-4.jpg',
 			tagName: 'HTML - шаблон',
-			headingHref: 'pages/Marketing/index.html',
+			headingHref: 'pages/Wave/ms/index.html',
 			heading: 'Marketing',
 			headingSmall: '',
 			img: 'images/photos/fullImg-4.jpg',
