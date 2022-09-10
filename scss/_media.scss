@@ -13,6 +13,23 @@
     }
 }
 
+@media (max-width: 800px) {
+    .contact {
+        .row {
+            flex-direction: column;
+            justify-content: unset;
+        }
+    }
+    .social {
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__link-and-icon {
+            width: 100px;
+        }
+    }
+}
+
 @media only screen and (min-width: 767px) {
     .slider__item_video {
         width: 1920px;
@@ -124,7 +141,7 @@
 
     .contact__inf {
         padding-top: 50px;
-        padding-bottom: 5px;
+        padding-bottom: 30px;
     }
 
     .mfp-content figcaption {
@@ -175,11 +192,6 @@
 
     .works__nav__item:first-child {
         margin-left: 0;
-    }
-
-    .contact__inf {
-        padding-top: 50px;
-        padding-bottom: 5px;
     }
 
     .mfp-bottom-bar {
