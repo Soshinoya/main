@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@500&family=Nunito:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Logo and menu -->
+    <header class="header">
+        <div class="inner-header container">
+            <div class="header__logo">
+                <a href="index.html" class="logo__item">
+                    <svg width="60" height="45" viewBox="0 0 60 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_127_2)">
+                            <path
+                                d="M0 25.3769L19.0557 35.2246V28.4069L6.94084 22.0942L19.0557 15.7815V8.96387L0 18.8115V25.3769Z"
+                                fill="black" />
+                            <path
+                                d="M40.8877 8.96387V15.7816L53.0026 22.0942L40.8877 28.4069V35.2245L59.9434 25.3769V18.8115L40.8877 8.96387Z"
+                                fill="black" />
+                            <path d="M21.2642 44.1887H27.5111L38.6796 0H32.4328L21.2642 44.1887Z" fill="black" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_127_2">
+                                <rect width="60" height="44.2169" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+
+            <button class="btn_nav">
+                <svg width="41" height="34" viewBox="0 0 41 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.489258 0H40.4893V9.14017H0.489258V0Z" fill="#fff" />
+                    <path d="M0.489258 12.3159H40.4893V21.4561H0.489258V12.3159Z" fill="#fff" />
+                    <path d="M0.489258 24.6318H40.4893V33.772H0.489258V24.6318Z" fill="#fff" />
+                </svg>
+            </button>
+
+            <nav class="navigation header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <span class="nav__item_underline"></span>Service
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link">
+                            <span class="nav__item_underline"></span>Works
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <span class="nav__item_underline"></span>Contacts
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Slider set -->
+        <!-- slider container -->
+        <section class="slider section">
+            <!-- slider item -->
+            <div class="slider__item slider__item_1">
+                <div class="container">
+                    <div class="slider__wrapper">
+                        <span class="item__text">HTML / CSS / JS</span>
+                        <h1 class="item__text item__text_big">
+                            ПРОФЕССИОНАЛЬНАЯ ВЕРСТКА САЙТОВ
+                            НА HTML,CSS И JS
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider controls -->
+        <!-- prev -->
+        <div class="pointer-container pointer-container_left">
+            <div class="pointer pointer_prev">
+                <div class="pointer__arrow pointer_color pointer__arrow_top"></div>
+                <div class="pointer__line pointer_color"></div>
+                <div class="pointer__arrow pointer_color pointer__arrow_bottom"></div>
+            </div>
+        </div>
+
+        <!-- next -->
+        <div class="pointer-container pointer-container_right">
+            <div class="pointer pointer_next">
+                <div class="pointer__arrow pointer_color pointer__arrow_top"></div>
+                <div class="pointer__line pointer_color"></div>
+                <div class="pointer__arrow pointer_color pointer__arrow_bottom"></div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <section id="services" class="services section">
+            <div class="container">
+                <div class="services__header-block">
+
+                    <h2 class="services__header col-xs-12 col-sm-6">Мои навыки</h2>
+
+                    <div class="arrow-controls col-xs-12 col-sm-6">
+
+                        <!-- arrows -->
+                        <div class="arrow arrow_back">
+                            <div class="arrow__line-short arrow__line_up"></div>
+                            <div class="arrow__line"></div>
+                            <div class="arrow__line-short arrow__line_down"></div>
+                        </div>
+
+                        <div class="arrow arrow_front">
+                            <div class="arrow__line-short arrow__line_up"></div>
+                            <div class="arrow__line"></div>
+                            <div class="arrow__line-short arrow__line_down"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr class="services__line">
+
+                <!-- carousel container -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="services__item">
+                            <h3>HTML5</h3>
+                            <p class="services__item__text">
+                                Семантическая разметка, использование БЭМ
+                            </p>
+                            <ul class="services__list">
+                                <li>Структутированный код</li>
+                                <li>Валидный код</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="services__item">
+                            <h3>Css3</h3>
+                            <p class="services__item__text">
+                                Стилизация элементов на странице
+                            </p>
+                            <ul class="services__list">
+                                <li>Анимация, hover-эффекты без JS</li>
+                                <li>Кроссбраузерная верстка</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="services__item">
+                            <h3>JavaScript</h3>
+                            <p class="services__item__text">
+                                Подключение скриптов для динамичности
+                            </p>
+                            <ul class="services__list">
+                                <li>Настроенные JQuery плагины</li>
+                                <li>Свой Javascript код</li>
+                                <li>Комментируемый код</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="services__item">
+                            <h3>Scss</h3>
+                            <p class="services__item__text">
+                                Быстрое написание стилей
+                            </p>
+                            <ul class="services__list">
+                                <li>Вложенность селекторов без ошибок</li>
+                                <li>Ускоренная стилизация сайта</li>
+                                <li>Более гибкий код</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="services__item">
+                            <h3>Nunjucks</h3>
+                            <p class="services__item__text">
+                                Быстрая верстка с шаблонизатором
+                            </p>
+                            <ul class="services__list">
+                                <li>Автоматизация процесса верстки</li>
+                                <li>Использование шаблонизаторов</li>
+                                <li>Модульная верстка</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="services__item">
+                            <h3>Photoshop</h3>
+                            <p class="services__item__text">
+                                Верстка сайта по макету PSD
+                            </p>
+                            <ul class="services__list">
+                                <li>Экспорт стилей для ускоренной верстки</li>
+                                <li>Оптимизация изображений для Web</li>
+                                <li>Нарезка изображений из макета</li>
+                                <li>Экспорт SVG-изображений</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="services__item">
+                            <h3>Figma</h3>
+                            <p class="services__item__text">
+                                Верстка сайта по макету Figma
+                            </p>
+                            <ul class="services__list">
+                                <li>Экспорт стилей для ускоренной верстки</li>
+                                <li>Оптимизация изображений для Web</li>
+                                <li>Нарезка изображений из макета</li>
+                                <li>Экспорт SVG-изображений</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="services__item">
+                            <h3>Gulp</h3>
+                            <p class="services__item__text">
+                                Быстрая компиляция файлов
+                            </p>
+                            <ul class="services__list">
+                                <li>Оптимизация сайта (lighthouse)</li>
+                                <li>Компиляция препроцессоров</li>
+                                <li>Минификация файлов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Works gallery -->
+        <section id="works" class="works section">
+            <div class="container">
+                <div class="row">
+                    <!-- header and buttons of the gallery -->
+                    <div class="works__header">
+                        <h2 class="col-xs-12 col-sm-3">Работы</h2>
+                        <nav class="works__header__nav col-xs-12 col-sm-9">
+                            <button data-filter="*" class="works__nav__item works__nav__item_active"><span
+                                    class="works__button_underline"></span>Все</button>
+                            <button data-filter=".course" class="works__nav__item"><span
+                                    class="works__button_underline"></span>Курсовые</button>
+                            <button data-filter=".landing" class="works__nav__item"><span
+                                    class="works__button_underline"></span>Лендинг</button>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="gallery">
+                    <!-- gallery container -->
+                    <div class="gallery__items">
+                        <!-- gallery item -->
+                        <div class="gallery__item gallery__item_1 col-xs-12 col-sm-6 landing">
+                            <div class="gallery__item__hover">
+                                <span class="item__hover__line"></span><span class="item__hover__tag">HTML - шаблон
+                                    шаблон</span>
+
+                                <h3 class="item__hover__header"><a href="pages/Vendugo/index.html">Vendugo</a></h3>
+                                <h4 class="item__hover__header-small"></h4>
+
+                                <a href="images/photos/fullImg-6.jpg" rel="nofollow" class="item__hover__zoom"
+                                    title="Coffee Web Site">
+                                    <img src="images/photos/fullImg-6.jpg" alt>
+                                    +&nbsp;Zoom
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- gallery item -->
+                        <div class="gallery__item gallery__item_2 col-xs-12 col-sm-6 course">
+                            <div class="gallery__item__hover">
+                                <span class="item__hover__line"></span><span class="item__hover__tag">HTML -
+                                    шаблон</span>
+
+                                <h3 class="item__hover__header"><a href="pages/Marcho/index.html">Marcho</a></h3>
+                                <h4 class="item__hover__header-small"></h4>
+
+                                <a href="images/photos/fullImg-2.jpg" rel="nofollow" class="item__hover__zoom"
+                                    title="Purple Web Page">
+                                    <img src="images/photos/fullImg-2.jpg" alt>
+                                    +&nbsp;Zoom
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <!-- gallery item -->
+                        <div class="gallery__item gallery__item_3 col-xs-12 col-sm-6 landing">
+                            <div class="gallery__item__hover">
+                                <span class="item__hover__line"></span><span class="item__hover__tag">HTML -
+                                    шаблон</span>
+
+                                <h3 class="item__hover__header"><a href="pages/Conquest/index.html">Conquest</a></h3>
+                                <h4 class="item__hover__header-small"></h4>
+
+                                <a href="images/photos/fullImg-7.jpg" rel="nofollow" class="item__hover__zoom"
+                                    title="Coffee Web Site">
+                                    <img src="images/photos/fullImg-7.jpg" alt>
+                                    +&nbsp;Zoom
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <!-- gallery item -->
+                        <div class="gallery__item gallery__item_4 col-xs-12 col-sm-6 landing">
+                            <div class="gallery__item__hover">
+                                <span class="item__hover__line"></span><span class="item__hover__tag">HTML -
+                                    шаблон</span>
+
+                                <h3 class="item__hover__header"><a href="pages/Musc/index.html">Musc</a></h3>
+                                <h4 class="item__hover__header-small"></h4>
+
+                                <a href="images/photos/fullImg-5.jpg" rel="nofollow" class="item__hover__zoom"
+                                    title="Coffee Web Site">
+                                    <img src="images/photos/fullImg-5.jpg" alt>
+                                    +&nbsp;Zoom
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- button load more	 -->
+                    <button class="gallery__button">
+                        <div class="preloader" hidden>
+                            <img class="preloader__inside" src="images/icons/preloader.gif" alt>
+                        </div>
+                        <span class="button-text">Load more</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact us -->
+    <footer class="contact container">
+        <div class="row">
+            <div class="contact__inf col-xs-12 col-sm-6">
+                <h2 id="contact" class="section">Контакты</h2>
+
+                <p class="contact__text">
+                    Позвоните мне или напишите сообщение<br>
+                    <a class="contact__email" href="mailto:nike95125@gmail.com">nike95125@gmail.com</a>
+                </p>
+
+                <address class="contact__address">
+                    г. Одинцово<br>
+                    <a class="contact__tel" href="tel:+79773890531">+7 977 389 05 31</a>
+                </address>
+
+                <p class="copyright">© 2022</p>
+            </div>
+            <!-- social networks -->
+            <div class="social">
+                <div class="social__link-and-icon">
+                    <span class="icon icon-facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666c.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <a class="social__link" href="javascript:void">Facebook<span
+                            class="social__link_underline"></span></a>
+                </div>
+                <div class="social__link-and-icon">
+                    <span class="icon icon-twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578a9.3 9.3 0 0 1-2.958 1.13a4.66 4.66 0 0 0-7.938 4.25a13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568a4.692 4.692 0 0 1-2.104.08a4.661 4.661 0 0 0 4.352 3.234a9.348 9.348 0 0 1-5.786 1.995a9.5 9.5 0 0 1-1.112-.065a13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254c0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003Z" />
+                        </svg>
+                    </span>
+                    <a class="social__link" href="javascript:void">Twitter<span
+                            class="social__link_underline"></span></a>
+                </div>
+                <div class="social__link-and-icon">
+                    <span class="icon icon-vk">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                            <path fill="currentColor"
+                                d="M20.911 0h-9.823C2.124 0-.001 2.125-.001 11.089v9.823c0 8.964 2.125 11.089 11.089 11.089h9.823C29.875 32.001 32 29.876 32 20.912v-9.823C32 2.125 29.854 0 20.911 0zm4.922 22.828H23.51c-.88 0-1.151-.698-2.734-2.302c-1.375-1.333-1.984-1.51-2.323-1.51c-.479 0-.615.135-.615.792v2.099c0 .563-.177.901-1.667.901c-2.464 0-5.198-1.49-7.115-4.266c-2.891-4.068-3.682-7.115-3.682-7.745c0-.339.135-.656.786-.656h2.328c.589 0 .813.271 1.042.901c1.151 3.323 3.068 6.234 3.859 6.234c.292 0 .427-.135.427-.88v-3.432c-.089-1.583-.922-1.719-.922-2.281c0-.271.224-.542.583-.542h3.661c.495 0 .677.271.677.854v4.63c0 .5.224.677.359.677c.292 0 .542-.177 1.083-.719c1.672-1.875 2.87-4.766 2.87-4.766c.156-.339.427-.656 1.016-.656h2.328c.698 0 .854.359.698.859c-.292 1.354-3.141 5.375-3.141 5.375c-.245.406-.339.583 0 1.036c.25.339 1.063 1.042 1.604 1.672c.995 1.13 1.76 2.078 1.964 2.734c.229.651-.109.99-.766.99z" />
+                        </svg>
+                    </span>
+                    <a class="social__link" href="javascript:void">VK<span class="social__link_underline"></span></a>
+                </div>
+                <div class="social__link-and-icon">
+                    <span class="icon icon-telegram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12S5.373 0 12 0s12 5.373 12 12ZM12.43 8.859c-1.167.485-3.5 1.49-6.998 3.014c-.568.226-.866.447-.893.663c-.046.366.412.51 1.034.705c.085.027.173.054.263.084c.613.199 1.437.432 1.865.441c.389.008.823-.152 1.302-.48c3.268-2.207 4.955-3.322 5.061-3.346c.075-.017.179-.039.249.024c.07.062.063.18.056.212c-.046.193-1.84 1.862-2.77 2.726c-.29.269-.495.46-.537.504c-.094.097-.19.19-.282.279c-.57.548-.996.96.024 1.632c.49.323.882.59 1.273.856c.427.291.853.581 1.405.943c.14.092.274.187.405.28c.497.355.944.673 1.496.623c.32-.03.652-.331.82-1.23c.397-2.126 1.179-6.73 1.36-8.628a2.111 2.111 0 0 0-.02-.472a.506.506 0 0 0-.172-.325c-.143-.117-.365-.142-.465-.14c-.451.008-1.143.249-4.476 1.635Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <a class="social__link" href="javascript:void">Telegram<span
+                            class="social__link_underline"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js" defer></script>
+</body>
+
+</html>

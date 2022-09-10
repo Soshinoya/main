@@ -1,0 +1,51 @@
+html,
+body {
+	height: 100%;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+body {
+	@extend %hind-400;
+	display: flex;
+	flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@extend %mont-500;
+	padding: 0;
+}
+
+h1 {
+	font-size: 46px;
+	@extend %nunito-500;
+}
+
+h2[class] {
+	font-size: 42px;
+	@extend %nunito-500;
+	padding: 0;
+}
+
+h3 {
+	font-size: 26px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+h6 {
+	font-size: 11px;
+}
