@@ -113,10 +113,20 @@
     }
 
     .contact__inf {
-        padding-top: 250px;
         padding-bottom: 50px;
     }
 }
+
+@media (max-width: 650px) {
+    .arrow-controls {
+        margin-top: 20px;
+    }
+    .services {
+        &__header-block {
+            padding-bottom: 30px;
+        }
+    }
+};
 
 /*media query for smartphones *******************************/
 
@@ -131,7 +141,6 @@
     }
 
     .works__header__nav {
-        margin-top: -10px;
         text-align: left;
     }
 
@@ -182,7 +191,6 @@
     }
 
     .works__header__nav {
-        margin-top: -10px;
         text-align: left;
     }
 
