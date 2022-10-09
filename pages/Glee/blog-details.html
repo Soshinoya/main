@@ -5,20 +5,76 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Blog</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/blog-details.min.css">
+  
 </head>
 
 <body>
-  <header id="swup" class="header transition-fade"><div class="container"><div class="header__inner"><a class="logo" href="#"><img loading="lazy" class="logo__img" src="images/logo.png" alt=""> <img loading="lazy" class="logo__title" src="images/logo_title.png" alt=""></a><nav class="menu"><ul class="menu__list"><li class="menu__list-item" data-text="Home"><a class="menu__list-link" href="index.html">Home</a></li><li class="menu__list-item" data-text="About"><a class="menu__list-link" href="about.html">About</a></li><li class="menu__list-item" data-text="Services"><a class="menu__list-link" href="login.html">Services</a></li><li class="menu__list-item" data-text="Pages"><a class="menu__list-link" href="shop.html">Pages</a></li><li class="menu__list-item" data-text="News"><a class="menu__list-link" href="blog.html">News</a></li><li class="menu__list-item" data-text="Contact"><a class="menu__list-link" href="contacts.html">Contact</a></li></ul></nav><div class="user__nav"><a class="user__nav-link--search" href="#"><img loading="lazy" class="user__nav-img" src="images/icons/search.png" alt=""></a><div class="user__nav-wrapper"><a class="user__nav-link" href="#"><img loading="lazy" class="user__nav-img" src="images/icons/heart.png" alt=""> <span class="user__nav-num">0</span> </a><img loading="lazy" class="user__nav-line" src="images/icons/white_line.svg" alt=""> <a class="user__nav-link" href="#"><img loading="lazy" class="user__nav-img" src="images/icons/cart.png" alt=""> <span class="user__nav-num">0</span></a></div><a class="user__nav-link--burger" href="#"><img loading="lazy" class="user__nav-img" src="images/icons/burger.png" alt=""> </a><button class="user__nav-link--btn"><span class="user__nav-link--span"></span> <span class="user__nav-link--span"></span> <span class="user__nav-link--span"></span> <span class="user__nav-link--span"></span></button></div></div></div></header>
+  <header id="swup" class="header transition-fade">
+    <div class="container">
+        <div class="header__inner"><a class="logo" href="#"><img loading="lazy" class="logo__img" src="images/logo.svg"
+                    alt=""> <img loading="lazy" class="logo__title" src="images/logo_title.png" alt=""></a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item" data-text="Home"><a class="menu__list-link" href="index.html">Home</a>
+                    </li>
+                    <li class="menu__list-item" data-text="About"><a class="menu__list-link" href="about.html">About</a>
+                    </li>
+                    <li class="menu__list-item" data-text="Services"><a class="menu__list-link"
+                            href="login.html">Authorize</a></li>
+                    <li class="menu__list-item" data-text="Pages"><a class="menu__list-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="menu__list-item" data-text="News"><a class="menu__list-link" href="blog.html">News</a>
+                    </li>
+                    <li class="menu__list-item" data-text="Contact"><a class="menu__list-link"
+                            href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+            <form class="header-form" action="#">
+                <input class="header-form__input" type="text" name="header-form__input" id="header-form__input"
+                    placeholder="Введите запрос...">
+                <label class="header-form__link user__nav-link--search" for="header-form__input" id="header-form__link">
+                    <img loading="lazy" class="user__nav-img" src="images/icons/search.png" alt="">
+                </label>
+                <div class="user__nav-wrapper">
+                    <a class="user__nav-link" href="#">
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24.2088 16.4765H7.61366L8.4469 14.7794L22.2915 14.7543C22.7597 14.7543 23.161 14.4199 23.2446 13.9573L25.1619 3.2255C25.212 2.94403 25.1368 2.65421 24.9529 2.43406C24.862 2.32571 24.7486 2.23843 24.6206 2.17828C24.4926 2.11813 24.353 2.08654 24.2116 2.08571L6.59928 2.02719L6.4488 1.31935C6.35405 0.8679 5.94718 0.539062 5.48458 0.539062H1.17904C0.918138 0.539063 0.667923 0.642705 0.483439 0.827189C0.298955 1.01167 0.195313 1.26189 0.195312 1.52279C0.195313 1.78369 0.298955 2.0339 0.483439 2.21839C0.667923 2.40287 0.918138 2.50651 1.17904 2.50651H4.68757L5.34524 5.63325L6.96435 13.4724L4.87985 16.875C4.7716 17.0211 4.7064 17.1946 4.69163 17.3759C4.67685 17.5571 4.71309 17.7389 4.79625 17.9006C4.96345 18.2322 5.30065 18.4412 5.67408 18.4412H7.42416C7.05107 18.9367 6.84954 19.5403 6.85009 20.1606C6.85009 21.7379 8.132 23.0198 9.7093 23.0198C11.2866 23.0198 12.5685 21.7379 12.5685 20.1606C12.5685 19.5392 12.3623 18.9344 11.9944 18.4412H16.4839C16.1108 18.9367 15.9093 19.5403 15.9098 20.1606C15.9098 21.7379 17.1917 23.0198 18.7691 23.0198C20.3464 23.0198 21.6283 21.7379 21.6283 20.1606C21.6283 19.5392 21.422 18.9344 21.0542 18.4412H24.2116C24.7522 18.4412 25.1953 18.0009 25.1953 17.4575C25.1937 17.1968 25.0891 16.9474 24.9042 16.7637C24.7194 16.5799 24.4694 16.4767 24.2088 16.4765V16.4765ZM7.00893 3.96677L23.0551 4.01972L21.4834 12.8203L8.87885 12.8426L7.00893 3.96677ZM9.7093 21.0412C9.22441 21.0412 8.82869 20.6455 8.82869 20.1606C8.82869 19.6757 9.22441 19.28 9.7093 19.28C10.1942 19.28 10.5899 19.6757 10.5899 20.1606C10.5899 20.3942 10.4971 20.6182 10.332 20.7833C10.1668 20.9485 9.94286 21.0412 9.7093 21.0412V21.0412ZM18.7691 21.0412C18.2842 21.0412 17.8884 20.6455 17.8884 20.1606C17.8884 19.6757 18.2842 19.28 18.7691 19.28C19.2539 19.28 19.6497 19.6757 19.6497 20.1606C19.6497 20.3942 19.5569 20.6182 19.3917 20.7833C19.2266 20.9485 19.0026 21.0412 18.7691 21.0412V21.0412Z"
+                                fill="#9ABCCA" />
+                        </svg>
+                        <span class="user__nav-num">0</span>
+                    </a>
+                </div>
+                <button class="user__nav-link--btn">
+                    <span class="user__nav-link--span"></span>
+                    <span class="user__nav-link--span"></span>
+                    <span class="user__nav-link--span"></span>
+                    <span class="user__nav-link--span"></span>
+                </button>
+            </form>
+            <ul class="header-links" id="header-links"></ul>
+        </div>
+    </div>
+</header>
 
   <main class="main">
 
 
-    <section class="top"><h1 class="top__title">About Us</h1><div class="breadcrumbs"><ul class="breadcrumbs__list"><li class="breadcrumbs__item"><a class="breadcrumbs__list-link" href="#">Home</a></li><li class="breadcrumbs__item"><a class="breadcrumbs__list-link" href="#">About Us</a></li></ul></div></section>
+    <section class="top">
+    <h1 class="top__title">Blog</h1>
+    <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__list-link" href="#">Home</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__list-link" href="#">Blog</a></li>
+        </ul>
+    </div>
+</section>
 
     <section class="blog blog-one">
       <a class="filter__link" href="#">Filter</a>
@@ -96,39 +152,352 @@
                 </div>
               </div>
             </div>
-            <div class="people-info"><div class="people-info__inner"><div class="people-info__left"><img loading="lazy" class="people-info__img" src="images/content/blog-details/people-1.jpg"><div class="people-info__content"><h4 class="people-info__name">Mark N. Hernandez</h4><p class="people-info__position">Designer</p></div></div><div class="people-info__right"><p class="people-info__tags"><span>Tags:</span>All, Trending</p><p class="people-info__share"><span>Share:</span> <a class="people-info__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8.13" height="15.43" viewBox="0 0 8.13 15.43"><defs><style>.cls-1 {
+            <div class="people-info">
+    <div class="people-info__inner">
+        <div class="people-info__left"><img loading="lazy" class="people-info__img"
+                src="images/content/blog-details/people-1.jpg">
+            <div class="people-info__content">
+                <h4 class="people-info__name">Mark N. Hernandez</h4>
+                <p class="people-info__position">Designer</p>
+            </div>
+        </div>
+        <div class="people-info__right">
+            <p class="people-info__tags"><span>Tags:</span>All, Trending</p>
+            <p class="people-info__share"><span>Share:</span> <a class="people-info__link" href="#"><svg
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        preserveAspectRatio="xMidYMid" width="8.13" height="15.43" viewBox="0 0 8.13 15.43">
+                        <defs>
+                            <style>
+                                .cls-1 {
                                     fill: #a1a1a1;
                                     fill-rule: evenodd;
-                                }</style></defs><path d="M6.100,-0.005 C6.513,-0.005 6.928,0.017 7.340,0.035 C7.608,0.046 7.877,0.085 8.129,0.112 L8.110,2.597 L7.912,2.597 C7.640,2.597 7.367,2.594 7.094,2.594 C6.890,2.594 6.685,2.595 6.481,2.602 C5.822,2.624 5.337,2.871 5.304,3.694 C5.283,4.286 5.268,5.595 5.267,5.663 C5.301,5.663 5.952,5.665 6.607,5.665 C6.934,5.665 7.254,5.665 7.478,5.663 L8.009,5.663 C7.876,6.618 7.754,7.533 7.621,8.455 L5.267,8.455 L5.214,15.426 L2.324,15.426 L2.377,8.444 L0.013,8.444 L0.034,5.668 L2.409,5.668 L2.411,5.460 C2.415,4.901 2.408,4.341 2.429,3.782 C2.437,3.431 2.456,3.069 2.520,2.717 C2.680,1.868 3.074,1.154 3.786,0.644 C4.409,0.200 5.118,0.013 5.870,-0.003 C5.946,-0.005 6.023,-0.005 6.100,-0.005 Z" class="cls-1"/></svg> </a><a class="people-info__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="14.31" height="11.62" viewBox="0 0 14.31 11.62"><defs><style>.cls-1 {
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M6.100,-0.005 C6.513,-0.005 6.928,0.017 7.340,0.035 C7.608,0.046 7.877,0.085 8.129,0.112 L8.110,2.597 L7.912,2.597 C7.640,2.597 7.367,2.594 7.094,2.594 C6.890,2.594 6.685,2.595 6.481,2.602 C5.822,2.624 5.337,2.871 5.304,3.694 C5.283,4.286 5.268,5.595 5.267,5.663 C5.301,5.663 5.952,5.665 6.607,5.665 C6.934,5.665 7.254,5.665 7.478,5.663 L8.009,5.663 C7.876,6.618 7.754,7.533 7.621,8.455 L5.267,8.455 L5.214,15.426 L2.324,15.426 L2.377,8.444 L0.013,8.444 L0.034,5.668 L2.409,5.668 L2.411,5.460 C2.415,4.901 2.408,4.341 2.429,3.782 C2.437,3.431 2.456,3.069 2.520,2.717 C2.680,1.868 3.074,1.154 3.786,0.644 C4.409,0.200 5.118,0.013 5.870,-0.003 C5.946,-0.005 6.023,-0.005 6.100,-0.005 Z"
+                            class="cls-1" />
+                    </svg> </a><a class="people-info__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="14.31"
+                        height="11.62" viewBox="0 0 14.31 11.62">
+                        <defs>
+                            <style>
+                                .cls-1 {
                                     fill: #a1a1a1;
                                     fill-rule: evenodd;
-                                }</style></defs><path d="M14.310,1.397 C14.205,1.556 14.100,1.704 13.978,1.847 C13.667,2.231 13.308,2.571 12.906,2.862 L12.856,2.955 C12.869,3.388 12.849,3.822 12.791,4.255 C12.674,5.165 12.410,6.037 12.019,6.866 C11.607,7.721 11.080,8.495 10.417,9.175 C9.289,10.332 7.939,11.079 6.368,11.424 C5.829,11.539 5.286,11.600 4.732,11.616 C4.643,11.618 4.555,11.620 4.467,11.620 C2.879,11.620 1.407,11.196 0.051,10.354 L-0.019,10.311 C0.213,10.335 0.442,10.348 0.670,10.348 C1.445,10.348 2.190,10.203 2.918,9.910 C3.419,9.702 3.882,9.438 4.318,9.093 C2.799,9.044 1.853,7.946 1.607,7.058 C1.789,7.093 1.971,7.110 2.152,7.110 C2.389,7.110 2.626,7.081 2.864,7.025 L2.908,7.003 C2.081,6.811 1.448,6.372 1.014,5.659 C0.722,5.187 0.589,4.666 0.593,4.101 C1.008,4.321 1.435,4.441 1.896,4.452 C1.279,4.008 0.867,3.421 0.703,2.675 C0.538,1.929 0.653,1.221 1.037,0.552 C2.608,2.423 4.608,3.449 7.058,3.618 C7.043,3.498 7.027,3.399 7.011,3.295 C6.934,2.604 7.082,1.962 7.459,1.381 C7.931,0.646 8.598,0.190 9.455,0.053 C9.637,0.023 9.815,0.008 9.988,0.008 C10.756,0.008 11.434,0.302 12.016,0.871 C12.052,0.903 12.083,0.921 12.124,0.921 C12.137,0.921 12.152,0.919 12.169,0.914 C12.773,0.788 13.346,0.569 13.880,0.262 L13.918,0.240 C13.705,0.920 13.278,1.446 12.672,1.836 C13.243,1.776 13.782,1.622 14.310,1.397 Z" class="cls-1"/></svg> </a><a class="people-info__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="13.63" height="13.66" viewBox="0 0 13.63 13.66"><defs><style>.cls-1 {
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M14.310,1.397 C14.205,1.556 14.100,1.704 13.978,1.847 C13.667,2.231 13.308,2.571 12.906,2.862 L12.856,2.955 C12.869,3.388 12.849,3.822 12.791,4.255 C12.674,5.165 12.410,6.037 12.019,6.866 C11.607,7.721 11.080,8.495 10.417,9.175 C9.289,10.332 7.939,11.079 6.368,11.424 C5.829,11.539 5.286,11.600 4.732,11.616 C4.643,11.618 4.555,11.620 4.467,11.620 C2.879,11.620 1.407,11.196 0.051,10.354 L-0.019,10.311 C0.213,10.335 0.442,10.348 0.670,10.348 C1.445,10.348 2.190,10.203 2.918,9.910 C3.419,9.702 3.882,9.438 4.318,9.093 C2.799,9.044 1.853,7.946 1.607,7.058 C1.789,7.093 1.971,7.110 2.152,7.110 C2.389,7.110 2.626,7.081 2.864,7.025 L2.908,7.003 C2.081,6.811 1.448,6.372 1.014,5.659 C0.722,5.187 0.589,4.666 0.593,4.101 C1.008,4.321 1.435,4.441 1.896,4.452 C1.279,4.008 0.867,3.421 0.703,2.675 C0.538,1.929 0.653,1.221 1.037,0.552 C2.608,2.423 4.608,3.449 7.058,3.618 C7.043,3.498 7.027,3.399 7.011,3.295 C6.934,2.604 7.082,1.962 7.459,1.381 C7.931,0.646 8.598,0.190 9.455,0.053 C9.637,0.023 9.815,0.008 9.988,0.008 C10.756,0.008 11.434,0.302 12.016,0.871 C12.052,0.903 12.083,0.921 12.124,0.921 C12.137,0.921 12.152,0.919 12.169,0.914 C12.773,0.788 13.346,0.569 13.880,0.262 L13.918,0.240 C13.705,0.920 13.278,1.446 12.672,1.836 C13.243,1.776 13.782,1.622 14.310,1.397 Z"
+                            class="cls-1" />
+                    </svg> </a><a class="people-info__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="13.63"
+                        height="13.66" viewBox="0 0 13.63 13.66">
+                        <defs>
+                            <style>
+                                .cls-1 {
                                     fill: #a1a1a1;
                                     fill-rule: evenodd;
-                                }</style></defs><path d="M13.420,10.779 C12.996,12.337 11.980,13.258 10.404,13.511 C9.815,13.606 8.224,13.663 6.636,13.663 C5.010,13.663 3.386,13.603 2.840,13.461 C1.291,13.061 0.367,12.052 0.121,10.483 C-0.063,9.331 -0.082,3.978 0.250,2.815 C0.684,1.301 1.695,0.412 3.227,0.160 C3.921,0.046 5.279,0.006 6.650,0.006 C7.925,0.006 9.211,0.041 9.985,0.083 C10.923,0.133 11.781,0.434 12.478,1.104 C13.143,1.740 13.483,2.535 13.568,3.435 C13.670,4.509 13.736,9.589 13.420,10.779 ZM12.339,3.550 C12.217,2.348 11.482,1.559 10.294,1.372 C9.705,1.283 8.288,1.243 6.878,1.243 C5.518,1.243 4.164,1.280 3.569,1.344 C2.378,1.482 1.577,2.217 1.386,3.402 C1.191,4.657 1.193,9.353 1.339,10.297 C1.491,11.278 2.046,11.953 3.025,12.227 C3.555,12.376 5.143,12.429 6.699,12.429 C8.132,12.429 9.539,12.384 10.067,12.326 C11.270,12.194 12.065,11.454 12.255,10.258 C12.451,9.057 12.451,4.674 12.339,3.550 ZM10.482,4.021 C10.027,4.016 9.667,3.648 9.671,3.199 C9.674,2.747 10.039,2.382 10.490,2.382 L10.499,2.382 C10.950,2.382 11.314,2.749 11.311,3.204 C11.307,3.654 10.937,4.021 10.482,4.021 ZM6.792,10.340 C4.855,10.340 3.304,8.771 3.318,6.835 C3.334,4.899 4.914,3.330 6.850,3.336 C8.781,3.336 10.338,4.905 10.323,6.841 C10.309,8.771 8.728,10.340 6.792,10.340 ZM6.857,4.570 L6.837,4.570 C5.596,4.570 4.573,5.569 4.553,6.813 C4.533,8.064 5.528,9.090 6.779,9.100 L6.799,9.101 C8.041,9.101 9.063,8.101 9.084,6.857 C9.104,5.601 8.108,4.581 6.857,4.570 Z" class="cls-1"/></svg> </a><a class="people-info__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="18.03" height="11.41" viewBox="0 0 18.03 11.41"><defs><style>.cls-1 {
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M13.420,10.779 C12.996,12.337 11.980,13.258 10.404,13.511 C9.815,13.606 8.224,13.663 6.636,13.663 C5.010,13.663 3.386,13.603 2.840,13.461 C1.291,13.061 0.367,12.052 0.121,10.483 C-0.063,9.331 -0.082,3.978 0.250,2.815 C0.684,1.301 1.695,0.412 3.227,0.160 C3.921,0.046 5.279,0.006 6.650,0.006 C7.925,0.006 9.211,0.041 9.985,0.083 C10.923,0.133 11.781,0.434 12.478,1.104 C13.143,1.740 13.483,2.535 13.568,3.435 C13.670,4.509 13.736,9.589 13.420,10.779 ZM12.339,3.550 C12.217,2.348 11.482,1.559 10.294,1.372 C9.705,1.283 8.288,1.243 6.878,1.243 C5.518,1.243 4.164,1.280 3.569,1.344 C2.378,1.482 1.577,2.217 1.386,3.402 C1.191,4.657 1.193,9.353 1.339,10.297 C1.491,11.278 2.046,11.953 3.025,12.227 C3.555,12.376 5.143,12.429 6.699,12.429 C8.132,12.429 9.539,12.384 10.067,12.326 C11.270,12.194 12.065,11.454 12.255,10.258 C12.451,9.057 12.451,4.674 12.339,3.550 ZM10.482,4.021 C10.027,4.016 9.667,3.648 9.671,3.199 C9.674,2.747 10.039,2.382 10.490,2.382 L10.499,2.382 C10.950,2.382 11.314,2.749 11.311,3.204 C11.307,3.654 10.937,4.021 10.482,4.021 ZM6.792,10.340 C4.855,10.340 3.304,8.771 3.318,6.835 C3.334,4.899 4.914,3.330 6.850,3.336 C8.781,3.336 10.338,4.905 10.323,6.841 C10.309,8.771 8.728,10.340 6.792,10.340 ZM6.857,4.570 L6.837,4.570 C5.596,4.570 4.573,5.569 4.553,6.813 C4.533,8.064 5.528,9.090 6.779,9.100 L6.799,9.101 C8.041,9.101 9.063,8.101 9.084,6.857 C9.104,5.601 8.108,4.581 6.857,4.570 Z"
+                            class="cls-1" />
+                    </svg> </a><a class="people-info__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="18.03"
+                        height="11.41" viewBox="0 0 18.03 11.41">
+                        <defs>
+                            <style>
+                                .cls-1 {
                                     fill: #a1a1a1;
                                     fill-rule: evenodd;
-                                }</style></defs><path d="M18.019,4.624 L18.019,4.679 L18.008,6.121 L18.007,6.181 L17.947,6.181 L16.016,6.181 L16.001,8.112 L16.001,8.167 L15.946,8.167 L14.498,8.167 L14.443,8.167 L14.444,8.112 L14.458,6.181 L12.528,6.181 L12.467,6.181 L12.468,6.121 L12.479,4.679 L12.479,4.624 L12.540,4.624 L14.470,4.624 L14.485,2.688 L14.485,2.633 L14.540,2.633 L15.988,2.633 L16.043,2.633 L16.043,2.688 L16.028,4.624 L17.959,4.624 L18.019,4.624 ZM7.229,11.201 C6.722,11.332 6.207,11.396 5.689,11.396 C5.579,11.396 5.468,11.393 5.357,11.387 C4.239,11.321 3.222,10.970 2.321,10.306 C1.159,9.451 0.428,8.310 0.120,6.900 C0.009,6.390 -0.031,5.880 0.012,5.365 C0.092,4.147 0.517,3.055 1.298,2.106 C2.106,1.113 3.136,0.466 4.368,0.154 C4.681,0.071 4.994,0.022 5.312,0.005 C5.493,-0.000 5.675,-0.011 5.856,-0.011 C6.821,-0.000 7.724,0.241 8.554,0.729 C9.111,1.048 9.427,1.371 9.563,1.470 C8.994,2.029 8.447,2.578 7.889,3.126 C7.474,2.769 7.016,2.441 6.222,2.320 C6.057,2.296 5.894,2.284 5.735,2.284 C4.141,2.284 2.805,3.437 2.450,4.947 C2.365,5.287 2.341,5.633 2.370,5.979 C2.492,7.383 3.432,8.535 4.701,8.946 C5.025,9.048 5.360,9.096 5.697,9.096 C5.776,9.096 5.855,9.094 5.934,9.089 C6.533,9.050 7.093,8.891 7.600,8.557 C8.455,7.975 8.731,7.065 8.733,6.840 L5.678,6.840 C5.678,6.765 5.689,5.337 5.694,4.640 L5.700,4.547 L11.064,4.547 C11.353,6.220 11.093,7.980 10.051,9.357 C9.331,10.306 8.372,10.904 7.229,11.201 Z" class="cls-1"/></svg></a></p></div></div></div>
-            <div class="comments"><div class="comments__inner"><h3 class="comments__title"><span>3</span> Comments</h3><div class="comments__items"><div class="comments__item"><img loading="lazy" class="comments__item-img" src="images/content/blog-details/people-2.jpg"><div class="comments__item-content"><div class="comments__item-top"><h5 class="comments__item-name">Delores G. Roberts</h5><p class="comments__item-info">Add 11 Oct 2020</p></div><p class="comments__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices</p><a class="comments__item-link" href="#">Reply</a></div></div><div class="comments__item comments__item--reply"><img loading="lazy" class="comments__item-img" src="images/content/blog-details/people-3.jpg"><div class="comments__item-content"><div class="comments__item-top"><h5 class="comments__item-name">Shannon S. Williams</h5><p class="comments__item-info">Add 11 Oct 2020</p></div><p class="comments__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra</p><a class="comments__item-link" href="#">Reply</a></div></div><div class="comments__item"><img loading="lazy" class="comments__item-img" src="images/content/blog-details/people-4.jpg"><div class="comments__item-content"><div class="comments__item-top"><h5 class="comments__item-name">Nicholas R. Coley</h5><p class="comments__item-info">Add 11 Oct 2020</p></div><p class="comments__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem,</p><a class="comments__item-link" href="#">Reply</a></div></div></div></div></div>
-            <div class="post"><h3 class="post__title">Leave A Comment</h3><form class="post-form" action="#"><div class="post-form__box-input"><input class="post-form__text-input" type="text" placeholder="Name"> <input class="post-form__text-input post-form__text-input--email" type="email" placeholder="E-mail"></div><textarea class="post-form__textarea" placeholder="Comment"></textarea> <button class="post-form__btn" type="submit">Post Comment</button></form></div>
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            d="M18.019,4.624 L18.019,4.679 L18.008,6.121 L18.007,6.181 L17.947,6.181 L16.016,6.181 L16.001,8.112 L16.001,8.167 L15.946,8.167 L14.498,8.167 L14.443,8.167 L14.444,8.112 L14.458,6.181 L12.528,6.181 L12.467,6.181 L12.468,6.121 L12.479,4.679 L12.479,4.624 L12.540,4.624 L14.470,4.624 L14.485,2.688 L14.485,2.633 L14.540,2.633 L15.988,2.633 L16.043,2.633 L16.043,2.688 L16.028,4.624 L17.959,4.624 L18.019,4.624 ZM7.229,11.201 C6.722,11.332 6.207,11.396 5.689,11.396 C5.579,11.396 5.468,11.393 5.357,11.387 C4.239,11.321 3.222,10.970 2.321,10.306 C1.159,9.451 0.428,8.310 0.120,6.900 C0.009,6.390 -0.031,5.880 0.012,5.365 C0.092,4.147 0.517,3.055 1.298,2.106 C2.106,1.113 3.136,0.466 4.368,0.154 C4.681,0.071 4.994,0.022 5.312,0.005 C5.493,-0.000 5.675,-0.011 5.856,-0.011 C6.821,-0.000 7.724,0.241 8.554,0.729 C9.111,1.048 9.427,1.371 9.563,1.470 C8.994,2.029 8.447,2.578 7.889,3.126 C7.474,2.769 7.016,2.441 6.222,2.320 C6.057,2.296 5.894,2.284 5.735,2.284 C4.141,2.284 2.805,3.437 2.450,4.947 C2.365,5.287 2.341,5.633 2.370,5.979 C2.492,7.383 3.432,8.535 4.701,8.946 C5.025,9.048 5.360,9.096 5.697,9.096 C5.776,9.096 5.855,9.094 5.934,9.089 C6.533,9.050 7.093,8.891 7.600,8.557 C8.455,7.975 8.731,7.065 8.733,6.840 L5.678,6.840 C5.678,6.765 5.689,5.337 5.694,4.640 L5.700,4.547 L11.064,4.547 C11.353,6.220 11.093,7.980 10.051,9.357 C9.331,10.306 8.372,10.904 7.229,11.201 Z"
+                            class="cls-1" />
+                    </svg></a></p>
+        </div>
+    </div>
+</div>
+            <div class="comments">
+    <div class="comments__inner">
+        <h3 class="comments__title"><span>3</span> Comments</h3>
+        <div class="comments__items">
+            <div class="comments__item"><img loading="lazy" class="comments__item-img"
+                    src="images/content/blog-details/people-2.jpg">
+                <div class="comments__item-content">
+                    <div class="comments__item-top">
+                        <h5 class="comments__item-name">Delores G. Roberts</h5>
+                        <p class="comments__item-info">Add 11 Oct 2020</p>
+                    </div>
+                    <p class="comments__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                        fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices</p><a
+                        class="comments__item-link" href="#">Reply</a>
+                </div>
+            </div>
+            <div class="comments__item comments__item--reply"><img loading="lazy" class="comments__item-img"
+                    src="images/content/blog-details/people-3.jpg">
+                <div class="comments__item-content">
+                    <div class="comments__item-top">
+                        <h5 class="comments__item-name">Shannon S. Williams</h5>
+                        <p class="comments__item-info">Add 11 Oct 2020</p>
+                    </div>
+                    <p class="comments__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                        fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra</p><a class="comments__item-link" href="#">Reply</a>
+                </div>
+            </div>
+            <div class="comments__item"><img loading="lazy" class="comments__item-img"
+                    src="images/content/blog-details/people-4.jpg">
+                <div class="comments__item-content">
+                    <div class="comments__item-top">
+                        <h5 class="comments__item-name">Nicholas R. Coley</h5>
+                        <p class="comments__item-info">Add 11 Oct 2020</p>
+                    </div>
+                    <p class="comments__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                        fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos. Suspendisse orci sem,</p><a class="comments__item-link"
+                        href="#">Reply</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="post">
+    <h3 class="post__title">Leave A Comment</h3>
+    <form class="post-form" action="#">
+        <div class="post-form__box-input"><input class="post-form__text-input" type="text" placeholder="Name"> <input
+                class="post-form__text-input post-form__text-input--email" type="email" placeholder="E-mail"></div>
+        <textarea class="post-form__textarea" placeholder="Comment"></textarea> <button class="post-form__btn"
+            type="submit">Post Comment</button>
+    </form>
+</div>
           </div>
-          <div class="blog-aside"><div class="blog-aside__search blog-aside__item"><form class="blog-aside__search-form" action="#"><input class="blog-aside__search-input" type="text"> <button class="blog-aside__search-btn" type="submit"></button></form></div><div class="filter-category filter__item"><div class="filter__item-box"><h3 class="filter__title">CATEGORY</h3><span></span></div><form class="filter-category__form" action="#"><label class="filter-category__label"><input class="filter-category__input" type="checkbox" data-filter=".category-chair"><div class="filter-category__checkbox"><span>Chair</span> <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div></label> <label class="filter-category__label"><input class="filter-category__input" type="checkbox" data-filter=".category-table"><div class="filter-category__checkbox"><span>Table</span> <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div></label> <label class="filter-category__label"><input class="filter-category__input" type="checkbox" data-filter=".category-lamp"><div class="filter-category__checkbox"><span>Lamp</span> <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div></label> <label class="filter-category__label"><input class="filter-category__input" type="checkbox" data-filter=".category-watch"><div class="filter-category__checkbox"><span>Watch</span> <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div></label> <label class="filter-category__label"><input class="filter-category__input" type="checkbox" data-filter=".category-clock"><div class="filter-category__checkbox"><span>Clock</span> <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div></label></form></div><div class="blog-recent blog-aside__item"><div class="filter__item-box"><h3 class="blog-recent__title filter__title">Recent Posts</h3><span></span></div><div class="blog-recent__inner"><div class="blog-recent__item"><img loading="lazy" class="blog-recent__img" src="images/content/blog/recent/1.jpg"><div class="blog-recent__content"><a class="blog-recent__item-title" href="#">Corem ipsum dolor tetur adipisicing elit</a><p class="blog-recent__date blog__item-date"> <?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="15px" viewBox="0 0 13 14" version="1.1"><g id="surface1"><path d="M 4.644531 0.875 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.875 C 8.355469 0.390625 8.773438 0 9.285156 0 C 9.800781 0 10.214844 0.390625 10.214844 0.875 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 L 13 4.375 L 0 4.375 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.875 C 2.785156 0.390625 3.199219 0 3.714844 0 C 4.226562 0 4.644531 0.390625 4.644531 0.875 Z M 0 5.25 L 13 5.25 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 Z M 1.855469 8.3125 C 1.855469 8.554688 2.066406 8.75 2.320312 8.75 L 3.25 8.75 C 3.503906 8.75 3.714844 8.554688 3.714844 8.3125 L 3.714844 7.4375 C 3.714844 7.195312 3.503906 7 3.25 7 L 2.320312 7 C 2.066406 7 1.855469 7.195312 1.855469 7.4375 Z M 5.570312 8.3125 C 5.570312 8.554688 5.78125 8.75 6.035156 8.75 L 6.964844 8.75 C 7.21875 8.75 7.429688 8.554688 7.429688 8.3125 L 7.429688 7.4375 C 7.429688 7.195312 7.21875 7 6.964844 7 L 6.035156 7 C 5.78125 7 5.570312 7.195312 5.570312 7.4375 Z M 9.75 7 C 9.496094 7 9.285156 7.195312 9.285156 7.4375 L 9.285156 8.3125 C 9.285156 8.554688 9.496094 8.75 9.75 8.75 L 10.679688 8.75 C 10.933594 8.75 11.144531 8.554688 11.144531 8.3125 L 11.144531 7.4375 C 11.144531 7.195312 10.933594 7 10.679688 7 Z M 1.855469 11.8125 C 1.855469 12.054688 2.066406 12.25 2.320312 12.25 L 3.25 12.25 C 3.503906 12.25 3.714844 12.054688 3.714844 11.8125 L 3.714844 10.9375 C 3.714844 10.695312 3.503906 10.5 3.25 10.5 L 2.320312 10.5 C 2.066406 10.5 1.855469 10.695312 1.855469 10.9375 Z M 6.035156 10.5 C 5.78125 10.5 5.570312 10.695312 5.570312 10.9375 L 5.570312 11.8125 C 5.570312 12.054688 5.78125 12.25 6.035156 12.25 L 6.964844 12.25 C 7.21875 12.25 7.429688 12.054688 7.429688 11.8125 L 7.429688 10.9375 C 7.429688 10.695312 7.21875 10.5 6.964844 10.5 Z M 9.285156 11.8125 C 9.285156 12.054688 9.496094 12.25 9.75 12.25 L 10.679688 12.25 C 10.933594 12.25 11.144531 12.054688 11.144531 11.8125 L 11.144531 10.9375 C 11.144531 10.695312 10.933594 10.5 10.679688 10.5 L 9.75 10.5 C 9.496094 10.5 9.285156 10.695312 9.285156 10.9375 Z M 9.285156 11.8125 "/></g></svg> <span>28 JANUARY, 2020</span></p></div></div><div class="blog-recent__item"><img loading="lazy" class="blog-recent__img" src="images/content/blog/recent/2.jpg"><div class="blog-recent__content"><a class="blog-recent__item-title" href="#">Fdipisicing elit, sed do eiusmod tempor</a><p class="blog-recent__date blog__item-date"> <?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="15px" viewBox="0 0 13 14" version="1.1"><g id="surface1"><path d="M 4.644531 0.875 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.875 C 8.355469 0.390625 8.773438 0 9.285156 0 C 9.800781 0 10.214844 0.390625 10.214844 0.875 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 L 13 4.375 L 0 4.375 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.875 C 2.785156 0.390625 3.199219 0 3.714844 0 C 4.226562 0 4.644531 0.390625 4.644531 0.875 Z M 0 5.25 L 13 5.25 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 Z M 1.855469 8.3125 C 1.855469 8.554688 2.066406 8.75 2.320312 8.75 L 3.25 8.75 C 3.503906 8.75 3.714844 8.554688 3.714844 8.3125 L 3.714844 7.4375 C 3.714844 7.195312 3.503906 7 3.25 7 L 2.320312 7 C 2.066406 7 1.855469 7.195312 1.855469 7.4375 Z M 5.570312 8.3125 C 5.570312 8.554688 5.78125 8.75 6.035156 8.75 L 6.964844 8.75 C 7.21875 8.75 7.429688 8.554688 7.429688 8.3125 L 7.429688 7.4375 C 7.429688 7.195312 7.21875 7 6.964844 7 L 6.035156 7 C 5.78125 7 5.570312 7.195312 5.570312 7.4375 Z M 9.75 7 C 9.496094 7 9.285156 7.195312 9.285156 7.4375 L 9.285156 8.3125 C 9.285156 8.554688 9.496094 8.75 9.75 8.75 L 10.679688 8.75 C 10.933594 8.75 11.144531 8.554688 11.144531 8.3125 L 11.144531 7.4375 C 11.144531 7.195312 10.933594 7 10.679688 7 Z M 1.855469 11.8125 C 1.855469 12.054688 2.066406 12.25 2.320312 12.25 L 3.25 12.25 C 3.503906 12.25 3.714844 12.054688 3.714844 11.8125 L 3.714844 10.9375 C 3.714844 10.695312 3.503906 10.5 3.25 10.5 L 2.320312 10.5 C 2.066406 10.5 1.855469 10.695312 1.855469 10.9375 Z M 6.035156 10.5 C 5.78125 10.5 5.570312 10.695312 5.570312 10.9375 L 5.570312 11.8125 C 5.570312 12.054688 5.78125 12.25 6.035156 12.25 L 6.964844 12.25 C 7.21875 12.25 7.429688 12.054688 7.429688 11.8125 L 7.429688 10.9375 C 7.429688 10.695312 7.21875 10.5 6.964844 10.5 Z M 9.285156 11.8125 C 9.285156 12.054688 9.496094 12.25 9.75 12.25 L 10.679688 12.25 C 10.933594 12.25 11.144531 12.054688 11.144531 11.8125 L 11.144531 10.9375 C 11.144531 10.695312 10.933594 10.5 10.679688 10.5 L 9.75 10.5 C 9.496094 10.5 9.285156 10.695312 9.285156 10.9375 Z M 9.285156 11.8125 "/></g></svg> <span>28 JANUARY, 2020</span></p></div></div><div class="blog-recent__item"><img loading="lazy" class="blog-recent__img" src="images/content/blog/recent/3.jpg"><div class="blog-recent__content"><a class="blog-recent__item-title" href="#">Eonsectetur adipisicing elit, sed do eiusmod</a><p class="blog-recent__date blog__item-date"> <?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="15px" viewBox="0 0 13 14" version="1.1"><g id="surface1"><path d="M 4.644531 0.875 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.875 C 8.355469 0.390625 8.773438 0 9.285156 0 C 9.800781 0 10.214844 0.390625 10.214844 0.875 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 L 13 4.375 L 0 4.375 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.875 C 2.785156 0.390625 3.199219 0 3.714844 0 C 4.226562 0 4.644531 0.390625 4.644531 0.875 Z M 0 5.25 L 13 5.25 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 Z M 1.855469 8.3125 C 1.855469 8.554688 2.066406 8.75 2.320312 8.75 L 3.25 8.75 C 3.503906 8.75 3.714844 8.554688 3.714844 8.3125 L 3.714844 7.4375 C 3.714844 7.195312 3.503906 7 3.25 7 L 2.320312 7 C 2.066406 7 1.855469 7.195312 1.855469 7.4375 Z M 5.570312 8.3125 C 5.570312 8.554688 5.78125 8.75 6.035156 8.75 L 6.964844 8.75 C 7.21875 8.75 7.429688 8.554688 7.429688 8.3125 L 7.429688 7.4375 C 7.429688 7.195312 7.21875 7 6.964844 7 L 6.035156 7 C 5.78125 7 5.570312 7.195312 5.570312 7.4375 Z M 9.75 7 C 9.496094 7 9.285156 7.195312 9.285156 7.4375 L 9.285156 8.3125 C 9.285156 8.554688 9.496094 8.75 9.75 8.75 L 10.679688 8.75 C 10.933594 8.75 11.144531 8.554688 11.144531 8.3125 L 11.144531 7.4375 C 11.144531 7.195312 10.933594 7 10.679688 7 Z M 1.855469 11.8125 C 1.855469 12.054688 2.066406 12.25 2.320312 12.25 L 3.25 12.25 C 3.503906 12.25 3.714844 12.054688 3.714844 11.8125 L 3.714844 10.9375 C 3.714844 10.695312 3.503906 10.5 3.25 10.5 L 2.320312 10.5 C 2.066406 10.5 1.855469 10.695312 1.855469 10.9375 Z M 6.035156 10.5 C 5.78125 10.5 5.570312 10.695312 5.570312 10.9375 L 5.570312 11.8125 C 5.570312 12.054688 5.78125 12.25 6.035156 12.25 L 6.964844 12.25 C 7.21875 12.25 7.429688 12.054688 7.429688 11.8125 L 7.429688 10.9375 C 7.429688 10.695312 7.21875 10.5 6.964844 10.5 Z M 9.285156 11.8125 C 9.285156 12.054688 9.496094 12.25 9.75 12.25 L 10.679688 12.25 C 10.933594 12.25 11.144531 12.054688 11.144531 11.8125 L 11.144531 10.9375 C 11.144531 10.695312 10.933594 10.5 10.679688 10.5 L 9.75 10.5 C 9.496094 10.5 9.285156 10.695312 9.285156 10.9375 Z M 9.285156 11.8125 "/></g></svg> <span>28 JANUARY, 2020</span></p></div></div><div class="blog-recent__item"><img loading="lazy" class="blog-recent__img" src="images/content/blog/recent/4.jpg"><div class="blog-recent__content"><a class="blog-recent__item-title" href="#">gnim ad minim veniam, quis nostrud</a><p class="blog-recent__date blog__item-date"> <?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="15px" viewBox="0 0 13 14" version="1.1"><g id="surface1"><path d="M 4.644531 0.875 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.875 C 8.355469 0.390625 8.773438 0 9.285156 0 C 9.800781 0 10.214844 0.390625 10.214844 0.875 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 L 13 4.375 L 0 4.375 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.875 C 2.785156 0.390625 3.199219 0 3.714844 0 C 4.226562 0 4.644531 0.390625 4.644531 0.875 Z M 0 5.25 L 13 5.25 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 Z M 1.855469 8.3125 C 1.855469 8.554688 2.066406 8.75 2.320312 8.75 L 3.25 8.75 C 3.503906 8.75 3.714844 8.554688 3.714844 8.3125 L 3.714844 7.4375 C 3.714844 7.195312 3.503906 7 3.25 7 L 2.320312 7 C 2.066406 7 1.855469 7.195312 1.855469 7.4375 Z M 5.570312 8.3125 C 5.570312 8.554688 5.78125 8.75 6.035156 8.75 L 6.964844 8.75 C 7.21875 8.75 7.429688 8.554688 7.429688 8.3125 L 7.429688 7.4375 C 7.429688 7.195312 7.21875 7 6.964844 7 L 6.035156 7 C 5.78125 7 5.570312 7.195312 5.570312 7.4375 Z M 9.75 7 C 9.496094 7 9.285156 7.195312 9.285156 7.4375 L 9.285156 8.3125 C 9.285156 8.554688 9.496094 8.75 9.75 8.75 L 10.679688 8.75 C 10.933594 8.75 11.144531 8.554688 11.144531 8.3125 L 11.144531 7.4375 C 11.144531 7.195312 10.933594 7 10.679688 7 Z M 1.855469 11.8125 C 1.855469 12.054688 2.066406 12.25 2.320312 12.25 L 3.25 12.25 C 3.503906 12.25 3.714844 12.054688 3.714844 11.8125 L 3.714844 10.9375 C 3.714844 10.695312 3.503906 10.5 3.25 10.5 L 2.320312 10.5 C 2.066406 10.5 1.855469 10.695312 1.855469 10.9375 Z M 6.035156 10.5 C 5.78125 10.5 5.570312 10.695312 5.570312 10.9375 L 5.570312 11.8125 C 5.570312 12.054688 5.78125 12.25 6.035156 12.25 L 6.964844 12.25 C 7.21875 12.25 7.429688 12.054688 7.429688 11.8125 L 7.429688 10.9375 C 7.429688 10.695312 7.21875 10.5 6.964844 10.5 Z M 9.285156 11.8125 C 9.285156 12.054688 9.496094 12.25 9.75 12.25 L 10.679688 12.25 C 10.933594 12.25 11.144531 12.054688 11.144531 11.8125 L 11.144531 10.9375 C 11.144531 10.695312 10.933594 10.5 10.679688 10.5 L 9.75 10.5 C 9.496094 10.5 9.285156 10.695312 9.285156 10.9375 Z M 9.285156 11.8125 "/></g></svg> <span>28 JANUARY, 2020</span></p></div></div></div></div></div>
+          <div class="blog-aside">
+    <div class="blog-aside__search blog-aside__item">
+        <form class="blog-aside__search-form" action="#"><input class="blog-aside__search-input" type="text"> <button
+                class="blog-aside__search-btn" type="submit"></button></form>
+    </div>
+    <div class="filter-category filter__item">
+        <div class="filter__item-box">
+            <h3 class="filter__title">CATEGORY</h3><span></span>
+        </div>
+        <form class="filter-category__form" action="#"><label class="filter-category__label"><input
+                    class="filter-category__input" type="checkbox" data-filter=".category-chair">
+                <div class="filter-category__checkbox"><span>Chair</span> <img loading="lazy"
+                        class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div>
+            </label> <label class="filter-category__label"><input class="filter-category__input" type="checkbox"
+                    data-filter=".category-table">
+                <div class="filter-category__checkbox"><span>Table</span> <img loading="lazy"
+                        class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div>
+            </label> <label class="filter-category__label"><input class="filter-category__input" type="checkbox"
+                    data-filter=".category-lamp">
+                <div class="filter-category__checkbox"><span>Lamp</span> <img loading="lazy"
+                        class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div>
+            </label> <label class="filter-category__label"><input class="filter-category__input" type="checkbox"
+                    data-filter=".category-watch">
+                <div class="filter-category__checkbox"><span>Watch</span> <img loading="lazy"
+                        class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div>
+            </label> <label class="filter-category__label"><input class="filter-category__input" type="checkbox"
+                    data-filter=".category-clock">
+                <div class="filter-category__checkbox"><span>Clock</span> <img loading="lazy"
+                        class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div>
+            </label></form>
+    </div>
+    <div class="blog-recent blog-aside__item">
+        <div class="filter__item-box">
+            <h3 class="blog-recent__title filter__title">Recent Posts</h3><span></span>
+        </div>
+        <div class="blog-recent__inner">
+            <div class="blog-recent__item"><img loading="lazy" class="blog-recent__img"
+                    src="images/content/blog/recent/1.jpg">
+                <div class="blog-recent__content"><a class="blog-recent__item-title" href="#">Corem ipsum dolor tetur
+                        adipisicing elit</a>
+                    <p class="blog-recent__date blog__item-date">
+                        <?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="15px" viewBox="0 0 13 14"
+                            version="1.1">
+                            <g id="surface1">
+                                <path
+                                    d="M 4.644531 0.875 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.875 C 8.355469 0.390625 8.773438 0 9.285156 0 C 9.800781 0 10.214844 0.390625 10.214844 0.875 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 L 13 4.375 L 0 4.375 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.875 C 2.785156 0.390625 3.199219 0 3.714844 0 C 4.226562 0 4.644531 0.390625 4.644531 0.875 Z M 0 5.25 L 13 5.25 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 Z M 1.855469 8.3125 C 1.855469 8.554688 2.066406 8.75 2.320312 8.75 L 3.25 8.75 C 3.503906 8.75 3.714844 8.554688 3.714844 8.3125 L 3.714844 7.4375 C 3.714844 7.195312 3.503906 7 3.25 7 L 2.320312 7 C 2.066406 7 1.855469 7.195312 1.855469 7.4375 Z M 5.570312 8.3125 C 5.570312 8.554688 5.78125 8.75 6.035156 8.75 L 6.964844 8.75 C 7.21875 8.75 7.429688 8.554688 7.429688 8.3125 L 7.429688 7.4375 C 7.429688 7.195312 7.21875 7 6.964844 7 L 6.035156 7 C 5.78125 7 5.570312 7.195312 5.570312 7.4375 Z M 9.75 7 C 9.496094 7 9.285156 7.195312 9.285156 7.4375 L 9.285156 8.3125 C 9.285156 8.554688 9.496094 8.75 9.75 8.75 L 10.679688 8.75 C 10.933594 8.75 11.144531 8.554688 11.144531 8.3125 L 11.144531 7.4375 C 11.144531 7.195312 10.933594 7 10.679688 7 Z M 1.855469 11.8125 C 1.855469 12.054688 2.066406 12.25 2.320312 12.25 L 3.25 12.25 C 3.503906 12.25 3.714844 12.054688 3.714844 11.8125 L 3.714844 10.9375 C 3.714844 10.695312 3.503906 10.5 3.25 10.5 L 2.320312 10.5 C 2.066406 10.5 1.855469 10.695312 1.855469 10.9375 Z M 6.035156 10.5 C 5.78125 10.5 5.570312 10.695312 5.570312 10.9375 L 5.570312 11.8125 C 5.570312 12.054688 5.78125 12.25 6.035156 12.25 L 6.964844 12.25 C 7.21875 12.25 7.429688 12.054688 7.429688 11.8125 L 7.429688 10.9375 C 7.429688 10.695312 7.21875 10.5 6.964844 10.5 Z M 9.285156 11.8125 C 9.285156 12.054688 9.496094 12.25 9.75 12.25 L 10.679688 12.25 C 10.933594 12.25 11.144531 12.054688 11.144531 11.8125 L 11.144531 10.9375 C 11.144531 10.695312 10.933594 10.5 10.679688 10.5 L 9.75 10.5 C 9.496094 10.5 9.285156 10.695312 9.285156 10.9375 Z M 9.285156 11.8125 " />
+                            </g>
+                        </svg> <span>28 JANUARY, 2020</span>
+                    </p>
+                </div>
+            </div>
+            <div class="blog-recent__item"><img loading="lazy" class="blog-recent__img"
+                    src="images/content/blog/recent/2.jpg">
+                <div class="blog-recent__content"><a class="blog-recent__item-title" href="#">Fdipisicing elit, sed do
+                        eiusmod tempor</a>
+                    <p class="blog-recent__date blog__item-date">
+                        <?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="15px" viewBox="0 0 13 14"
+                            version="1.1">
+                            <g id="surface1">
+                                <path
+                                    d="M 4.644531 0.875 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.875 C 8.355469 0.390625 8.773438 0 9.285156 0 C 9.800781 0 10.214844 0.390625 10.214844 0.875 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 L 13 4.375 L 0 4.375 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.875 C 2.785156 0.390625 3.199219 0 3.714844 0 C 4.226562 0 4.644531 0.390625 4.644531 0.875 Z M 0 5.25 L 13 5.25 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 Z M 1.855469 8.3125 C 1.855469 8.554688 2.066406 8.75 2.320312 8.75 L 3.25 8.75 C 3.503906 8.75 3.714844 8.554688 3.714844 8.3125 L 3.714844 7.4375 C 3.714844 7.195312 3.503906 7 3.25 7 L 2.320312 7 C 2.066406 7 1.855469 7.195312 1.855469 7.4375 Z M 5.570312 8.3125 C 5.570312 8.554688 5.78125 8.75 6.035156 8.75 L 6.964844 8.75 C 7.21875 8.75 7.429688 8.554688 7.429688 8.3125 L 7.429688 7.4375 C 7.429688 7.195312 7.21875 7 6.964844 7 L 6.035156 7 C 5.78125 7 5.570312 7.195312 5.570312 7.4375 Z M 9.75 7 C 9.496094 7 9.285156 7.195312 9.285156 7.4375 L 9.285156 8.3125 C 9.285156 8.554688 9.496094 8.75 9.75 8.75 L 10.679688 8.75 C 10.933594 8.75 11.144531 8.554688 11.144531 8.3125 L 11.144531 7.4375 C 11.144531 7.195312 10.933594 7 10.679688 7 Z M 1.855469 11.8125 C 1.855469 12.054688 2.066406 12.25 2.320312 12.25 L 3.25 12.25 C 3.503906 12.25 3.714844 12.054688 3.714844 11.8125 L 3.714844 10.9375 C 3.714844 10.695312 3.503906 10.5 3.25 10.5 L 2.320312 10.5 C 2.066406 10.5 1.855469 10.695312 1.855469 10.9375 Z M 6.035156 10.5 C 5.78125 10.5 5.570312 10.695312 5.570312 10.9375 L 5.570312 11.8125 C 5.570312 12.054688 5.78125 12.25 6.035156 12.25 L 6.964844 12.25 C 7.21875 12.25 7.429688 12.054688 7.429688 11.8125 L 7.429688 10.9375 C 7.429688 10.695312 7.21875 10.5 6.964844 10.5 Z M 9.285156 11.8125 C 9.285156 12.054688 9.496094 12.25 9.75 12.25 L 10.679688 12.25 C 10.933594 12.25 11.144531 12.054688 11.144531 11.8125 L 11.144531 10.9375 C 11.144531 10.695312 10.933594 10.5 10.679688 10.5 L 9.75 10.5 C 9.496094 10.5 9.285156 10.695312 9.285156 10.9375 Z M 9.285156 11.8125 " />
+                            </g>
+                        </svg> <span>28 JANUARY, 2020</span>
+                    </p>
+                </div>
+            </div>
+            <div class="blog-recent__item"><img loading="lazy" class="blog-recent__img"
+                    src="images/content/blog/recent/3.jpg">
+                <div class="blog-recent__content"><a class="blog-recent__item-title" href="#">Eonsectetur adipisicing
+                        elit, sed do eiusmod</a>
+                    <p class="blog-recent__date blog__item-date">
+                        <?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="15px" viewBox="0 0 13 14"
+                            version="1.1">
+                            <g id="surface1">
+                                <path
+                                    d="M 4.644531 0.875 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.875 C 8.355469 0.390625 8.773438 0 9.285156 0 C 9.800781 0 10.214844 0.390625 10.214844 0.875 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 L 13 4.375 L 0 4.375 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.875 C 2.785156 0.390625 3.199219 0 3.714844 0 C 4.226562 0 4.644531 0.390625 4.644531 0.875 Z M 0 5.25 L 13 5.25 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 Z M 1.855469 8.3125 C 1.855469 8.554688 2.066406 8.75 2.320312 8.75 L 3.25 8.75 C 3.503906 8.75 3.714844 8.554688 3.714844 8.3125 L 3.714844 7.4375 C 3.714844 7.195312 3.503906 7 3.25 7 L 2.320312 7 C 2.066406 7 1.855469 7.195312 1.855469 7.4375 Z M 5.570312 8.3125 C 5.570312 8.554688 5.78125 8.75 6.035156 8.75 L 6.964844 8.75 C 7.21875 8.75 7.429688 8.554688 7.429688 8.3125 L 7.429688 7.4375 C 7.429688 7.195312 7.21875 7 6.964844 7 L 6.035156 7 C 5.78125 7 5.570312 7.195312 5.570312 7.4375 Z M 9.75 7 C 9.496094 7 9.285156 7.195312 9.285156 7.4375 L 9.285156 8.3125 C 9.285156 8.554688 9.496094 8.75 9.75 8.75 L 10.679688 8.75 C 10.933594 8.75 11.144531 8.554688 11.144531 8.3125 L 11.144531 7.4375 C 11.144531 7.195312 10.933594 7 10.679688 7 Z M 1.855469 11.8125 C 1.855469 12.054688 2.066406 12.25 2.320312 12.25 L 3.25 12.25 C 3.503906 12.25 3.714844 12.054688 3.714844 11.8125 L 3.714844 10.9375 C 3.714844 10.695312 3.503906 10.5 3.25 10.5 L 2.320312 10.5 C 2.066406 10.5 1.855469 10.695312 1.855469 10.9375 Z M 6.035156 10.5 C 5.78125 10.5 5.570312 10.695312 5.570312 10.9375 L 5.570312 11.8125 C 5.570312 12.054688 5.78125 12.25 6.035156 12.25 L 6.964844 12.25 C 7.21875 12.25 7.429688 12.054688 7.429688 11.8125 L 7.429688 10.9375 C 7.429688 10.695312 7.21875 10.5 6.964844 10.5 Z M 9.285156 11.8125 C 9.285156 12.054688 9.496094 12.25 9.75 12.25 L 10.679688 12.25 C 10.933594 12.25 11.144531 12.054688 11.144531 11.8125 L 11.144531 10.9375 C 11.144531 10.695312 10.933594 10.5 10.679688 10.5 L 9.75 10.5 C 9.496094 10.5 9.285156 10.695312 9.285156 10.9375 Z M 9.285156 11.8125 " />
+                            </g>
+                        </svg> <span>28 JANUARY, 2020</span>
+                    </p>
+                </div>
+            </div>
+            <div class="blog-recent__item"><img loading="lazy" class="blog-recent__img"
+                    src="images/content/blog/recent/4.jpg">
+                <div class="blog-recent__content"><a class="blog-recent__item-title" href="#">gnim ad minim veniam, quis
+                        nostrud</a>
+                    <p class="blog-recent__date blog__item-date">
+                        <?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="15px" viewBox="0 0 13 14"
+                            version="1.1">
+                            <g id="surface1">
+                                <path
+                                    d="M 4.644531 0.875 L 4.644531 1.75 L 8.355469 1.75 L 8.355469 0.875 C 8.355469 0.390625 8.773438 0 9.285156 0 C 9.800781 0 10.214844 0.390625 10.214844 0.875 L 10.214844 1.75 L 11.605469 1.75 C 12.375 1.75 13 2.335938 13 3.0625 L 13 4.375 L 0 4.375 L 0 3.0625 C 0 2.335938 0.625 1.75 1.394531 1.75 L 2.785156 1.75 L 2.785156 0.875 C 2.785156 0.390625 3.199219 0 3.714844 0 C 4.226562 0 4.644531 0.390625 4.644531 0.875 Z M 0 5.25 L 13 5.25 L 13 12.6875 C 13 13.414062 12.375 14 11.605469 14 L 1.394531 14 C 0.625 14 0 13.414062 0 12.6875 Z M 1.855469 8.3125 C 1.855469 8.554688 2.066406 8.75 2.320312 8.75 L 3.25 8.75 C 3.503906 8.75 3.714844 8.554688 3.714844 8.3125 L 3.714844 7.4375 C 3.714844 7.195312 3.503906 7 3.25 7 L 2.320312 7 C 2.066406 7 1.855469 7.195312 1.855469 7.4375 Z M 5.570312 8.3125 C 5.570312 8.554688 5.78125 8.75 6.035156 8.75 L 6.964844 8.75 C 7.21875 8.75 7.429688 8.554688 7.429688 8.3125 L 7.429688 7.4375 C 7.429688 7.195312 7.21875 7 6.964844 7 L 6.035156 7 C 5.78125 7 5.570312 7.195312 5.570312 7.4375 Z M 9.75 7 C 9.496094 7 9.285156 7.195312 9.285156 7.4375 L 9.285156 8.3125 C 9.285156 8.554688 9.496094 8.75 9.75 8.75 L 10.679688 8.75 C 10.933594 8.75 11.144531 8.554688 11.144531 8.3125 L 11.144531 7.4375 C 11.144531 7.195312 10.933594 7 10.679688 7 Z M 1.855469 11.8125 C 1.855469 12.054688 2.066406 12.25 2.320312 12.25 L 3.25 12.25 C 3.503906 12.25 3.714844 12.054688 3.714844 11.8125 L 3.714844 10.9375 C 3.714844 10.695312 3.503906 10.5 3.25 10.5 L 2.320312 10.5 C 2.066406 10.5 1.855469 10.695312 1.855469 10.9375 Z M 6.035156 10.5 C 5.78125 10.5 5.570312 10.695312 5.570312 10.9375 L 5.570312 11.8125 C 5.570312 12.054688 5.78125 12.25 6.035156 12.25 L 6.964844 12.25 C 7.21875 12.25 7.429688 12.054688 7.429688 11.8125 L 7.429688 10.9375 C 7.429688 10.695312 7.21875 10.5 6.964844 10.5 Z M 9.285156 11.8125 C 9.285156 12.054688 9.496094 12.25 9.75 12.25 L 10.679688 12.25 C 10.933594 12.25 11.144531 12.054688 11.144531 11.8125 L 11.144531 10.9375 C 11.144531 10.695312 10.933594 10.5 10.679688 10.5 L 9.75 10.5 C 9.496094 10.5 9.285156 10.695312 9.285156 10.9375 Z M 9.285156 11.8125 " />
+                            </g>
+                        </svg> <span>28 JANUARY, 2020</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
       </div>
     </section>
 
-    <section class="ideas"><div class="container-icon"><div class="ideas__top"><h2 class="title">Our Insights & Articles</h2><a class="ideas__link" href="#">View All</a></div><div class="ideas__items"><div class="ideas-item"><img loading="lazy" src="images/content/interiers/1.jpg" alt="interior"><div class="ideas-item__text"><p class="ideas__subtitle">NEWS</p><p class="ideas__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p><div class="ideas-item__publicdetails"><p class="ideas-item__date">28 JANUARY, 2020</p><p class="ideas-item__author">BY ADMIN</p></div></div></div><div class="ideas-item"><img loading="lazy" src="images/content/interiers/2.jpg" alt="interior"><div class="ideas-item__text"><p class="ideas__subtitle">NEWS</p><p class="ideas__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><div class="ideas-item__publicdetails"><p class="ideas-item__date">28 JANUARY, 2020</p><p class="ideas-item__author">BY ADMIN</p></div></div></div><div class="ideas-item"><img loading="lazy" src="images/content/interiers/3.jpg" alt="interior"><div class="ideas-item__text"><p class="ideas__subtitle">NEWS</p><p class="ideas__text">Rncididunt ut labore et dolore magna aliqua. Ut enim</p><div class="ideas-item__publicdetails"><p class="ideas-item__date">28 JANUARY, 2020</p><p class="ideas-item__author">BY ADMIN</p></div></div></div></div><div class="ideas__partners"><ul class="ideas__partners-list"><li class="ideas__partners-item"><img loading="lazy" src="images/partners/1.png" alt="partner"></li><li class="ideas__partners-item"><img loading="lazy" src="images/partners/2.png" alt="partner"></li><li class="ideas__partners-item"><img loading="lazy" src="images/partners/3.png" alt="partner"></li><li class="ideas__partners-item"><img loading="lazy" src="images/partners/4.png" alt="partner"></li><li class="ideas__partners-item"><img loading="lazy" src="images/partners/5.png" alt="partner"></li></ul></div></div></section>
+    <section class="ideas">
+    <div class="container-icon">
+        <div class="ideas__top">
+            <h2 class="title">Our Insights & Articles</h2><a class="ideas__link" href="#">View All</a>
+        </div>
+        <div class="ideas__items">
+            <div class="ideas-item"><img loading="lazy" src="images/content/interiers/1.jpg" alt="interior">
+                <div class="ideas-item__text">
+                    <p class="ideas__subtitle">NEWS</p>
+                    <p class="ideas__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam</p>
+                    <div class="ideas-item__publicdetails">
+                        <p class="ideas-item__date">28 JANUARY, 2020</p>
+                        <p class="ideas-item__author">BY ADMIN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ideas-item"><img loading="lazy" src="images/content/interiers/2.jpg" alt="interior">
+                <div class="ideas-item__text">
+                    <p class="ideas__subtitle">NEWS</p>
+                    <p class="ideas__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore</p>
+                    <div class="ideas-item__publicdetails">
+                        <p class="ideas-item__date">28 JANUARY, 2020</p>
+                        <p class="ideas-item__author">BY ADMIN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ideas-item"><img loading="lazy" src="images/content/interiers/3.jpg" alt="interior">
+                <div class="ideas-item__text">
+                    <p class="ideas__subtitle">NEWS</p>
+                    <p class="ideas__text">Rncididunt ut labore et dolore magna aliqua. Ut enim</p>
+                    <div class="ideas-item__publicdetails">
+                        <p class="ideas-item__date">28 JANUARY, 2020</p>
+                        <p class="ideas-item__author">BY ADMIN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ideas__partners">
+            <ul class="ideas__partners-list">
+                <li class="ideas__partners-item"><img loading="lazy" src="images/partners/1.png" alt="partner"></li>
+                <li class="ideas__partners-item"><img loading="lazy" src="images/partners/2.png" alt="partner"></li>
+                <li class="ideas__partners-item"><img loading="lazy" src="images/partners/3.png" alt="partner"></li>
+                <li class="ideas__partners-item"><img loading="lazy" src="images/partners/4.png" alt="partner"></li>
+                <li class="ideas__partners-item"><img loading="lazy" src="images/partners/5.png" alt="partner"></li>
+            </ul>
+        </div>
+    </div>
+</section>
 
   </main>
 
-  <footer class="footer"><div class="footer-top"><div class="footer-border"><div class="footer-top__item footer-top__item-contact"><a class="logo" href="#"><img loading="lazy" class="logo__img" src="images/logo.png" alt=""> <img loading="lazy" class="logo__title" src="images/logo_title.png" alt=""></a><ul class="footer-top__item-list"><li class="footer-top__item"><a class="footer-top__address" href="#">ADDRESS: 4772 Wines Lane</a></li><li class="footer-top__item"><a href="#" class="footer-top__link">Houston, TX 77032</a></li><li class="footer-top__item"><a class="footer-top__link" href="tel:+8323475843">Telephone: +832-347-5843</a></li><li class="footer-top__item"><a class="footer-top__link" href="mailto:contact@Glee.com">Email: contact@Glee.com</a></li></ul></div><div class="footer-top__item footer-top__item-service"><h6 class="footer-top__title">Services</h6><ul class="footer-top__item-list"><li class="footer-top__item"><a class="footer-top__link" href="#">About us</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Return Policy</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Our Blog</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Contact Us</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Terms & Condition</a></li></ul></div><div class="footer-top__item footer-top__item-account"><h6 class="footer-top__title">Account</h6><ul class="footer-top__item-list"><li class="footer-top__item"><a class="footer-top__link" href="#">Your Account</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Checkout</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Login</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Register</a></li></ul></div><div class="footer-top__item footer-top__item-newsletter"><h6 class="footer-top__title">newsletter</h6><p class="footer-top__text">Subscribe by our newsletter and get update protidin.</p><form class="footer-top__form" action="#"><input class="footer-top__form-input" type="email" placeholder="Email address" required> <button class="footer-top__form-btn" type="submit">Subscribe</button></form></div></div></div><div class="footer-bottom"><a class="footer-bottom__copy" href="#">©2020 CopyRight Example. All rights reserved.</a><ul class="footer-bottom__menu"><li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Home</a></li><li class="footer-bottom__item"><a class="footer-bottom__link" href="#">About</a></li><li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Blog</a></li><li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Contact</a></li></ul></div></footer>
+  <footer class="footer">
+    <div class="footer-top">
+        <div class="footer-border">
+            <div class="footer-top__item footer-top__item-contact"><a class="logo" href="#"><img loading="lazy"
+                        class="logo__img" src="images/logo.svg" alt=""> <img loading="lazy" class="logo__title"
+                        src="images/logo_title.png" alt=""></a>
+                <ul class="footer-top__item-list">
+                    <li class="footer-top__item"><a class="footer-top__address" href="#">ADDRESS: 4772 Wines Lane</a>
+                    </li>
+                    <li class="footer-top__item"><a href="#" class="footer-top__link">Houston, TX 77032</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="tel:+8323475843">Telephone:
+                            +832-347-5843</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="mailto:contact@Glee.com">Email:
+                            contact@Glee.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-top__item footer-top__item-service">
+                <h6 class="footer-top__title">Services</h6>
+                <ul class="footer-top__item-list">
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">About us</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Return Policy</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Our Blog</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Contact Us</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="footer-top__item footer-top__item-account">
+                <h6 class="footer-top__title">Account</h6>
+                <ul class="footer-top__item-list">
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Your Account</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Checkout</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Login</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-top__item footer-top__item-newsletter">
+                <h6 class="footer-top__title">newsletter</h6>
+                <p class="footer-top__text">Subscribe by our newsletter and get update protidin.</p>
+                <form class="footer-top__form" action="#"><input class="footer-top__form-input" type="email"
+                        placeholder="Email address" required> <button class="footer-top__form-btn"
+                        type="submit">Subscribe</button></form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom"><a class="footer-bottom__copy" href="#">©2020 CopyRight Example. All rights reserved.</a>
+        <ul class="footer-bottom__menu">
+            <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Home</a></li>
+            <li class="footer-bottom__item"><a class="footer-bottom__link" href="about.html">About</a></li>
+            <li class="footer-bottom__item"><a class="footer-bottom__link" href="blog.html">Blog</a></li>
+            <li class="footer-bottom__item"><a class="footer-bottom__link" href="contacts.html">Contact</a></li>
+        </ul>
+    </div>
+</footer>
 
 
 
 
 
 
-  <script src="js/main.min.js" defer></script>
+  <script src="js-min/blog.min.js" defer></script>
 </body>
 
 </html>

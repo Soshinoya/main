@@ -1,233 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product list 2</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/shop2.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product list 2</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.svg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/shop2.min.css">
+  
+  </head>
 
-<body>
-  <header id="swup" class="header transition-fade"><div class="container"><div class="header__inner"><a class="logo" href="#"><img loading="lazy" class="logo__img" src="images/logo.png" alt=""> <img loading="lazy" class="logo__title" src="images/logo_title.png" alt=""></a><nav class="menu"><ul class="menu__list"><li class="menu__list-item" data-text="Home"><a class="menu__list-link" href="index.html">Home</a></li><li class="menu__list-item" data-text="About"><a class="menu__list-link" href="about.html">About</a></li><li class="menu__list-item" data-text="Services"><a class="menu__list-link" href="login.html">Services</a></li><li class="menu__list-item" data-text="Pages"><a class="menu__list-link" href="shop.html">Pages</a></li><li class="menu__list-item" data-text="News"><a class="menu__list-link" href="blog.html">News</a></li><li class="menu__list-item" data-text="Contact"><a class="menu__list-link" href="contacts.html">Contact</a></li></ul></nav><div class="user__nav"><a class="user__nav-link--search" href="#"><img loading="lazy" class="user__nav-img" src="images/icons/search.png" alt=""></a><div class="user__nav-wrapper"><a class="user__nav-link" href="#"><img loading="lazy" class="user__nav-img" src="images/icons/heart.png" alt=""> <span class="user__nav-num">0</span> </a><img loading="lazy" class="user__nav-line" src="images/icons/white_line.svg" alt=""> <a class="user__nav-link" href="#"><img loading="lazy" class="user__nav-img" src="images/icons/cart.png" alt=""> <span class="user__nav-num">0</span></a></div><a class="user__nav-link--burger" href="#"><img loading="lazy" class="user__nav-img" src="images/icons/burger.png" alt=""> </a><button class="user__nav-link--btn"><span class="user__nav-link--span"></span> <span class="user__nav-link--span"></span> <span class="user__nav-link--span"></span> <span class="user__nav-link--span"></span></button></div></div></div></header>
+  <body>
+    <header id="swup" class="header transition-fade">
+    <div class="container">
+        <div class="header__inner"><a class="logo" href="#"><img loading="lazy" class="logo__img" src="images/logo.svg"
+                    alt=""> <img loading="lazy" class="logo__title" src="images/logo_title.png" alt=""></a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item" data-text="Home"><a class="menu__list-link" href="index.html">Home</a>
+                    </li>
+                    <li class="menu__list-item" data-text="About"><a class="menu__list-link" href="about.html">About</a>
+                    </li>
+                    <li class="menu__list-item" data-text="Services"><a class="menu__list-link"
+                            href="login.html">Authorize</a></li>
+                    <li class="menu__list-item" data-text="Pages"><a class="menu__list-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="menu__list-item" data-text="News"><a class="menu__list-link" href="blog.html">News</a>
+                    </li>
+                    <li class="menu__list-item" data-text="Contact"><a class="menu__list-link"
+                            href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+            <form class="header-form" action="#">
+                <input class="header-form__input" type="text" name="header-form__input" id="header-form__input"
+                    placeholder="Введите запрос...">
+                <label class="header-form__link user__nav-link--search" for="header-form__input" id="header-form__link">
+                    <img loading="lazy" class="user__nav-img" src="images/icons/search.png" alt="">
+                </label>
+                <div class="user__nav-wrapper">
+                    <a class="user__nav-link" href="#">
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24.2088 16.4765H7.61366L8.4469 14.7794L22.2915 14.7543C22.7597 14.7543 23.161 14.4199 23.2446 13.9573L25.1619 3.2255C25.212 2.94403 25.1368 2.65421 24.9529 2.43406C24.862 2.32571 24.7486 2.23843 24.6206 2.17828C24.4926 2.11813 24.353 2.08654 24.2116 2.08571L6.59928 2.02719L6.4488 1.31935C6.35405 0.8679 5.94718 0.539062 5.48458 0.539062H1.17904C0.918138 0.539063 0.667923 0.642705 0.483439 0.827189C0.298955 1.01167 0.195313 1.26189 0.195312 1.52279C0.195313 1.78369 0.298955 2.0339 0.483439 2.21839C0.667923 2.40287 0.918138 2.50651 1.17904 2.50651H4.68757L5.34524 5.63325L6.96435 13.4724L4.87985 16.875C4.7716 17.0211 4.7064 17.1946 4.69163 17.3759C4.67685 17.5571 4.71309 17.7389 4.79625 17.9006C4.96345 18.2322 5.30065 18.4412 5.67408 18.4412H7.42416C7.05107 18.9367 6.84954 19.5403 6.85009 20.1606C6.85009 21.7379 8.132 23.0198 9.7093 23.0198C11.2866 23.0198 12.5685 21.7379 12.5685 20.1606C12.5685 19.5392 12.3623 18.9344 11.9944 18.4412H16.4839C16.1108 18.9367 15.9093 19.5403 15.9098 20.1606C15.9098 21.7379 17.1917 23.0198 18.7691 23.0198C20.3464 23.0198 21.6283 21.7379 21.6283 20.1606C21.6283 19.5392 21.422 18.9344 21.0542 18.4412H24.2116C24.7522 18.4412 25.1953 18.0009 25.1953 17.4575C25.1937 17.1968 25.0891 16.9474 24.9042 16.7637C24.7194 16.5799 24.4694 16.4767 24.2088 16.4765V16.4765ZM7.00893 3.96677L23.0551 4.01972L21.4834 12.8203L8.87885 12.8426L7.00893 3.96677ZM9.7093 21.0412C9.22441 21.0412 8.82869 20.6455 8.82869 20.1606C8.82869 19.6757 9.22441 19.28 9.7093 19.28C10.1942 19.28 10.5899 19.6757 10.5899 20.1606C10.5899 20.3942 10.4971 20.6182 10.332 20.7833C10.1668 20.9485 9.94286 21.0412 9.7093 21.0412V21.0412ZM18.7691 21.0412C18.2842 21.0412 17.8884 20.6455 17.8884 20.1606C17.8884 19.6757 18.2842 19.28 18.7691 19.28C19.2539 19.28 19.6497 19.6757 19.6497 20.1606C19.6497 20.3942 19.5569 20.6182 19.3917 20.7833C19.2266 20.9485 19.0026 21.0412 18.7691 21.0412V21.0412Z"
+                                fill="#9ABCCA" />
+                        </svg>
+                        <span class="user__nav-num">0</span>
+                    </a>
+                </div>
+                <button class="user__nav-link--btn">
+                    <span class="user__nav-link--span"></span>
+                    <span class="user__nav-link--span"></span>
+                    <span class="user__nav-link--span"></span>
+                    <span class="user__nav-link--span"></span>
+                </button>
+            </form>
+            <ul class="header-links" id="header-links"></ul>
+        </div>
+    </div>
+</header>
 
-  <main class="main">
+    <main class="main">
 
-
-    <section class="top"><h1 class="top__title">About Us</h1><div class="breadcrumbs"><ul class="breadcrumbs__list"><li class="breadcrumbs__item"><a class="breadcrumbs__list-link" href="#">Home</a></li><li class="breadcrumbs__item"><a class="breadcrumbs__list-link" href="#">About Us</a></li></ul></div></section>
-    <section class="product">
-      <a class="filter__link">FILTER</a>
-      <div class="container-icon">
-        <div class="product__inner">
-          <div class="product__filters filter__inner"><div class="filter-category filter__item"><div class="filter__item-box"><h3 class="filter__title">CATEGORY</h3><span></span></div><form class="filter-category__form" action="#"><label class="filter-category__label"><input class="filter-category__input" type="checkbox" data-filter=".category-chair"><div class="filter-category__checkbox"><span>Chair</span> <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div></label> <label class="filter-category__label"><input class="filter-category__input" type="checkbox" data-filter=".category-table"><div class="filter-category__checkbox"><span>Table</span> <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div></label> <label class="filter-category__label"><input class="filter-category__input" type="checkbox" data-filter=".category-lamp"><div class="filter-category__checkbox"><span>Lamp</span> <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div></label> <label class="filter-category__label"><input class="filter-category__input" type="checkbox" data-filter=".category-watch"><div class="filter-category__checkbox"><span>Watch</span> <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div></label> <label class="filter-category__label"><input class="filter-category__input" type="checkbox" data-filter=".category-clock"><div class="filter-category__checkbox"><span>Clock</span> <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt=""></div></label></form></div><div class="filter-price filter__item"><div class="filter__item-box"><h3 class="filter__title">Price</h3><span></span></div><form class="filter-price__form" action="#"><input class="filter-price__input" type="text" data-min="0" data-max="900" data-from="100" data-to="500"> <label class="filter-price__label"><span><p>$<span class="filter-price__from"></span>.00</p><p>$<span class="filter-price__to"></span>.00</p></span></label></form></div><div class="filter-brand filter__item"><div class="filter__item-box"><h3 class="filter__title">Brand</h3><span></span></div><form class="filter-brand__form" action="#"><label class="filter-brand__label"><input class="filter-brand__input" type="radio" name="test" checked="checked" data-filter=".brand-rfl"><div class="filter-brand__checkbox"><span>RFL</span> <span>(10)</span></div></label> <label class="filter-brand__label"><input class="filter-brand__input" type="radio" name="test" data-filter=".brand-brothers"><div class="filter-brand__checkbox"><span>Brothers</span> <span>(21)</span></div></label> <label class="filter-brand__label"><input class="filter-brand__input" type="radio" name="test" data-filter=".brand-regal"><div class="filter-brand__checkbox"><span>Regal</span> <span>(3)</span></div></label> <label class="filter-brand__label"><input class="filter-brand__input" type="radio" name="test" data-filter=".brand-nadia"><div class="filter-brand__checkbox"><span>Nadia</span> <span>(14)</span></div></label> <label class="filter-brand__label"><input class="filter-brand__input" type="radio" name="test" data-filter=".brand-otobi"><div class="filter-brand__checkbox"><span>Otobi</span> <span>(6)</span></div></label></form></div><div class="filter-recent filter__item"><div class="filter__item-box"><h3 class="filter__title">Recent Products</h3><span></span></div><div class="filter-recent__items"><div class="filter-recent__item"><div class="filter-recent__img"><img loading="lazy" src="images/content/Pendant-lampe--mini.png" alt=""></div><div class="filter-recent__content"><h4 class="filter-recent__title">Pendant lamp</h4><div class="star"></div><p class="filter-recent__count">23$</p></div></div><div class="filter-recent__item"><div class="filter-recent__img"><img loading="lazy" src="images/content/mirum-lampe--mini.png" alt=""></div><div class="filter-recent__content"><h4 class="filter-recent__title">Pendant lamp</h4><div class="star"></div><p class="filter-recent__count">23$</p></div></div><div class="filter-recent__item"><div class="filter-recent__img"><img loading="lazy" src="images/content/malesuada-lampe--mini.png" alt=""></div><div class="filter-recent__content"><h4 class="filter-recent__title">Pendant lamp</h4><div class="star"></div><p class="filter-recent__count">23$</p></div></div></div></div></div>
-          <div class="product__content">
-            <div class="product__content-inner--hor">
-              <div class="product__item mix category-chair brand-brothers">
-                <div class="product__item-inner">
-                  <div class="product__item-img">
-                    <img src="images/content/products2/1.png" alt="">
-                  </div>
-                  <div class="product__item-content">
-                    <h2 class="product__item-title">Wooden radio</h2>
+      <section class="top">
+    <h1 class="top__title">Shop</h1>
+    <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__list-link" href="#">Home</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__list-link" href="#">Shop</a></li>
+        </ul>
+    </div>
+</section>
+      <section class="product">
+        <a class="filter__link">FILTER</a>
+        <div class="container-icon">
+          <div class="product__inner">
+            <div class="product__filters filter__inner">
+    <div class="filter-category filter__item">
+        <div class="filter__item-box">
+            <h3 class="filter__title">CATEGORY</h3><span></span>
+        </div>
+        <form class="filter-category__form" action="#">
+            <label class="filter-category__label">
+                <input class="filter-category__input" type="checkbox" data-filter="chair">
+                <div class="filter-category__checkbox"><span>Chair</span>
+                    <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt="">
+                </div>
+            </label>
+            <label class="filter-category__label">
+                <input class="filter-category__input" type="checkbox" data-filter="table">
+                <div class="filter-category__checkbox"><span>Table</span>
+                    <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt="">
+                </div>
+            </label>
+            <label class="filter-category__label">
+                <input class="filter-category__input" type="checkbox" data-filter="lamp">
+                <div class="filter-category__checkbox"><span>Lamp</span>
+                    <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt="">
+                </div>
+            </label>
+            <label class="filter-category__label">
+                <input class="filter-category__input" type="checkbox" data-filter="watch">
+                <div class="filter-category__checkbox"><span>Watch</span>
+                    <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt="">
+                </div>
+            </label>
+            <label class="filter-category__label">
+                <input class="filter-category__input" type="checkbox" data-filter="clock">
+                <div class="filter-category__checkbox"><span>Clock</span>
+                    <img loading="lazy" class="filter-category__arrow" src="images/icons/arrow-right-filter.svg" alt="">
+                </div>
+            </label>
+        </form>
+    </div>
+    <div class="filter-price filter__item">
+        <div class="filter__item-box">
+            <h3 class="filter__title">Price</h3><span></span>
+        </div>
+        <form class="filter-price__form" action="#">
+            <input class="filter-price__input" type="text" data-min="0" data-max="200" data-from="0" data-to="100">
+            <label class="filter-price__label">
+                <span>
+                    <p>$<span class="filter-price__from"></span>.00</p>
+                    <p>$<span class="filter-price__to"></span>.00</p>
+                </span>
+            </label>
+        </form>
+    </div>
+    <div class="filter-brand filter__item">
+        <div class="filter__item-box">
+            <h3 class="filter__title">Brand</h3><span></span>
+        </div>
+        <form class="filter-brand__form" action="#">
+            <label class="filter-brand__label">
+                <input class="filter-brand__input" type="radio" name="test" data-filter="rfl">
+                <div class="filter-brand__checkbox">
+                    <span>RFL</span>
+                    <!-- <span>(10)</span> -->
+                </div>
+            </label>
+            <label class="filter-brand__label">
+                <input class="filter-brand__input" type="radio" name="test" data-filter="brothers">
+                <div class="filter-brand__checkbox">
+                    <span>Brothers</span>
+                    <!-- <span>(21)</span> -->
+                </div>
+            </label>
+            <label class="filter-brand__label">
+                <input class="filter-brand__input" type="radio" name="test" data-filter="regal">
+                <div class="filter-brand__checkbox">
+                    <span>Regal</span>
+                    <!-- <span>(3)</span> -->
+                </div>
+            </label>
+            <label class="filter-brand__label">
+                <input class="filter-brand__input" type="radio" name="test" data-filter="nadia">
+                <div class="filter-brand__checkbox">
+                    <span>Nadia</span>
+                    <!-- <span>(14)</span> -->
+                </div>
+            </label>
+            <label class="filter-brand__label">
+                <input class="filter-brand__input" type="radio" name="test" data-filter="otobi">
+                <div class="filter-brand__checkbox">
+                    <span>Otobi</span>
+                    <!-- <span>(6)</span> -->
+                </div>
+            </label>
+        </form>
+    </div>
+    <div class="filter-recent filter__item">
+        <div class="filter__item-box">
+            <h3 class="filter__title">Recent Products</h3><span></span>
+        </div>
+        <div class="filter-recent__items">
+            <div class="filter-recent__item">
+                <div class="filter-recent__img"><img loading="lazy" src="images/content/Pendant-lampe--mini.png" alt="">
+                </div>
+                <div class="filter-recent__content">
+                    <h4 class="filter-recent__title">Pendant lamp</h4>
                     <div class="star"></div>
-                    <h3 class="product__price">$23.00</h3>
-                    <p class="product__item-info">
+                    <p class="filter-recent__count">23$</p>
+                </div>
+            </div>
+            <div class="filter-recent__item">
+                <div class="filter-recent__img"><img loading="lazy" src="images/content/mirum-lampe--mini.png" alt="">
+                </div>
+                <div class="filter-recent__content">
+                    <h4 class="filter-recent__title">Pendant lamp</h4>
+                    <div class="star"></div>
+                    <p class="filter-recent__count">23$</p>
+                </div>
+            </div>
+            <div class="filter-recent__item">
+                <div class="filter-recent__img"><img loading="lazy" src="images/content/malesuada-lampe--mini.png"
+                        alt=""></div>
+                <div class="filter-recent__content">
+                    <h4 class="filter-recent__title">Pendant lamp</h4>
+                    <div class="star"></div>
+                    <p class="filter-recent__count">23$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="product__content">
+              <div class="product__content-inner--hor">
+                <div class="product__item mix category-chair brand-brothers">
+                  <div class="product__item-inner">
+                    <div class="product__item-img">
+                      <img src="images/content/products2/1.png" alt="">
+                    </div>
+                    <div class="product__item-content">
+                      <h2 class="product__item-title">Wooden radio</h2>
+                      <div class="star"></div>
+                      <h3 class="product__price">$23.00</h3>
+                      <p class="product__item-info">
                       consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       Ut enim ad minim veniam, quis nostrud exercitation
                     </p>
-                    <div class="product__item-links">
-                      <a class="product__item-link">
+                      <div class="product__item-links">
+                        <a class="product__item-link">
                         Add to cart
                       </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="product__item mix category-chair brand-brothers">
-                <div class="product__item-inner">
-                  <div class="product__item-img">
-                    <img src="images/content/products2/2.png" alt="">
-                  </div>
-                  <div class="product__item-content">
-                    <h2 class="product__item-title">Wooden chair</h2>
-                    <div class="star"></div>
-                    <h3 class="product__price">$23.00</h3>
-                    <p class="product__item-info">
+                <div class="product__item mix category-chair brand-brothers">
+                  <div class="product__item-inner">
+                    <div class="product__item-img">
+                      <img src="images/content/products2/2.png" alt="">
+                    </div>
+                    <div class="product__item-content">
+                      <h2 class="product__item-title">Wooden chair</h2>
+                      <div class="star"></div>
+                      <h3 class="product__price">$23.00</h3>
+                      <p class="product__item-info">
                       consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       Ut enim ad minim veniam, quis nostrud exercitation
                     </p>
-                    <div class="product__item-links">
-                      <a class="product__item-link">
-                        <svg preserveAspectRatio="xMidYMid" width="22" height="20" viewBox="0 0 22 20">
-                          <defs>
-                            <style>
-                              .cls-1 {
-                                fill: #9ABCCA;
-                                fill-rule: evenodd;
-                              }
-                            </style>
-                          </defs>
-                          <path
+                      <div class="product__item-links">
+                        <a class="product__item-link">
+                          <svg preserveAspectRatio="xMidYMid" width="22" height="20" viewBox="0 0 22 20">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #9ABCCA;
+                                  fill-rule: evenodd;
+                                }
+                              </style>
+                            </defs>
+                            <path
                             d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z"
-                            class="cls-1" />
-                        </svg>
-                      </a>
-                      <a class="product__item-link">
-                        <svg preserveAspectRatio="xMidYMid" width="22" height="18" viewBox="0 0 22 18">
-                          <defs>
-                            <style>
-                              .cls-1 {
-                                fill: #9ABCCA;
-                                fill-rule: evenodd;
-                              }
-                            </style>
-                          </defs>
-                          <path
+                            class="cls-1"/>
+                          </svg>
+                        </a>
+                        <a class="product__item-link">
+                          <svg preserveAspectRatio="xMidYMid" width="22" height="18" viewBox="0 0 22 18">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #9ABCCA;
+                                  fill-rule: evenodd;
+                                }
+                              </style>
+                            </defs>
+                            <path
                             d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
-                            class="cls-1" />
-                        </svg>
-                      </a>
+                            class="cls-1"/>
+                          </svg>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="product__item mix category-chair brand-brothers">
-                <div class="product__item-inner">
-                  <div class="product__item-img">
-                    <img src="images/content/products2/3.png" alt="">
-                  </div>
-                  <div class="product__item-content">
-                    <h2 class="product__item-title">Pendant lamp</h2>
-                    <div class="star"></div>
-                    <h3 class="product__price">$23.00</h3>
-                    <p class="product__item-info">
+                <div class="product__item mix category-chair brand-brothers">
+                  <div class="product__item-inner">
+                    <div class="product__item-img">
+                      <img src="images/content/products2/3.png" alt="">
+                    </div>
+                    <div class="product__item-content">
+                      <h2 class="product__item-title">Pendant lamp</h2>
+                      <div class="star"></div>
+                      <h3 class="product__price">$23.00</h3>
+                      <p class="product__item-info">
                       consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       Ut enim ad minim veniam, quis nostrud exercitation
                     </p>
-                    <div class="product__item-links">
-                      <a class="product__item-link">
-                        <svg preserveAspectRatio="xMidYMid" width="22" height="20" viewBox="0 0 22 20">
-                          <defs>
-                            <style>
-                              .cls-1 {
-                                fill: #9ABCCA;
-                                fill-rule: evenodd;
-                              }
-                            </style>
-                          </defs>
-                          <path
+                      <div class="product__item-links">
+                        <a class="product__item-link">
+                          <svg preserveAspectRatio="xMidYMid" width="22" height="20" viewBox="0 0 22 20">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #9ABCCA;
+                                  fill-rule: evenodd;
+                                }
+                              </style>
+                            </defs>
+                            <path
                             d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z"
-                            class="cls-1" />
-                        </svg>
-                      </a>
-                      <a class="product__item-link">
-                        <svg preserveAspectRatio="xMidYMid" width="22" height="18" viewBox="0 0 22 18">
-                          <defs>
-                            <style>
-                              .cls-1 {
-                                fill: #9ABCCA;
-                                fill-rule: evenodd;
-                              }
-                            </style>
-                          </defs>
-                          <path
+                            class="cls-1"/>
+                          </svg>
+                        </a>
+                        <a class="product__item-link">
+                          <svg preserveAspectRatio="xMidYMid" width="22" height="18" viewBox="0 0 22 18">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #9ABCCA;
+                                  fill-rule: evenodd;
+                                }
+                              </style>
+                            </defs>
+                            <path
                             d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
-                            class="cls-1" />
-                        </svg>
-                      </a>
+                            class="cls-1"/>
+                          </svg>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="product__item mix category-chair brand-brothers">
-                <div class="product__item-inner">
-                  <div class="product__item-img">
-                    <img src="images/content/products2/4.png" alt="">
-                  </div>
-                  <div class="product__item-content">
-                    <h2 class="product__item-title">Retro table</h2>
-                    <div class="star"></div>
-                    <h3 class="product__price">$23.00</h3>
-                    <p class="product__item-info">
+                <div class="product__item mix category-chair brand-brothers">
+                  <div class="product__item-inner">
+                    <div class="product__item-img">
+                      <img src="images/content/products2/4.png" alt="">
+                    </div>
+                    <div class="product__item-content">
+                      <h2 class="product__item-title">Retro table</h2>
+                      <div class="star"></div>
+                      <h3 class="product__price">$23.00</h3>
+                      <p class="product__item-info">
                       consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       Ut enim ad minim veniam, quis nostrud exercitation
                     </p>
-                    <div class="product__item-links">
-                      <a class="product__item-link">
-                        <svg preserveAspectRatio="xMidYMid" width="22" height="20" viewBox="0 0 22 20">
-                          <defs>
-                            <style>
-                              .cls-1 {
-                                fill: #9ABCCA;
-                                fill-rule: evenodd;
-                              }
-                            </style>
-                          </defs>
-                          <path
+                      <div class="product__item-links">
+                        <a class="product__item-link">
+                          <svg preserveAspectRatio="xMidYMid" width="22" height="20" viewBox="0 0 22 20">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #9ABCCA;
+                                  fill-rule: evenodd;
+                                }
+                              </style>
+                            </defs>
+                            <path
                             d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z"
-                            class="cls-1" />
-                        </svg>
-                      </a>
-                      <a class="product__item-link">
-                        <svg preserveAspectRatio="xMidYMid" width="22" height="18" viewBox="0 0 22 18">
-                          <defs>
-                            <style>
-                              .cls-1 {
-                                fill: #9ABCCA;
-                                fill-rule: evenodd;
-                              }
-                            </style>
-                          </defs>
-                          <path
+                            class="cls-1"/>
+                          </svg>
+                        </a>
+                        <a class="product__item-link">
+                          <svg preserveAspectRatio="xMidYMid" width="22" height="18" viewBox="0 0 22 18">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #9ABCCA;
+                                  fill-rule: evenodd;
+                                }
+                              </style>
+                            </defs>
+                            <path
                             d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
-                            class="cls-1" />
-                        </svg>
-                      </a>
+                            class="cls-1"/>
+                          </svg>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="pagination blog-pagination">
+    <ul class="pagination__list blog-pagination__list">
+        <li class="pagination__list-item blog-pagination__list-item"><a
+                class="pagination__link blog-pagination__link pagination__link--active" href="#">1</a></li>
+        <li class="pagination__list-item blog-pagination__list-item"><a class="pagination__link blog-pagination__link"
+                href="#">2</a></li>
+        <li class="pagination__list-item blog-pagination__list-item"><a class="pagination__link blog-pagination__link"
+                href="#">3</a></li>
+        <li class="pagination__list-item blog-pagination__list-item"><a class="pagination__link blog-pagination__link"
+                href="#">Next</a></li>
+    </ul>
+</div>
             </div>
-            <div class="pagination blog-pagination"><ul class="pagination__list blog-pagination__list"><li class="pagination__list-item blog-pagination__list-item"><a class="pagination__link blog-pagination__link pagination__link--active" href="#">1</a></li><li class="pagination__list-item blog-pagination__list-item"><a class="pagination__link blog-pagination__link" href="#">2</a></li><li class="pagination__list-item blog-pagination__list-item"><a class="pagination__link blog-pagination__link" href="#">3</a></li><li class="pagination__list-item blog-pagination__list-item"><a class="pagination__link blog-pagination__link" href="#">Next</a></li></ul></div>
           </div>
         </div>
+      </section>
+      <div class="ideas__partners">
+        <div class="container-icon">
+          <ul class="ideas__partners-list">
+            <li class="ideas__partners-item">
+              <img src="images/partners/1.png" alt="partner">
+            </li>
+            <li class="ideas__partners-item">
+              <img src="images/partners/2.png" alt="partner">
+            </li>
+            <li class="ideas__partners-item">
+              <img src="images/partners/3.png" alt="partner">
+            </li>
+            <li class="ideas__partners-item">
+              <img src="images/partners/4.png" alt="partner">
+            </li>
+            <li class="ideas__partners-item">
+              <img src="images/partners/5.png" alt="partner">
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
-    <div class="ideas__partners">
-      <div class="container-icon">
-        <ul class="ideas__partners-list">
-          <li class="ideas__partners-item">
-            <img src="images/partners/1.png" alt="partner">
-          </li>
-          <li class="ideas__partners-item">
-            <img src="images/partners/2.png" alt="partner">
-          </li>
-          <li class="ideas__partners-item">
-            <img src="images/partners/3.png" alt="partner">
-          </li>
-          <li class="ideas__partners-item">
-            <img src="images/partners/4.png" alt="partner">
-          </li>
-          <li class="ideas__partners-item">
-            <img src="images/partners/5.png" alt="partner">
-          </li>
-        </ul>
-      </div>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-top">
+        <div class="footer-border">
+            <div class="footer-top__item footer-top__item-contact"><a class="logo" href="#"><img loading="lazy"
+                        class="logo__img" src="images/logo.svg" alt=""> <img loading="lazy" class="logo__title"
+                        src="images/logo_title.png" alt=""></a>
+                <ul class="footer-top__item-list">
+                    <li class="footer-top__item"><a class="footer-top__address" href="#">ADDRESS: 4772 Wines Lane</a>
+                    </li>
+                    <li class="footer-top__item"><a href="#" class="footer-top__link">Houston, TX 77032</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="tel:+8323475843">Telephone:
+                            +832-347-5843</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="mailto:contact@Glee.com">Email:
+                            contact@Glee.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-top__item footer-top__item-service">
+                <h6 class="footer-top__title">Services</h6>
+                <ul class="footer-top__item-list">
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">About us</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Return Policy</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Our Blog</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Contact Us</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="footer-top__item footer-top__item-account">
+                <h6 class="footer-top__title">Account</h6>
+                <ul class="footer-top__item-list">
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Your Account</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Checkout</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Login</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-top__item footer-top__item-newsletter">
+                <h6 class="footer-top__title">newsletter</h6>
+                <p class="footer-top__text">Subscribe by our newsletter and get update protidin.</p>
+                <form class="footer-top__form" action="#"><input class="footer-top__form-input" type="email"
+                        placeholder="Email address" required> <button class="footer-top__form-btn"
+                        type="submit">Subscribe</button></form>
+            </div>
+        </div>
     </div>
-  </main>
+    <div class="footer-bottom"><a class="footer-bottom__copy" href="#">©2020 CopyRight Example. All rights reserved.</a>
+        <ul class="footer-bottom__menu">
+            <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Home</a></li>
+            <li class="footer-bottom__item"><a class="footer-bottom__link" href="about.html">About</a></li>
+            <li class="footer-bottom__item"><a class="footer-bottom__link" href="blog.html">Blog</a></li>
+            <li class="footer-bottom__item"><a class="footer-bottom__link" href="contacts.html">Contact</a></li>
+        </ul>
+    </div>
+</footer>
 
-  <footer class="footer"><div class="footer-top"><div class="footer-border"><div class="footer-top__item footer-top__item-contact"><a class="logo" href="#"><img loading="lazy" class="logo__img" src="images/logo.png" alt=""> <img loading="lazy" class="logo__title" src="images/logo_title.png" alt=""></a><ul class="footer-top__item-list"><li class="footer-top__item"><a class="footer-top__address" href="#">ADDRESS: 4772 Wines Lane</a></li><li class="footer-top__item"><a href="#" class="footer-top__link">Houston, TX 77032</a></li><li class="footer-top__item"><a class="footer-top__link" href="tel:+8323475843">Telephone: +832-347-5843</a></li><li class="footer-top__item"><a class="footer-top__link" href="mailto:contact@Glee.com">Email: contact@Glee.com</a></li></ul></div><div class="footer-top__item footer-top__item-service"><h6 class="footer-top__title">Services</h6><ul class="footer-top__item-list"><li class="footer-top__item"><a class="footer-top__link" href="#">About us</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Return Policy</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Our Blog</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Contact Us</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Terms & Condition</a></li></ul></div><div class="footer-top__item footer-top__item-account"><h6 class="footer-top__title">Account</h6><ul class="footer-top__item-list"><li class="footer-top__item"><a class="footer-top__link" href="#">Your Account</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Checkout</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Login</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Register</a></li></ul></div><div class="footer-top__item footer-top__item-newsletter"><h6 class="footer-top__title">newsletter</h6><p class="footer-top__text">Subscribe by our newsletter and get update protidin.</p><form class="footer-top__form" action="#"><input class="footer-top__form-input" type="email" placeholder="Email address" required> <button class="footer-top__form-btn" type="submit">Subscribe</button></form></div></div></div><div class="footer-bottom"><a class="footer-bottom__copy" href="#">©2020 CopyRight Example. All rights reserved.</a><ul class="footer-bottom__menu"><li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Home</a></li><li class="footer-bottom__item"><a class="footer-bottom__link" href="#">About</a></li><li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Blog</a></li><li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Contact</a></li></ul></div></footer>
-
-
-
-
-
-
-  <script src="js/main.min.js" defer></script>
-</body>
+    <script src="js-min/shop.min.js" defer></script>
+  </body>
 
 </html>

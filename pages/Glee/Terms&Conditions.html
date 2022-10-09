@@ -5,33 +5,226 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Terms</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/Terms&Conditions.min.css">
+  
 </head>
 
 <body>
-  <header id="swup" class="header transition-fade"><div class="container"><div class="header__inner"><a class="logo" href="#"><img loading="lazy" class="logo__img" src="images/logo.png" alt=""> <img loading="lazy" class="logo__title" src="images/logo_title.png" alt=""></a><nav class="menu"><ul class="menu__list"><li class="menu__list-item" data-text="Home"><a class="menu__list-link" href="index.html">Home</a></li><li class="menu__list-item" data-text="About"><a class="menu__list-link" href="about.html">About</a></li><li class="menu__list-item" data-text="Services"><a class="menu__list-link" href="login.html">Services</a></li><li class="menu__list-item" data-text="Pages"><a class="menu__list-link" href="shop.html">Pages</a></li><li class="menu__list-item" data-text="News"><a class="menu__list-link" href="blog.html">News</a></li><li class="menu__list-item" data-text="Contact"><a class="menu__list-link" href="contacts.html">Contact</a></li></ul></nav><div class="user__nav"><a class="user__nav-link--search" href="#"><img loading="lazy" class="user__nav-img" src="images/icons/search.png" alt=""></a><div class="user__nav-wrapper"><a class="user__nav-link" href="#"><img loading="lazy" class="user__nav-img" src="images/icons/heart.png" alt=""> <span class="user__nav-num">0</span> </a><img loading="lazy" class="user__nav-line" src="images/icons/white_line.svg" alt=""> <a class="user__nav-link" href="#"><img loading="lazy" class="user__nav-img" src="images/icons/cart.png" alt=""> <span class="user__nav-num">0</span></a></div><a class="user__nav-link--burger" href="#"><img loading="lazy" class="user__nav-img" src="images/icons/burger.png" alt=""> </a><button class="user__nav-link--btn"><span class="user__nav-link--span"></span> <span class="user__nav-link--span"></span> <span class="user__nav-link--span"></span> <span class="user__nav-link--span"></span></button></div></div></div></header>
+  <header id="swup" class="header transition-fade">
+    <div class="container">
+        <div class="header__inner"><a class="logo" href="#"><img loading="lazy" class="logo__img" src="images/logo.svg"
+                    alt=""> <img loading="lazy" class="logo__title" src="images/logo_title.png" alt=""></a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item" data-text="Home"><a class="menu__list-link" href="index.html">Home</a>
+                    </li>
+                    <li class="menu__list-item" data-text="About"><a class="menu__list-link" href="about.html">About</a>
+                    </li>
+                    <li class="menu__list-item" data-text="Services"><a class="menu__list-link"
+                            href="login.html">Authorize</a></li>
+                    <li class="menu__list-item" data-text="Pages"><a class="menu__list-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="menu__list-item" data-text="News"><a class="menu__list-link" href="blog.html">News</a>
+                    </li>
+                    <li class="menu__list-item" data-text="Contact"><a class="menu__list-link"
+                            href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+            <form class="header-form" action="#">
+                <input class="header-form__input" type="text" name="header-form__input" id="header-form__input"
+                    placeholder="Введите запрос...">
+                <label class="header-form__link user__nav-link--search" for="header-form__input" id="header-form__link">
+                    <img loading="lazy" class="user__nav-img" src="images/icons/search.png" alt="">
+                </label>
+                <div class="user__nav-wrapper">
+                    <a class="user__nav-link" href="#">
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24.2088 16.4765H7.61366L8.4469 14.7794L22.2915 14.7543C22.7597 14.7543 23.161 14.4199 23.2446 13.9573L25.1619 3.2255C25.212 2.94403 25.1368 2.65421 24.9529 2.43406C24.862 2.32571 24.7486 2.23843 24.6206 2.17828C24.4926 2.11813 24.353 2.08654 24.2116 2.08571L6.59928 2.02719L6.4488 1.31935C6.35405 0.8679 5.94718 0.539062 5.48458 0.539062H1.17904C0.918138 0.539063 0.667923 0.642705 0.483439 0.827189C0.298955 1.01167 0.195313 1.26189 0.195312 1.52279C0.195313 1.78369 0.298955 2.0339 0.483439 2.21839C0.667923 2.40287 0.918138 2.50651 1.17904 2.50651H4.68757L5.34524 5.63325L6.96435 13.4724L4.87985 16.875C4.7716 17.0211 4.7064 17.1946 4.69163 17.3759C4.67685 17.5571 4.71309 17.7389 4.79625 17.9006C4.96345 18.2322 5.30065 18.4412 5.67408 18.4412H7.42416C7.05107 18.9367 6.84954 19.5403 6.85009 20.1606C6.85009 21.7379 8.132 23.0198 9.7093 23.0198C11.2866 23.0198 12.5685 21.7379 12.5685 20.1606C12.5685 19.5392 12.3623 18.9344 11.9944 18.4412H16.4839C16.1108 18.9367 15.9093 19.5403 15.9098 20.1606C15.9098 21.7379 17.1917 23.0198 18.7691 23.0198C20.3464 23.0198 21.6283 21.7379 21.6283 20.1606C21.6283 19.5392 21.422 18.9344 21.0542 18.4412H24.2116C24.7522 18.4412 25.1953 18.0009 25.1953 17.4575C25.1937 17.1968 25.0891 16.9474 24.9042 16.7637C24.7194 16.5799 24.4694 16.4767 24.2088 16.4765V16.4765ZM7.00893 3.96677L23.0551 4.01972L21.4834 12.8203L8.87885 12.8426L7.00893 3.96677ZM9.7093 21.0412C9.22441 21.0412 8.82869 20.6455 8.82869 20.1606C8.82869 19.6757 9.22441 19.28 9.7093 19.28C10.1942 19.28 10.5899 19.6757 10.5899 20.1606C10.5899 20.3942 10.4971 20.6182 10.332 20.7833C10.1668 20.9485 9.94286 21.0412 9.7093 21.0412V21.0412ZM18.7691 21.0412C18.2842 21.0412 17.8884 20.6455 17.8884 20.1606C17.8884 19.6757 18.2842 19.28 18.7691 19.28C19.2539 19.28 19.6497 19.6757 19.6497 20.1606C19.6497 20.3942 19.5569 20.6182 19.3917 20.7833C19.2266 20.9485 19.0026 21.0412 18.7691 21.0412V21.0412Z"
+                                fill="#9ABCCA" />
+                        </svg>
+                        <span class="user__nav-num">0</span>
+                    </a>
+                </div>
+                <button class="user__nav-link--btn">
+                    <span class="user__nav-link--span"></span>
+                    <span class="user__nav-link--span"></span>
+                    <span class="user__nav-link--span"></span>
+                    <span class="user__nav-link--span"></span>
+                </button>
+            </form>
+            <ul class="header-links" id="header-links"></ul>
+        </div>
+    </div>
+</header>
 
   <main class="main">
 
 
-    <section class="top"><h1 class="top__title">About Us</h1><div class="breadcrumbs"><ul class="breadcrumbs__list"><li class="breadcrumbs__item"><a class="breadcrumbs__list-link" href="#">Home</a></li><li class="breadcrumbs__item"><a class="breadcrumbs__list-link" href="#">About Us</a></li></ul></div></section>
-    <section class="terms-conditions"><div class="container-icon"><div class="terms-conditions__inner"><div class="terms-conditions__item"><h3 class="terms-conditions__title">Types of Personal Information We Collect</h3><p class="terms-conditions__text--list">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p><p class="terms-conditions__text--list">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p><p class="terms-conditions__text--list">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p class="terms-conditions__text--list">Dagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p class="terms-conditions__text--list">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p></div><div class="terms-conditions__item"><h3 class="terms-conditions__title">How marketpmss.com Collects Personal Infonnation</h3><p class="terms-conditions__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p></div><div class="terms-conditions__item"><h3 class="terms-conditions__title">How marketprosscom Uses Personal Information</h3><p class="terms-conditions__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p></div></div></div></section>
-    <section class="ideas"><div class="container-icon"><div class="ideas__top"><h2 class="title">Our Insights & Articles</h2><a class="ideas__link" href="#">View All</a></div><div class="ideas__items"><div class="ideas-item"><img loading="lazy" src="images/content/interiers/1.jpg" alt="interior"><div class="ideas-item__text"><p class="ideas__subtitle">NEWS</p><p class="ideas__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p><div class="ideas-item__publicdetails"><p class="ideas-item__date">28 JANUARY, 2020</p><p class="ideas-item__author">BY ADMIN</p></div></div></div><div class="ideas-item"><img loading="lazy" src="images/content/interiers/2.jpg" alt="interior"><div class="ideas-item__text"><p class="ideas__subtitle">NEWS</p><p class="ideas__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><div class="ideas-item__publicdetails"><p class="ideas-item__date">28 JANUARY, 2020</p><p class="ideas-item__author">BY ADMIN</p></div></div></div><div class="ideas-item"><img loading="lazy" src="images/content/interiers/3.jpg" alt="interior"><div class="ideas-item__text"><p class="ideas__subtitle">NEWS</p><p class="ideas__text">Rncididunt ut labore et dolore magna aliqua. Ut enim</p><div class="ideas-item__publicdetails"><p class="ideas-item__date">28 JANUARY, 2020</p><p class="ideas-item__author">BY ADMIN</p></div></div></div></div><div class="ideas__partners"><ul class="ideas__partners-list"><li class="ideas__partners-item"><img loading="lazy" src="images/partners/1.png" alt="partner"></li><li class="ideas__partners-item"><img loading="lazy" src="images/partners/2.png" alt="partner"></li><li class="ideas__partners-item"><img loading="lazy" src="images/partners/3.png" alt="partner"></li><li class="ideas__partners-item"><img loading="lazy" src="images/partners/4.png" alt="partner"></li><li class="ideas__partners-item"><img loading="lazy" src="images/partners/5.png" alt="partner"></li></ul></div></div></section>
+    <section class="top">
+    <h1 class="top__title">Terms</h1>
+    <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__list-link" href="#">Home</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__list-link" href="#">Terms</a></li>
+        </ul>
+    </div>
+</section>
+    <section class="terms-conditions">
+    <div class="container-icon">
+        <div class="terms-conditions__inner">
+            <div class="terms-conditions__item">
+                <h3 class="terms-conditions__title">Types of Personal Information We Collect</h3>
+                <p class="terms-conditions__text--list">Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore</p>
+                <p class="terms-conditions__text--list">Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore</p>
+                <p class="terms-conditions__text--list">Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.</p>
+                <p class="terms-conditions__text--list">Dagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="terms-conditions__text--list">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod</p>
+            </div>
+            <div class="terms-conditions__item">
+                <h3 class="terms-conditions__title">How marketpmss.com Collects Personal Infonnation</h3>
+                <p class="terms-conditions__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore</p>
+            </div>
+            <div class="terms-conditions__item">
+                <h3 class="terms-conditions__title">How marketprosscom Uses Personal Information</h3>
+                <p class="terms-conditions__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="ideas">
+    <div class="container-icon">
+        <div class="ideas__top">
+            <h2 class="title">Our Insights & Articles</h2><a class="ideas__link" href="#">View All</a>
+        </div>
+        <div class="ideas__items">
+            <div class="ideas-item"><img loading="lazy" src="images/content/interiers/1.jpg" alt="interior">
+                <div class="ideas-item__text">
+                    <p class="ideas__subtitle">NEWS</p>
+                    <p class="ideas__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam</p>
+                    <div class="ideas-item__publicdetails">
+                        <p class="ideas-item__date">28 JANUARY, 2020</p>
+                        <p class="ideas-item__author">BY ADMIN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ideas-item"><img loading="lazy" src="images/content/interiers/2.jpg" alt="interior">
+                <div class="ideas-item__text">
+                    <p class="ideas__subtitle">NEWS</p>
+                    <p class="ideas__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore</p>
+                    <div class="ideas-item__publicdetails">
+                        <p class="ideas-item__date">28 JANUARY, 2020</p>
+                        <p class="ideas-item__author">BY ADMIN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ideas-item"><img loading="lazy" src="images/content/interiers/3.jpg" alt="interior">
+                <div class="ideas-item__text">
+                    <p class="ideas__subtitle">NEWS</p>
+                    <p class="ideas__text">Rncididunt ut labore et dolore magna aliqua. Ut enim</p>
+                    <div class="ideas-item__publicdetails">
+                        <p class="ideas-item__date">28 JANUARY, 2020</p>
+                        <p class="ideas-item__author">BY ADMIN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ideas__partners">
+            <ul class="ideas__partners-list">
+                <li class="ideas__partners-item"><img loading="lazy" src="images/partners/1.png" alt="partner"></li>
+                <li class="ideas__partners-item"><img loading="lazy" src="images/partners/2.png" alt="partner"></li>
+                <li class="ideas__partners-item"><img loading="lazy" src="images/partners/3.png" alt="partner"></li>
+                <li class="ideas__partners-item"><img loading="lazy" src="images/partners/4.png" alt="partner"></li>
+                <li class="ideas__partners-item"><img loading="lazy" src="images/partners/5.png" alt="partner"></li>
+            </ul>
+        </div>
+    </div>
+</section>
 
   </main>
 
-  <footer class="footer"><div class="footer-top"><div class="footer-border"><div class="footer-top__item footer-top__item-contact"><a class="logo" href="#"><img loading="lazy" class="logo__img" src="images/logo.png" alt=""> <img loading="lazy" class="logo__title" src="images/logo_title.png" alt=""></a><ul class="footer-top__item-list"><li class="footer-top__item"><a class="footer-top__address" href="#">ADDRESS: 4772 Wines Lane</a></li><li class="footer-top__item"><a href="#" class="footer-top__link">Houston, TX 77032</a></li><li class="footer-top__item"><a class="footer-top__link" href="tel:+8323475843">Telephone: +832-347-5843</a></li><li class="footer-top__item"><a class="footer-top__link" href="mailto:contact@Glee.com">Email: contact@Glee.com</a></li></ul></div><div class="footer-top__item footer-top__item-service"><h6 class="footer-top__title">Services</h6><ul class="footer-top__item-list"><li class="footer-top__item"><a class="footer-top__link" href="#">About us</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Return Policy</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Our Blog</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Contact Us</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Terms & Condition</a></li></ul></div><div class="footer-top__item footer-top__item-account"><h6 class="footer-top__title">Account</h6><ul class="footer-top__item-list"><li class="footer-top__item"><a class="footer-top__link" href="#">Your Account</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Checkout</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Login</a></li><li class="footer-top__item"><a class="footer-top__link" href="#">Register</a></li></ul></div><div class="footer-top__item footer-top__item-newsletter"><h6 class="footer-top__title">newsletter</h6><p class="footer-top__text">Subscribe by our newsletter and get update protidin.</p><form class="footer-top__form" action="#"><input class="footer-top__form-input" type="email" placeholder="Email address" required> <button class="footer-top__form-btn" type="submit">Subscribe</button></form></div></div></div><div class="footer-bottom"><a class="footer-bottom__copy" href="#">©2020 CopyRight Example. All rights reserved.</a><ul class="footer-bottom__menu"><li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Home</a></li><li class="footer-bottom__item"><a class="footer-bottom__link" href="#">About</a></li><li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Blog</a></li><li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Contact</a></li></ul></div></footer>
+  <footer class="footer">
+    <div class="footer-top">
+        <div class="footer-border">
+            <div class="footer-top__item footer-top__item-contact"><a class="logo" href="#"><img loading="lazy"
+                        class="logo__img" src="images/logo.svg" alt=""> <img loading="lazy" class="logo__title"
+                        src="images/logo_title.png" alt=""></a>
+                <ul class="footer-top__item-list">
+                    <li class="footer-top__item"><a class="footer-top__address" href="#">ADDRESS: 4772 Wines Lane</a>
+                    </li>
+                    <li class="footer-top__item"><a href="#" class="footer-top__link">Houston, TX 77032</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="tel:+8323475843">Telephone:
+                            +832-347-5843</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="mailto:contact@Glee.com">Email:
+                            contact@Glee.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-top__item footer-top__item-service">
+                <h6 class="footer-top__title">Services</h6>
+                <ul class="footer-top__item-list">
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">About us</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Return Policy</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Our Blog</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Contact Us</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="footer-top__item footer-top__item-account">
+                <h6 class="footer-top__title">Account</h6>
+                <ul class="footer-top__item-list">
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Your Account</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Checkout</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Login</a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="#">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-top__item footer-top__item-newsletter">
+                <h6 class="footer-top__title">newsletter</h6>
+                <p class="footer-top__text">Subscribe by our newsletter and get update protidin.</p>
+                <form class="footer-top__form" action="#"><input class="footer-top__form-input" type="email"
+                        placeholder="Email address" required> <button class="footer-top__form-btn"
+                        type="submit">Subscribe</button></form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom"><a class="footer-bottom__copy" href="#">©2020 CopyRight Example. All rights reserved.</a>
+        <ul class="footer-bottom__menu">
+            <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Home</a></li>
+            <li class="footer-bottom__item"><a class="footer-bottom__link" href="about.html">About</a></li>
+            <li class="footer-bottom__item"><a class="footer-bottom__link" href="blog.html">Blog</a></li>
+            <li class="footer-bottom__item"><a class="footer-bottom__link" href="contacts.html">Contact</a></li>
+        </ul>
+    </div>
+</footer>
 
 
 
 
 
 
-  <script src="js/main.min.js" defer></script>
+  <script src="js-min/terms.min.js" defer></script>
 </body>
 
 </html>
