@@ -15,28 +15,28 @@ const { notify }     = require('browser-sync');
 const browserSync    = require('browser-sync').create();
 
 function html() {
-  return src('app/**/*.html')
+  return src('./**/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(dest('app/'));
+    .pipe(dest('./'));
 };
 
 function img() {
-  return src('app/images/**/*.*')
+  return src('./images/**/*.*')
     .pipe(imagemin())
-    .pipe(dest('app/images/'))
+    .pipe(dest('./images/'))
 };
 
 function browsersync() {
   browserSync.init({
     server: {
-      baseDir: 'app/'
+      baseDir: './'
     },
     notify: false
   })
 }
 
 function styles() {
-  return src('app/scss/*.scss')
+  return src('./scss/*.scss')
     .pipe(scss({outputStyle: 'compressed'}))
     .pipe(rename({
       suffix: '.min'
@@ -45,30 +45,30 @@ function styles() {
       overrideBrowserslist: ['last 10 versions'],
       grid: true
     }))
-    .pipe(dest('app/css'))
+    .pipe(dest('./css'))
     .pipe(browserSync.stream())
 }
 
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    'app/js/libs/*.js',
-    'app/js/load_more.js',
-    'app/js/menu.js',
-    'app/js/main.js',
+    './js/libs/*.js',
+    './js/load_more.js',
+    './js/menu.js',
+    './js/main.js',
   ])
   .pipe(concat('main.min.js'))
   .pipe(uglify())
-  .pipe(dest('app/js'))
+  .pipe(dest('./js'))
   .pipe(browserSync.stream())
 }
 
 function dist() {
   return src([
-    'app/**/*.html',
-    'app/css/**/*.css',
-    'app/js/main.min.js'
-  ], {base: 'app'})
+    './**/*.html',
+    './css/**/*.css',
+    './js/main.min.js'
+  ], {base: '.'})
   .pipe(dest('dist'))
 }
 
@@ -77,9 +77,9 @@ function cleanDist() {
 }
 
 function watching() {
-  watch(['app/**/*.scss'], styles);
-  watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/**/*.html']).on('change', browserSync.reload);
+  watch(['./**/*.scss'], styles);
+  watch(['./js/**/*.js', '!./js/main.min.js'], scripts);
+  watch(['./**/*.html']).on('change', browserSync.reload);
 }
 
 
