@@ -1,0 +1,219 @@
+{
+    "comments": [
+        {
+            "imgPath": "./assets/comments/1.jpg",
+            "title": "My house sold out fast!",
+            "text": "I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!",
+            "rate": 4.3,
+            "people": {
+                "imgPath": "./assets/peoples/blue.png",
+                "name": "Courtney Henry",
+                "location": "CEO Andarafish"
+            }
+        },
+        {
+            "imgPath": "./assets/comments/2.jpg",
+            "title": "Roselands House",
+            "text": "Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.",
+            "rate": 4.6,
+            "people": {
+                "imgPath": "./assets/peoples/yellow.png",
+                "name": "Dianne Russell",
+                "location": "Manchester, Kentucky"
+            }
+        },
+        {
+            "imgPath": "./assets/comments/3.jpg",
+            "title": "Through the Hounter, I can get a house for my self",
+            "text": "By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!",
+            "rate": 4,
+            "people": {
+                "imgPath": "./assets/peoples/purple.png",
+                "name": "Esther Howard",
+                "location": "Head of Marketing"
+            }
+        }
+    ],
+    "products": [
+        {
+            "type": "house",
+            "imgPath": "./assets/productsImg/premises/1.jpg",
+            "tag": "popular",
+            "tagSvg": "popular",
+            "tagMsg": "popular",
+            "title": "Roselands House",
+            "price": 35000000,
+            "people": {
+                "imgPath": "./assets/peoples/yellow.png",
+                "name": "Dianne Russell",
+                "location": "Manchester, Kentucky"
+            }
+        },
+        {
+            "type": "house",
+            "imgPath": "./assets/productsImg/premises/2.jpg",
+            "tag": "new",
+            "tagSvg": "house",
+            "tagMsg": "New house",
+            "title": "Woodlandside",
+            "price": 20000000,
+            "people": {
+                "imgPath": "./assets/peoples/blue.png",
+                "name": "Robert Fox",
+                "location": "Dr. San Jose, South Dakota"
+            }
+        },
+        {
+            "type": "house",
+            "imgPath": "./assets/productsImg/premises/3.jpg",
+            "tag": "best",
+            "tagSvg": "wallet",
+            "tagMsg": "Best Deals",
+            "title": "The Old Lighthouse",
+            "price": 44000000,
+            "people": {
+                "imgPath": "./assets/peoples/blue2.png",
+                "name": "Ronald Richards",
+                "location": "Santa Ana, Illinois"
+            }
+        },
+        {
+            "type": "house",
+            "imgPath": "./assets/productsImg/premises/4.jpg",
+            "tag": "popular",
+            "tagSvg": "popular",
+            "tagMsg": "popular",
+            "title": "Cosmo's House",
+            "price": 22000000,
+            "people": {
+                "imgPath": "./assets/peoples/beige.png",
+                "name": "Jenny Wilson",
+                "location": "Preston Rd. Inglewood, Maine 98380"
+            }
+        },
+        {
+            "type": "villa",
+            "imgPath": "./assets/productsImg/premises/3.jpg",
+            "tag": "best",
+            "tagSvg": "wallet",
+            "tagMsg": "Best Deals",
+            "title": "The Old Lighthouse",
+            "price": 44000000,
+            "people": {
+                "imgPath": "./assets/peoples/blue2.png",
+                "name": "Ronald Richards",
+                "location": "Santa Ana, Illinois"
+            }
+        },
+        {
+            "type": "villa",
+            "imgPath": "./assets/productsImg/premises/4.jpg",
+            "tag": "popular",
+            "tagSvg": "popular",
+            "tagMsg": "popular",
+            "title": "Cosmo's House",
+            "price": 22000000,
+            "people": {
+                "imgPath": "./assets/peoples/beige.png",
+                "name": "Jenny Wilson",
+                "location": "Preston Rd. Inglewood, Maine 98380"
+            }
+        },
+        {
+            "type": "apartment",
+            "imgPath": "./assets/productsImg/premises/1.jpg",
+            "tag": "popular",
+            "tagSvg": "popular",
+            "tagMsg": "popular",
+            "title": "Roselands House",
+            "price": 35000000,
+            "people": {
+                "imgPath": "./assets/peoples/yellow.png",
+                "name": "Dianne Russell",
+                "location": "Manchester, Kentucky"
+            }
+        },
+        {
+            "type": "apartment",
+            "imgPath": "./assets/productsImg/premises/2.jpg",
+            "tag": "new",
+            "tagSvg": "house",
+            "tagMsg": "New house",
+            "title": "Woodlandside",
+            "price": 20000000,
+            "people": {
+                "imgPath": "./assets/peoples/blue.png",
+                "name": "Robert Fox",
+                "location": "Dr. San Jose, South Dakota"
+            }
+        }
+    ],
+    "news": [
+        {
+            "id": 0,
+            "imgPath": "./assets/news/1.jpg",
+            "title": "The things we need to check when we want to buy a house",
+            "text": "Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+            "date": "4 min read | 25 Apr 2021",
+            "people": {
+                "imgPath": "./assets/peoples/yellow.png",
+                "name": "Dianne Russell"
+            }
+        },
+        {
+            "id": 1,
+            "imgPath": "./assets/news/2.jpg",
+            "title": "7 Ways to distinguish the quality of the house we want to buy",
+            "text": "Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+            "date": "6 min read | 24 Apr 2021",
+            "people": {
+                "imgPath": "./assets/peoples/purplemen.png",
+                "name": "Courtney Henry"
+            }
+        },
+        {
+            "id": 2,
+            "imgPath": "./assets/news/3.jpg",
+            "title": "The best way to know the quality of the house we want to buy",
+            "text": "Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+            "date": "2 min read | 24 Apr 2021<",
+            "people": {
+                "imgPath": "./assets/peoples/purplemen2.png",
+                "name": "Darlene Robertson"
+            }
+        },
+        {
+            "id": 3,
+            "imgPath": "./assets/news/2.jpg",
+            "title": "7 Ways to distinguish the quality of the house we want to buy",
+            "text": "Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+            "date": "6 min read | 24 Apr 2021",
+            "people": {
+                "imgPath": "./assets/peoples/purplemen.png",
+                "name": "Courtney Henry"
+            }
+        },
+        {
+            "id": 4,
+            "imgPath": "./assets/news/3.jpg",
+            "title": "The best way to know the quality of the house we want to buy",
+            "text": "Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+            "date": "2 min read | 24 Apr 2021<",
+            "people": {
+                "imgPath": "./assets/peoples/purplemen2.png",
+                "name": "Darlene Robertson"
+            }
+        },
+        {
+            "id": 0,
+            "imgPath": "./assets/news/1.jpg",
+            "title": "The things we need to check when we want to buy a house",
+            "text": "Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+            "date": "4 min read | 25 Apr 2021",
+            "people": {
+                "imgPath": "./assets/peoples/yellow.png",
+                "name": "Dianne Russell"
+            }
+        }
+    ]
+}
