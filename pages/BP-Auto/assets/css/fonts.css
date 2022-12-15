@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Gotham__Pro";
+  src: url("../fonts/gothampro.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gotham__Pro";
+  src: url("../fonts/gothampro_bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Circe-Light";
+  src: url("../fonts/Circe-Light.woff") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "CoreSansA65Bold";
+  src: url("../fonts/CoreSansAR-65Bold.woff") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}

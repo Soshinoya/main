@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://test-project.ru.s57.hhos.net/#top -->
+<html lang="ru">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BP AUTO</title>
+
+	<link rel="shortcut icon" href="assets/images/logo.ico.html" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+	<link href="assets/css/css2.css" rel="stylesheet">
+	<link href="assets/css/css2(1).css" rel="stylesheet">
+	<link href="assets/css/css2(2).css" rel="stylesheet">
+	<link href="assets/css/css2(3).css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="assets/js/slick/js/slick-theme.css.html">
+
+	<link rel="stylesheet" type="text/css" href="pages/assets/css/slick.css.html">
+	<link rel="stylesheet" href="assets/css/fonts.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="pages/assets/css/cart.css">
+	<link rel="stylesheet" href="pages/assets/css/modal.css">
+	<link rel="stylesheet" type="text/css" href="pages/assets/fancybox/source/jquery.fancybox.css?v=2.1.5"
+		media="screen">
+	<link rel="stylesheet" href="pages/assets/fancybox/source/helpers/jquery.fancybox-buttons.css">
+	<link rel="stylesheet" href="pages/assets/fancybox/source/helpers/jquery.fancybox-thumbs.css">
+	<link rel="stylesheet" href="pages/assets/css/custom_fancy.css">
+</head>
+
+<body>
+	<header class="header" id="top" tabindex="-1" style="outline: none;">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="home.html" class="header__logo">
+					<img src="assets/images/logo.svg" alt="BP AUTO">
+				</a>
+				<div class="header__body" id="header-menu">
+					<div class="header__house">
+						<a href="home.html" class="header__nav-home">
+
+						</a>
+					</div>
+					<div class="header__nav">
+						<div class="header__top">
+							<a href="home.html#" class="header__top-text">
+								Customer service </a>
+							<a href="tel:+37126858674" class="header__top-text">
+								+(371) 268 58 674
+							</a>
+						</div>
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="home.html#cars__active" class="menu__link">
+										Car in Stock </a>
+								</li>
+								<li class="menu__item">
+									<a href="home.html#soon" class="menu__link">
+										Soon </a>
+								</li>
+								<li class="menu__item">
+									<a href="home.html#sold__cars" class="menu__link">
+										Sold cars </a>
+								</li>
+								<li class="menu__item">
+									<a href="home.html#about__us" class="menu__link">
+										Cars per order </a>
+								</li>
+								<li class="menu-service menu__item" onclick="">
+									<div class="nav_trigger"></div>
+									<ul>
+										<li><a href="vikup.html">Выкуп</a></li>
+										<li><a href="realise.html">Реализация</a></li>
+									</ul>
+								</li>
+								<!-- <li class="menu__item">
+									<a href="home#buy__car" class="menu__link">
+																			</a>
+								</li> -->
+								<li class="menu__item">
+									<a href="home.html#about__dscr" class="menu__link">
+										About us </a>
+								</li>
+								<li class="menu__item">
+									<a href="home.html#contact" class="menu__link">
+										Contact Us </a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__right">
+						<div class="header__languages">
+							<a href="product-4.html?lang=ru&product=2">
+								RUS
+							</a>
+							<a href="product-5.html?lang=lv&product=2">
+								LV
+							</a>
+							<a href="#" class="active">
+								EN
+							</a>
+						</div>
+						<div class="header__social">
+							<a href="https://test-project.ru.s57.hhos.net/#" class="header__social-facebook"></a>
+							<a href="https://test-project.ru.s57.hhos.net/#" class="header__social-instagram"></a>
+						</div>
+					</div>
+				</div>
+				<div class="header-hamb">
+					<div class="hamb__field" id="header-hamb">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="header-popup" id="header-popup"></div>
+
+	<!-- Модальное окно -->
+	<div class="modal_blocker"></div>
+	<div class="modal">
+		<form action="" class="catalog">
+			<div class="row">
+				<input type="text" name="mail" placeholder="Email/phone" required="">
+			</div>
+			<div class="row">
+				<input type="text" name="message" type="text" placeholder="Price, €" required="">
+			</div>
+			<div class="row">
+				<textarea name="message" placeholder="Comment"></textarea>
+			</div>
+			<div class="row">
+				<div class="col-xs-3">
+					Captcha </div>
+				<div class="col-xs-9">
+					<img src="pages/assets/php/captcha/captcha.php?color=#023BC7" alt="captcha" class="purpur">
+					<input type="text" name="capthca" class="input">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="row text-center">
+				<span class="result-text"></span>
+				<button type="submit" class="btn btn-primary" name="sale-button">Send</button>
+				<div class="clearfix"></div>
+				<div class="catalog_result"></div>
+			</div>
+			<a href="#close-modal" class="close-modal"></a>
+		</form>
+	</div>
+
+	<!-- ЗАПИСАТЬСЯ НА ТЕКСТ-ДРАЙВ -->
+
+	<div class="modal modal-test-drive">
+		<form action="" class="catalog">
+			<div class="row">
+				<input type="text" name="mail" placeholder="Email/phone" required="">
+			</div>
+			<div class="row">
+				<textarea name="message" placeholder="Comment"></textarea>
+			</div>
+			<div class="row">
+				<div class="col-xs-3">
+					Captcha </div>
+				<div class="col-xs-9">
+					<img src="pages/assets/php/captcha/captcha.php?color=#023BC7" alt="captcha" class="purpur">
+					<input type="text" name="capthca" class="input">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="row text-center">
+				<span class="result-text"></span>
+				<button type="submit" class="btn btn-primary" name="sale-button">Send</button>
+				<div class="clearfix"></div>
+				<div class="catalog_result"></div>
+			</div>
+			<a href="#close-modal" class="close-modal"></a>
+		</form>
+	</div>
+	<!-- Конец модального окна -->
+
+	<div class="content__main">
+		<section class="car__images">
+			<div class="container">
+				<div class="car__images-wrapper">
+					<div class="car__images-nav">
+						<a href="index.htm">
+							Главная
+						</a>
+						<a href="https://test-project.ru.s57.hhos.net/pages/cart.html#">
+							Машины на месте
+						</a>
+						<!-- <a href="https://test-project.ru.s57.hhos.net/pages/cart.html#">
+								С-Class							</a> -->
+						<a href="/bmw.html">
+							BMW 318d </a>
+					</div>
+				</div>
+				<div class="car__images-content">
+					<div class="car__images-main car__images-item" href="pages/products/images/bmw/tn_1.jpeg"
+						data-fancybox-group="thumb">
+						<img src="pages/products/images/bmw/tn_1.jpeg" alt="" class="car__images-main-url">
+					</div>
+					<div class="car__images-items">
+
+
+						<a href="pages/products/images/bmw/tn_1.jpeg" class="car__images-item"
+							data-fancybox-group="thumb">
+							<img src="pages/products/images/bmw/tn_1.jpeg" alt="">
+						</a>
+
+						<a href="pages/products/images/bmw/tn_2.jpeg" class="car__images-item"
+							data-fancybox-group="thumb">
+							<img src="pages/products/images/bmw/tn_2.jpeg" alt="">
+						</a>
+
+						<a href="pages/products/images/bmw/tn_3.jpeg" class="car__images-item"
+							data-fancybox-group="thumb">
+							<img src="pages/products/images/bmw/tn_4.jpeg" alt="">
+						</a>
+
+
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/bmw/tn_9.jpeg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/bmw/tn_5.jpeg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/bmw/tn_6.jpeg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/bmw/tn_7.jpeg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/bmw/tn_8.jpeg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/bmw/tn_10.jpeg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/bmw/tn_11.jpeg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/bmw/tn_12.jpeg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/bmw/tn_13.jpeg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/bmw/tn_14.jpeg"></span>
+						<div class="car__images-item all">
+							<span>Check more</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="car__dscr">
+			<div class="container">
+				<div class="car__dscr-wrapper">
+					<div class="car__dscr-top">
+						<div class="car-info">
+							<div class="auto">
+								<div class="auto-info">
+									<p>Car</p>
+									<p>BMW 318d</p>
+								</div>
+							</div>
+							<div class="block">
+								<div class="auto-desc">
+									<div class="year">
+										<div class="year-info">
+											<p>Years</p>
+											<p>2012</p>
+										</div>
+									</div>
+									<div class="mileage">
+										<div class="mileage-info">
+											<p>Mileage</p>
+											<p>241 300 km</p>
+										</div>
+									</div>
+									<div class="transmission">
+										<div class="transmission-info">
+											<p>Transmission</p>
+											<p>Automatic</p>
+										</div>
+									</div>
+									<div class="engine">
+										<div class="engine-info">
+											<p>Engine</p>
+											<p>2.0 TDI</p>
+										</div>
+									</div>
+									<div class="articel">
+										<div class="article-info">
+											<p>Article</p>
+											<p>BP-017</p>
+										</div>
+									</div>
+
+									<!-- <div class="from">
+											<div class="from-info">
+												<p>From</p>
+												<p>Бельгия</p>
+											</div>
+										</div> -->
+
+
+									<div class="price">
+										<div class="price-info">
+											<p>Price</p>
+											<p>13 300 €</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="car__dscr-text">
+						Ожидаем BMW 318d (F30). Редкий белый, привлекательный цвет. Мотор 105 квт (143 л.с). Машина из
+						Германии.
+						<br><br>
+						Комплектация: ксеноновые/LED фары, система Start-Stop automatik, климат-контроль с опцией
+						кондиционера, датчик дождя, круиз-контроль, мультируль, борт компьютер, текстильный салон с
+						подогревом сидений, парковочные датчики спереди и сзади, навигация по всей Европе, hands free
+						(bluetooth) также можно подключить телефон и слушать музыку, диски на 18 с летней практически
+						новой летней резиной (если нужно можем поставить и Зиму), тонированные задние окна, 2
+						оригинальных ключа и др. опции. <br><br>
+						Машина в ближайшее время будет в Риге. По всем вопросам, звоните пожалуйста по телефону.
+						<br><br>
+						Кликнув на Посмотреть в объявлении, можно посмотреть все автомобили, которые сейчас есть в
+						продаже у нас и которые мы ожидаем. <br><br>
+						Продаем только проверенные автомобили из Европы. Перед покупкой, автомобиль можем поднять на
+						подъемнике у нас в сервисе. <br>
+						Также по этому автомобилю, можем дооснастить его кожанным салоном и другими опциями у себя в
+						мастерской. Запчасти по оснащению автомобилей каждую неделю возим под заказ из Европы.<br>
+						BMW 318d. Soon will be in Riga. All info by phone.<br>
+						* На месте можем поднять автомобиль на подъемнике. Видео осмотр ниже по кнопке<br>
+						* По всем вопросам, звоните пожалуйста по телефону, он указан на сайте
+					</div>
+					<div class="car__dscr-btns">
+						<div class="car__dscr-numArtc">
+							Sign for a test drive </div>
+						<div class="car__dscr-report">
+							Offer your price </div>
+						<a href="https://www.youtube.com/watch?v=4IKNVbbZjgc" target="_blank" class="car__video-review">
+							Auto Video Review </a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="info__contact">
+			<div class="container">
+				<div class="info__contact-wrapper">
+					<div class="info__contact-text text__wrapper">
+						<div class="info__contact-title title">
+							Contact Us </div>
+					</div>
+					<div class="info__contact-items">
+						<div class="info__contact-item">
+							<a href="tel:+37126858674">(371) 26858674</a>
+							<div class="info__logos">
+								<img src="assets/images/whatsapp.png" alt="Whatsapp">
+								<img src="assets/images/telegram.png" alt="Telegram">
+								<img src="assets/images/viber.png" alt="Viber">
+							</div>
+						</div>
+						<div class="info__contact-item">
+							<a href="mailto:info@bpauto.lv">info@bpauto.lv</a>
+						</div>
+						<!-- <div class="info__contact-item">
+								<a href="tel:+37126858674">(371) 26858674</a>
+							</div> -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="btn__top-wrapper">
+			<a href="product-1.html?product=2#top" class="btn__top">
+
+			</a>
+		</div>
+
+		<section class="other__car">
+			<div class="container">
+				<div class="other__car-wrapper">
+					<div class="other__car-content">
+						<div class="other__car-text text__wrapper">
+							<div class="other__car-title title">
+								Other offers </div>
+						</div>
+						<div class="other__car-items">
+							<div class="other__car-item cars__active-item car-item slick-slide slick-cloned">
+								<a href="product.html?product=1">
+									<div class="cars__active-item car-item">
+										<img src="pages/products/images/prod_2/tn_1.jpg" alt="Mazda 6">
+										<div class="cars__active-item-title">
+											BMW 318d </div>
+										<div class="cars__active-item-dscr">
+											2012, 241 300 km, Автомат,
+											2.0 TDI, BP-017 </div>
+										<div class="cars__active-item-price">
+											13 300 EUR
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="other__cars-slider-arrows">
+
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__contact">
+					<a href="tel:+37126858674" class="footer__contact-item">
+						+(371) 26858674
+					</a>
+					<div class="footer__contact-item">
+						Slokas iela 52, Riga, LV-1007 </div>
+				</div>
+				<div class="footer__menu">
+					<a href="home.html" class="header__nav-home footer__nav-home"></a>
+					<div class="footer__nav">
+						<ul class="footer__list">
+							<li>
+								<a href="home.html#cars__active">
+									Car in Stock </a>
+							</li>
+							<li>
+								<a href="home.html#sold__cars">
+									Sold cars </a>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li>
+								<a href="home.html#about__us">
+									Cars per order </a>
+							</li>
+							<li>
+								<a href="home.html#buy__car">
+									Car buying </a>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li>
+								<a href="home.html#about__dscr">
+									About us </a>
+							</li>
+							<li>
+								<a href="home.html#contact">
+									Contact Us </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__right">
+					<a href="home.html" class="footer__logo">
+						<img src="assets/images/logo.svg" alt="BP AUTO">
+					</a>
+					<p>All rights reserved © Bp Auto</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+	<script src="assets/js/header-menu.js"></script>
+	<script src="assets/js/slide.js"></script>
+
+	<script src="pages/assets/js/upload-pictures.js"></script>
+	<script src="pages/assets/js/modal.js"></script>
+	<script src="pages/assets/js/ajax-mail.js"></script>
+	<script src="assets/js/slide-up.js"></script>
+
+	<script type="text/javascript" src="pages/assets/fancybox/lib/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="pages/assets/fancybox/lib/jquery.mousewheel.pack.js?v=3.1.3"></script>
+	<script type="text/javascript" src="pages/assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script type="text/javascript" src="pages/assets/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="pages/assets/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+	<script type="text/javascript" src="pages/assets/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+	<script type="text/javascript" src="pages/assets/js/fancyoptions.js"></script>
+
+</body>
+
+</html>

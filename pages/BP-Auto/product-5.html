@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0041)https://test-project.ru.s57.hhos.net/#top -->
+<html lang="ru">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BP AUTO</title>
+
+	<link rel="shortcut icon" href="assets/images/logo.ico.html" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+	<link href="assets/css/css2.css" rel="stylesheet">
+	<link href="assets/css/css2(1).css" rel="stylesheet">
+	<link href="assets/css/css2(2).css" rel="stylesheet">
+	<link href="assets/css/css2(3).css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="assets/js/slick/js/slick-theme.css.html">
+
+	<link rel="stylesheet" type="text/css" href="pages/assets/css/slick.css.html">
+	<link rel="stylesheet" href="assets/css/fonts.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="pages/assets/css/cart.css">
+	<link rel="stylesheet" href="pages/assets/css/modal.css">
+	<link rel="stylesheet" type="text/css" href="pages/assets/fancybox/source/jquery.fancybox.css?v=2.1.5"
+		media="screen">
+	<link rel="stylesheet" href="pages/assets/fancybox/source/helpers/jquery.fancybox-buttons.css">
+	<link rel="stylesheet" href="pages/assets/fancybox/source/helpers/jquery.fancybox-thumbs.css">
+	<link rel="stylesheet" href="pages/assets/css/custom_fancy.css">
+</head>
+
+<body>
+	<header class="header" id="top" tabindex="-1" style="outline: none;">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="home.html" class="header__logo">
+					<img src="assets/images/logo.svg" alt="BP AUTO">
+				</a>
+				<div class="header__body" id="header-menu">
+					<div class="header__house">
+						<a href="home.html" class="header__nav-home">
+
+						</a>
+					</div>
+					<div class="header__nav">
+						<div class="header__top">
+							<a href="home.html#" class="header__top-text">
+								Klientu apkalpošana </a>
+							<a href="tel:+37126858674" class="header__top-text">
+								+(371) 268 58 674
+							</a>
+						</div>
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="home.html#cars__active" class="menu__link">
+										Auto uz vietas </a>
+								</li>
+								<li class="menu__item">
+									<a href="home.html#cars__waiting" class="menu__link">
+										Drīzumā </a>
+								</li>
+								<li class="menu__item">
+									<a href="home.html#sold__cars" class="menu__link">
+										PĀRDOTIE AUTO </a>
+								</li>
+								<li class="menu__item">
+									<a href="home.html#about__us" class="menu__link">
+										AUTO PASŪTĪŠANA </a>
+								</li>
+								<li class="menu-service menu__item" onclick="">
+									<div class="nav_trigger"></div>
+									<ul>
+										<li><a href="vikup.html">Выкуп</a></li>
+										<li><a href="realise.html">Реализация</a></li>
+									</ul>
+								</li>
+								<!-- <li class="menu__item">
+									<a href="home#buy__car" class="menu__link">
+																			</a>
+								</li> -->
+								<li class="menu__item">
+									<a href="home.html#about__dscr" class="menu__link">
+										PAR MUMS </a>
+								</li>
+								<li class="menu__item">
+									<a href="home.html#contact" class="menu__link">
+										KONTAKTI </a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__right">
+						<div class="header__languages">
+							<a href="product-4.html?lang=ru&product=2">
+								RUS
+							</a>
+							<a href="" #"="" class="active">
+								LV
+							</a>
+							<a href="product-7.html?lang=en&product=2">
+								EN
+							</a>
+						</div>
+						<div class="header__social">
+							<a href="https://test-project.ru.s57.hhos.net/#" class="header__social-facebook"></a>
+							<a href="https://test-project.ru.s57.hhos.net/#" class="header__social-instagram"></a>
+						</div>
+					</div>
+				</div>
+				<div class="header-hamb">
+					<div class="hamb__field" id="header-hamb">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header-popup" id="header-popup"></div>
+	<!-- Модальное окно -->
+	<div class="modal_blocker"></div>
+	<div class="modal">
+		<form action="" class="catalog">
+			<div class="row">
+				<input type="text" name="mail" placeholder="E-mail/talrunis " required="">
+			</div>
+			<div class="row">
+				<input type="text" name="message" type="text" placeholder="Cena, €" required="">
+			</div>
+			<div class="row">
+				<textarea name="message" placeholder="Komentārs"></textarea>
+			</div>
+			<div class="row">
+				<div class="col-xs-3">
+					Capcha </div>
+				<div class="col-xs-9">
+					<img src="pages/assets/php/captcha/captcha.php?color=#023BC7" alt="captcha" class="purpur">
+					<input type="text" name="capthca" class="input">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="row text-center">
+				<span class="result-text"></span>
+				<button type="submit" class="btn btn-primary" name="sale-button">Nosūtīt</button>
+				<div class="clearfix"></div>
+				<div class="catalog_result"></div>
+			</div>
+			<a href="#close-modal" class="close-modal"></a>
+		</form>
+	</div>
+
+	<!-- ЗАПИСАТЬСЯ НА ТЕКСТ-ДРАЙВ -->
+
+	<div class="modal modal-test-drive">
+		<form action="" class="catalog">
+			<div class="row">
+				<input type="text" name="mail" placeholder="E-mail/talrunis " required="">
+			</div>
+			<div class="row">
+				<textarea name="message" placeholder="Komentārs"></textarea>
+			</div>
+			<div class="row">
+				<div class="col-xs-3">
+					Capcha </div>
+				<div class="col-xs-9">
+					<img src="pages/assets/php/captcha/captcha.php?color=#023BC7" alt="captcha" class="purpur">
+					<input type="text" name="capthca" class="input">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="row text-center">
+				<span class="result-text"></span>
+				<button type="submit" class="btn btn-primary" name="sale-button">Nosūtīt</button>
+				<div class="clearfix"></div>
+				<div class="catalog_result"></div>
+			</div>
+			<a href="#close-modal" class="close-modal"></a>
+		</form>
+	</div>
+	<!-- Конец модального окна -->
+
+	<div class="content__main">
+		<section class="car__images">
+			<div class="container">
+				<div class="car__images-wrapper">
+					<div class="car__images-nav">
+						<a href="index.htm">
+							Главная
+						</a>
+						<a href="https://test-project.ru.s57.hhos.net/pages/cart.html#">
+							Машины на месте
+						</a>
+						<!-- <a href="https://test-project.ru.s57.hhos.net/pages/cart.html#">
+								С-Class							</a> -->
+						<a href="https://test-project.ru.s57.hhos.net/pages/cart.html#">
+							MB C-klass 200 cdi AMG </a>
+					</div>
+				</div>
+				<div class="car__images-content">
+					<div class="car__images-main car__images-item" href="pages/products/images/prod_1/1%20%2816%29.jpg"
+						data-fancybox-group="thumb">
+						<img src="pages/products/images/prod_1/1%20%2816%29.jpg" alt="" class="car__images-main-url">
+					</div>
+					<div class="car__images-items">
+
+
+						<a href="pages/products/images/prod_1/2%20%286%29.jpg" class="car__images-item"
+							data-fancybox-group="thumb">
+							<img src="pages/products/images/prod_1/2%20%286%29.jpg" alt="">
+						</a>
+
+						<a href="pages/products/images/prod_1/3%20%286%29.jpg" class="car__images-item"
+							data-fancybox-group="thumb">
+							<img src="pages/products/images/prod_1/3%20%286%29.jpg" alt="">
+						</a>
+
+						<a href="pages/products/images/prod_1/4.jpg" class="car__images-item"
+							data-fancybox-group="thumb">
+							<img src="pages/products/images/prod_1/4.jpg" alt="">
+						</a>
+
+
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/prod_1/5 (1) (3).jpg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/prod_1/5 (2) (3).jpg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/prod_1/6 (3).jpg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/prod_1/7 (1).jpg"></span>
+						<span class="more_photo-1" style="display: none;"
+							upload-picture="pages/products/images/prod_1/7 (2) (2).jpg"></span>
+						<div class="car__images-item all">
+							<span>Apskatīt visus</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="car__dscr">
+			<div class="container">
+				<div class="car__dscr-wrapper">
+					<div class="car__dscr-top">
+						<div class="car-info">
+							<div class="auto">
+								<div class="auto-info">
+									<p>Auto</p>
+									<p>MB C-klass 200 cdi AMG</p>
+								</div>
+							</div>
+							<div class="block">
+								<div class="auto-desc">
+									<div class="year">
+										<div class="year-info">
+											<p>Gads</p>
+											<p>2010</p>
+										</div>
+									</div>
+									<div class="mileage">
+										<div class="mileage-info">
+											<p>Nobraukums</p>
+											<p>293 516 km</p>
+										</div>
+									</div>
+									<div class="transmission">
+										<div class="transmission-info">
+											<p>Transmisija</p>
+											<p>Automāts</p>
+										</div>
+									</div>
+									<div class="engine">
+										<div class="engine-info">
+											<p>Motors</p>
+											<p>2.2 CDI</p>
+										</div>
+									</div>
+									<div class="articel">
+										<div class="article-info">
+											<p>Article</p>
+											<p>BP-015</p>
+										</div>
+									</div>
+
+									<!-- <div class="from">
+											<div class="from-info">
+												<p>No</p>
+												<p>Бельгия</p>
+											</div>
+										</div> -->
+
+
+									<div class="price">
+										<div class="price-info">
+											<p>Cena</p>
+											<p>7 500 €</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="car__dscr-text">
+						Мercedes-Benz C200 cdi. Amg пакет, автомат. Машина в хорошем состоянии. Оригинальный пробег.
+						<br><br>
+						Комплектация: ксеноновые фары, климат-контроль с опцией кондиционера, датчик дождя,
+						круиз-контроль, мультируль, борт компьютер, кожаный/текстиль салон с подогревом сидений, черный
+						потолок, навигация по всей Европе, hands free (bluetooth) также можно подключить телефон и
+						слушать музыку, есть USB/SD Card. Оригинальные диски AMG на 17, тонированные задние стекла,
+						сигнализация со звуком, 2 оригинальных ключа, складные задние сиденья, запасное колесо и др.
+						опции. <br><br>
+						Средний расход по городу 7.2, трасса 4.8 литра. Выхлоп 0.18 m1. Чистая труба, без черного
+						дыма.<br><br>
+						Двигатель работает ровно, коробка не бьет. Машина по низу вся сухая, без ржавчины.<br><br>
+						* Записаться на тест-драйв, желающим купить авто можно ниже<br>
+						* Если интересует быстрый выкуп автомобиля, ваше ценовое предложение, можете отправить через
+						форму <br>
+						* На месте можем поднять автомобиль на подъемнике. Видео осмотр ниже по кнопке<br>
+						* По всем вопросам, звоните пожалуйста по телефону, он указан на сайте </div>
+					<div class="car__dscr-btns">
+						<div class="car__dscr-numArtc">
+							Pieteikties testa braucienam </div>
+						<div class="car__dscr-report">
+							Piedāvājiet savu cenu </div>
+						<a href="https://www.youtube.com/watch?v=4IKNVbbZjgc" target="_blank" class="car__video-review">
+							Auto Video Apskate </a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="info__contact">
+			<div class="container">
+				<div class="info__contact-wrapper">
+					<div class="info__contact-text text__wrapper">
+						<div class="info__contact-title title">
+							Sazinieties ar mums </div>
+					</div>
+					<div class="info__contact-items">
+						<div class="info__contact-item">
+							<a href="tel:+37126858674">(371) 26858674</a>
+							<div class="info__logos">
+								<img src="assets/images/whatsapp.png" alt="Whatsapp">
+								<img src="assets/images/telegram.png" alt="Telegram">
+								<img src="assets/images/viber.png" alt="Viber">
+							</div>
+						</div>
+						<div class="info__contact-item">
+							<a href="mailto:info@bpauto.lv">info@bpauto.lv</a>
+						</div>
+						<!-- <div class="info__contact-item">
+								<a href="tel:+37126858674">(371) 26858674</a>
+							</div> -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="btn__top-wrapper">
+			<a href="product-5.html?lang=lv&product=2#top" class="btn__top">
+
+			</a>
+		</div>
+
+		<section class="other__car">
+			<div class="container">
+				<div class="other__car-wrapper">
+					<div class="other__car-content">
+						<div class="other__car-text text__wrapper">
+							<div class="other__car-title title">
+								Citi piedāvājumi </div>
+						</div>
+						<div class="other__car-items">
+							<div class="other__car-item cars__active-item car-item slick-slide slick-cloned">
+								<a href="product.html?product=1">
+									<div class="cars__active-item car-item">
+										<img src="pages/products/images/prod_2/tn_1.jpg" alt="Mazda 6">
+										<div class="cars__active-item-title">
+											Seat Leon FR </div>
+										<div class="cars__active-item-dscr">
+											2013, 148 602 km, Automāts,
+											2.0 TDI, BP-016 </div>
+										<div class="cars__active-item-price">
+											9 900 EUR
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="other__cars-slider-arrows">
+
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__contact">
+					<a href="tel:+37126858674" class="footer__contact-item">
+						+(371) 26858674
+					</a>
+					<div class="footer__contact-item">
+						Slokas iela 52, Rīga, LV-1007 </div>
+				</div>
+				<div class="footer__menu">
+					<a href="home.html" class="header__nav-home footer__nav-home"></a>
+					<div class="footer__nav">
+						<ul class="footer__list">
+							<li>
+								<a href="home.html#cars__active">
+									Auto uz vietas </a>
+							</li>
+							<li>
+								<a href="home.html#sold__cars">
+									PĀRDOTIE AUTO </a>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li>
+								<a href="home.html#about__us">
+									AUTO PASŪTĪŠANA </a>
+							</li>
+							<li>
+								<a href="home.html#buy__car">
+									AUTO IZPIRKŠANA </a>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li>
+								<a href="home.html#about__dscr">
+									PAR MUMS </a>
+							</li>
+							<li>
+								<a href="home.html#contact">
+									KONTAKTI </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__right">
+					<a href="home.html" class="footer__logo">
+						<img src="assets/images/logo.svg" alt="BP AUTO">
+					</a>
+					<p>Visas tiesības aizsargātas © Bp Auto</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+	<script src="assets/js/header-menu.js"></script>
+	<script src="assets/js/slide.js"></script>
+
+	<script src="pages/assets/js/upload-pictures.js"></script>
+	<script src="pages/assets/js/modal.js"></script>
+	<script src="pages/assets/js/ajax-mail.js"></script>
+	<script src="assets/js/slide-up.js"></script>
+
+	<script type="text/javascript" src="pages/assets/fancybox/lib/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="pages/assets/fancybox/lib/jquery.mousewheel.pack.js?v=3.1.3"></script>
+	<script type="text/javascript" src="pages/assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script type="text/javascript" src="pages/assets/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="pages/assets/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+	<script type="text/javascript" src="pages/assets/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+	<script type="text/javascript" src="pages/assets/js/fancyoptions.js"></script>
+
+</body>
+
+</html>
