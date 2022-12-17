@@ -72,10 +72,12 @@
 										Cars per order </a>
 								</li>
 								<li class="menu-service menu__item" onclick="">
-									<div class="nav_trigger"></div>
+									<div class="nav_trigger">
+										Auto Buying
+									</div>
 									<ul>
-										<li><a href="vikup.html">Выкуп</a></li>
-										<li><a href="realise.html">Реализация</a></li>
+										<li><a href="vikup.html">Redemption</a></li>
+										<li><a href="realise.html">Implementation</a></li>
 									</ul>
 								</li>
 								<!-- <li class="menu__item">
@@ -121,7 +123,7 @@
 			</div>
 		</div>
 	</header>
-	
+
 	<div class="header-popup" id="header-popup"></div>
 
 	<!-- Модальное окно -->
@@ -425,40 +427,40 @@
 					<a href="tel:+37126858674" class="footer__contact-item">
 						+(371) 26858674
 					</a>
-					<div class="footer__contact-item">
-						Slokas iela 52, Riga, LV-1007 </div>
+					<div class="footer__contact-item" id="lng-footer-location">
+						Слокас 52 (LV–1007) Рига </div>
 				</div>
 				<div class="footer__menu">
 					<a href="home.html" class="header__nav-home footer__nav-home"></a>
 					<div class="footer__nav">
 						<ul class="footer__list">
 							<li>
-								<a href="home.html#cars__active">
-									Car in Stock </a>
+								<a href="home.html#cars__active" id="lng-footer-link-1">
+									Машины на месте </a>
 							</li>
 							<li>
-								<a href="home.html#sold__cars">
-									Sold cars </a>
-							</li>
-						</ul>
-						<ul class="footer__list">
-							<li>
-								<a href="home.html#about__us">
-									Cars per order </a>
-							</li>
-							<li>
-								<a href="home.html#buy__car">
-									Car buying </a>
+								<a href="home.html#sold__cars" id="lng-footer-link-2">
+									Проданные Авто </a>
 							</li>
 						</ul>
 						<ul class="footer__list">
 							<li>
-								<a href="home.html#about__dscr">
-									About us </a>
+								<a href="home.html#about__us" id="lng-footer-link-3">
+									Авто под заказ </a>
 							</li>
 							<li>
-								<a href="home.html#contact">
-									Contact Us </a>
+								<a href="home.html#buy__car" id="lng-footer-link-4">
+									Выкуп Авто </a>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li>
+								<a href="home.html#about__dscr" id="lng-footer-link-5">
+									О нас </a>
+							</li>
+							<li>
+								<a href="home.html#contact" id="lng-footer-link-6">
+									Контакты </a>
 							</li>
 						</ul>
 					</div>
@@ -467,7 +469,7 @@
 					<a href="home.html" class="footer__logo">
 						<img src="assets/images/logo.svg" alt="BP AUTO">
 					</a>
-					<p>All rights reserved © Bp Auto</p>
+					<p id="lng-footer-rights">Все права защищены © Bp Auto</p>
 				</div>
 			</div>
 		</div>
@@ -475,6 +477,7 @@
 	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+	<script src="assets/js/changeLang.js"></script>
 	<script src="assets/js/header-menu.js"></script>
 	<script src="assets/js/slide.js"></script>
 

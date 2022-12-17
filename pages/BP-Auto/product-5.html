@@ -41,14 +41,13 @@
 				</a>
 				<div class="header__body" id="header-menu">
 					<div class="header__house">
-						<a href="home.html" class="header__nav-home">
-
-						</a>
+						<a href="home.html" class="header__nav-home"></a>
 					</div>
 					<div class="header__nav">
 						<div class="header__top">
-							<a href="home.html#" class="header__top-text">
-								Klientu apkalpošana </a>
+							<a href="home.html" class="header__top-text" id="lng-header-service">
+								Обслуживание клиентов
+							</a>
 							<a href="tel:+37126858674" class="header__top-text">
 								+(371) 268 58 674
 							</a>
@@ -56,52 +55,63 @@
 						<nav class="menu">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a href="home.html#cars__active" class="menu__link">
-										Auto uz vietas </a>
+									<a href="home.html#cars__active" class="menu__link" id="lng-header-carStock">
+										Машины на месте
+									</a>
 								</li>
 								<li class="menu__item">
-									<a href="home.html#cars__waiting" class="menu__link">
-										Drīzumā </a>
+									<a href="home.html#cars__waiting" class="menu__link" id="lng-header-carSoon">
+										Ожидание
+									</a>
 								</li>
 								<li class="menu__item">
-									<a href="home.html#sold__cars" class="menu__link">
-										PĀRDOTIE AUTO </a>
+									<a href="home.html#sold__cars" class="menu__link" id="lng-header-carSold">
+										Проданные Авто
+									</a>
 								</li>
 								<li class="menu__item">
-									<a href="home.html#about__us" class="menu__link">
-										AUTO PASŪTĪŠANA </a>
+									<a href="home.html#about__us" class="menu__link" id="lng-header-carOrder">
+										Авто под заказ
+									</a>
 								</li>
 								<li class="menu-service menu__item" onclick="">
-									<div class="nav_trigger"></div>
+									<div class="nav_trigger" id="lng-header-carBuy">Покупка авто</div>
 									<ul>
-										<li><a href="vikup.html">Выкуп</a></li>
-										<li><a href="realise.html">Реализация</a></li>
+										<li>
+											<a href="vikup.html" id="lng-header-carRedemption">Выкуп</a>
+										</li>
+										<li>
+											<a href="realise.html" id="lng-header-carImplementation">Реализация</a>
+										</li>
 									</ul>
 								</li>
 								<!-- <li class="menu__item">
 									<a href="home#buy__car" class="menu__link">
-																			</a>
+										Покупка авто
+									</a>
 								</li> -->
 								<li class="menu__item">
-									<a href="home.html#about__dscr" class="menu__link">
-										PAR MUMS </a>
+									<a href="home.html#about__dscr" class="menu__link" id="lng-header-about">
+										О нас
+									</a>
 								</li>
 								<li class="menu__item">
-									<a href="home.html#contact" class="menu__link">
-										KONTAKTI </a>
+									<a href="home.html#contact" class="menu__link" id="lng-header-contacts">
+										Контакты
+									</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
 					<div class="header__right">
 						<div class="header__languages">
-							<a href="product-4.html?lang=ru&product=2">
+							<a href="#" class="header__languages-link active" data-pageLang="rus">
 								RUS
 							</a>
-							<a href="" #"="" class="active">
+							<a href="#" class="header__languages-link" data-pageLang="lv">
 								LV
 							</a>
-							<a href="product-7.html?lang=en&product=2">
+							<a href="#" class="header__languages-link" data-pageLang="en">
 								EN
 							</a>
 						</div>
@@ -408,40 +418,40 @@
 					<a href="tel:+37126858674" class="footer__contact-item">
 						+(371) 26858674
 					</a>
-					<div class="footer__contact-item">
-						Slokas iela 52, Rīga, LV-1007 </div>
+					<div class="footer__contact-item" id="lng-footer-location">
+						Слокас 52 (LV–1007) Рига </div>
 				</div>
 				<div class="footer__menu">
 					<a href="home.html" class="header__nav-home footer__nav-home"></a>
 					<div class="footer__nav">
 						<ul class="footer__list">
 							<li>
-								<a href="home.html#cars__active">
-									Auto uz vietas </a>
+								<a href="home.html#cars__active" id="lng-footer-link-1">
+									Машины на месте </a>
 							</li>
 							<li>
-								<a href="home.html#sold__cars">
-									PĀRDOTIE AUTO </a>
-							</li>
-						</ul>
-						<ul class="footer__list">
-							<li>
-								<a href="home.html#about__us">
-									AUTO PASŪTĪŠANA </a>
-							</li>
-							<li>
-								<a href="home.html#buy__car">
-									AUTO IZPIRKŠANA </a>
+								<a href="home.html#sold__cars" id="lng-footer-link-2">
+									Проданные Авто </a>
 							</li>
 						</ul>
 						<ul class="footer__list">
 							<li>
-								<a href="home.html#about__dscr">
-									PAR MUMS </a>
+								<a href="home.html#about__us" id="lng-footer-link-3">
+									Авто под заказ </a>
 							</li>
 							<li>
-								<a href="home.html#contact">
-									KONTAKTI </a>
+								<a href="home.html#buy__car" id="lng-footer-link-4">
+									Выкуп Авто </a>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li>
+								<a href="home.html#about__dscr" id="lng-footer-link-5">
+									О нас </a>
+							</li>
+							<li>
+								<a href="home.html#contact" id="lng-footer-link-6">
+									Контакты </a>
 							</li>
 						</ul>
 					</div>
@@ -450,7 +460,7 @@
 					<a href="home.html" class="footer__logo">
 						<img src="assets/images/logo.svg" alt="BP AUTO">
 					</a>
-					<p>Visas tiesības aizsargātas © Bp Auto</p>
+					<p id="lng-footer-rights">Все права защищены © Bp Auto</p>
 				</div>
 			</div>
 		</div>
@@ -458,6 +468,7 @@
 	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+	<script src="assets/js/changeLang.js"></script>
 	<script src="assets/js/header-menu.js"></script>
 	<script src="assets/js/slide.js"></script>
 
