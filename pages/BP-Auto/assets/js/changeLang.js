@@ -1,59 +1,81 @@
-const headerSelect = document.querySelector('.header__languages');
+let headerSelect = document.querySelectorAll('.header__languages');
 const allLang = ['en', 'rus', 'lv'];
 const defLang = allLang[0]
 
-const getLangFromLocalStorage = localeStr => {
+document.querySelector("#header-hamb").addEventListener('click', e => {
+    hambHandler(e)
+    headerSelect = document.querySelectorAll('.header__languages');
+    addListenerForSelect(headerSelect)
+    getLangFromSessionStorage()
+})
+
+const getLangFromSessionStorage = localeStr => {
     if (localeStr) {
-        localStorage.setItem("locale", localeStr)
+        sessionStorage.setItem("locale", localeStr)
     }
-    if (typeof localStorage.getItem("locale") != 'string') {
+    if (typeof sessionStorage.getItem("locale") != 'string') {
         activeItemsCount = 0
-        Array.from(headerSelect.children).forEach(child => {
-            if (child.classList.contains('active')) {
-                localStorage.setItem("locale", (child.textContent).trim())
-                activeItemsCount = activeItemsCount + 1
-            }
+        headerSelect.forEach(select => {
+            Array.from(select.children).forEach(child => {
+                if (child.classList.contains('active')) {
+                    sessionStorage.setItem("locale", (child.textContent).trim())
+                    activeItemsCount = activeItemsCount + 1
+                }
+            })
         })
         if (!activeItemsCount) {
-            localStorage.setItem("locale", defLang);
+            sessionStorage.setItem("locale", defLang);
             document.querySelector(`[data-pagelang=${defLang}]`).classList.add('active')
         }
     } else {
-        const locale = localStorage.getItem("locale");
-        Array.from(headerSelect.children).forEach(child => {
-            child.classList.remove('active')
+        const locale = sessionStorage.getItem("locale");
+        headerSelect.forEach(select => {
+            Array.from(select.children).forEach(child => {
+                child.classList.remove('active')
+            })
         })
-        document.querySelector(`[data-pagelang=${locale.toLowerCase()}]`)?.classList.add('active')
+        document.querySelectorAll(`[data-pagelang=${locale.toLowerCase()}]`).forEach(elem => elem?.classList.add('active'))
     }
-    const locale = localStorage.getItem("locale")
+    const locale = sessionStorage.getItem("locale")
     return locale
 }
 
 window.onload = () => {
-    getLangFromLocalStorage()
+    getLangFromSessionStorage()
     changeLanguage()
+    addListenerForSelect(headerSelect)
 };
 
-headerSelect.addEventListener('click', e => {
+const changeActiveHeaderLang = e => {
     if (e.target.classList.contains('header__languages-link')) {
-        Array.from(headerSelect.children).forEach(child => {
-            child.classList.remove('active')
+        headerSelect.forEach(select => {
+            Array.from(select.children).forEach(child => {
+                child.classList.remove('active')
+            })
         })
         e.target.classList.add('active')
-        getLangFromLocalStorage(e.target.dataset.pagelang)
+        getLangFromSessionStorage(e.target.dataset.pagelang)
         changeLanguage()
     }
-});
+}
+
+function addListenerForSelect(elem) {
+    elem.forEach(select => {
+        select.addEventListener('click', e => {
+            changeActiveHeaderLang(e)
+        });
+    })
+}
 
 function changeLanguage() {
-    let locale = localStorage.getItem("locale").toLowerCase();
+    let locale = sessionStorage.getItem("locale").toLowerCase();
 
     const promise = () => {
         return new Promise((resolve, reject) => {
 
             const xhr = new XMLHttpRequest();
 
-            xhr.open('GET', './assets/js/language.json');
+            xhr.open('GET', './language.json');
 
             xhr.responseType = 'json';
 
@@ -76,10 +98,12 @@ function changeLanguage() {
 
             for (const sectionKey in res) {
                 for (const elemKey in res[sectionKey]) {
-                    const elem = document.querySelector(`#lng-${sectionKey}-${elemKey}`)
-                    if (elem) {
-                        elem.innerHTML = res[sectionKey][elemKey][localStorage.getItem("locale")]
-                    }
+                    const elements = document.querySelectorAll(`#lng-${sectionKey}-${elemKey}`);
+                    elements.forEach(elem => {
+                        if (elem) {
+                            elem.innerHTML = res[sectionKey][elemKey][sessionStorage.getItem("locale").toLowerCase()]
+                        }
+                    })
                 }
             }
 

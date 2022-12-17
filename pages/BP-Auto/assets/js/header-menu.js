@@ -3,7 +3,7 @@ const popup = document.querySelector("#header-popup");
 const menu = document.querySelector("#header-menu").cloneNode(1);
 const body = document.body;
 
-hamb.addEventListener("click", hambHandler);
+// hamb.addEventListener("click", hambHandler);
 
 function hambHandler(e) {
     e.preventDefault();
