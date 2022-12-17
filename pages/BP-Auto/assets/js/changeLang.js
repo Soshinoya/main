@@ -53,7 +53,7 @@ function changeLanguage() {
 
             const xhr = new XMLHttpRequest();
 
-            xhr.open('GET', './assets/js/language.json');
+            xhr.open('GET', './language.json');
 
             xhr.responseType = 'json';
 
