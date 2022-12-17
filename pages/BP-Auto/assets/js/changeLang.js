@@ -4,28 +4,28 @@ const defLang = allLang[0]
 
 const getLangFromLocalStorage = localeStr => {
     if (localeStr) {
-        localStorage.setItem("locale", localeStr)
+        sessionStorage.setItem("locale", localeStr)
     }
-    if (typeof localStorage.getItem("locale") != 'string') {
+    if (typeof sessionStorage.getItem("locale") != 'string') {
         activeItemsCount = 0
         Array.from(headerSelect.children).forEach(child => {
             if (child.classList.contains('active')) {
-                localStorage.setItem("locale", (child.textContent).trim())
+                sessionStorage.setItem("locale", (child.textContent).trim())
                 activeItemsCount = activeItemsCount + 1
             }
         })
         if (!activeItemsCount) {
-            localStorage.setItem("locale", defLang);
+            sessionStorage.setItem("locale", defLang);
             document.querySelector(`[data-pagelang=${defLang}]`).classList.add('active')
         }
     } else {
-        const locale = localStorage.getItem("locale");
+        const locale = sessionStorage.getItem("locale");
         Array.from(headerSelect.children).forEach(child => {
             child.classList.remove('active')
         })
         document.querySelector(`[data-pagelang=${locale.toLowerCase()}]`)?.classList.add('active')
     }
-    const locale = localStorage.getItem("locale")
+    const locale = sessionStorage.getItem("locale")
     return locale
 }
 
@@ -46,7 +46,7 @@ headerSelect.addEventListener('click', e => {
 });
 
 function changeLanguage() {
-    let locale = localStorage.getItem("locale").toLowerCase();
+    let locale = sessionStorage.getItem("locale").toLowerCase();
 
     const promise = () => {
         return new Promise((resolve, reject) => {
@@ -78,7 +78,7 @@ function changeLanguage() {
                 for (const elemKey in res[sectionKey]) {
                     const elem = document.querySelector(`#lng-${sectionKey}-${elemKey}`)
                     if (elem) {
-                        elem.innerHTML = res[sectionKey][elemKey][localStorage.getItem("locale")]
+                        elem.innerHTML = res[sectionKey][elemKey][sessionStorage.getItem("locale")]
                     }
                 }
             }
