@@ -6,6 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta name="viewport" content="width=1000"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BP AUTO</title>
 	<meta name="description"
@@ -131,12 +132,13 @@
 		<div class="container">
 			<div class="сars__active-wrapper">
 				<div class="cars__active-text text__wrapper">
-					<div class="cars__active-title title">
+					<div class="cars__active-title title" id="lng-carsActive-carsTitle">
 						Машины на месте </div>
-					<div class="cars__active-dscr dscr">
+					<div class="cars__active-dscr dscr" id="lng-carsActive-carsDesc">
 						Все машины перед покупкой проверены нашими специалистами. На месте, машину можно поднять на
 						подъёмнике<br>
-						у нас в сервисе. </div>
+						у нас в сервисе.
+					</div>
 				</div>
 				<div class="cars__active-items">
 
@@ -147,7 +149,7 @@
 							</div>
 							<div class="cars__active-item-title">
 								Seat Leon FR </div>
-							<div class="cars__active-item-dscr">
+							<div class="cars__active-item-dscr" id="lng-carsActive-carItem-1">
 								2013, 148 602 км, Автомат,
 								2.0 TDI, BP-016 </div>
 							<div class="cars__active-item-price">
@@ -162,7 +164,7 @@
 							</div>
 							<div class="cars__active-item-title">
 								MB C-klass 200 cdi AMG </div>
-							<div class="cars__active-item-dscr">
+							<div class="cars__active-item-dscr" id="lng-carsActive-carItem-2">
 								2010, 293 516 км, Автомат,
 								2.2 CDI, BP-015 </div>
 							<div class="cars__active-item-price">
@@ -172,8 +174,9 @@
 					</a>
 
 				</div>
-				<div class="cars__active-btn" style="visibility: hidden;">
-					Посмотреть еще </div>
+				<div class="cars__active-btn" style="visibility: hidden;" id="lng-carsActive-carsBtnMore">
+					Посмотреть еще
+				</div>
 
 			</div>
 		</div>
@@ -189,30 +192,29 @@
 		<div class="container">
 			<div class="waiting__cars-wrapper sold__cars-wrapper">
 				<div class="sold__cars-text text__wrapper">
-					<div class="sold__cars-title title">
+					<div class="sold__cars-title title" id="lng-carsWaiting-carsTitle">
 						Ожидаем </div>
-					<div class="sold__cars-dscr dscr">
+					<div class="sold__cars-dscr dscr" id="lng-carsWaiting-carsDesc">
 						Машины, которые мы ожидаем получить в ближайшее время. Все машины перед покупкой и погрузкой на
 						автовоз проверены нашим специалистом. Резервацию на авто, можно сделать по телефону. </div>
 				</div>
-				<div class="cars__active-items"><a href="product_1?product=1">
+				<div class="cars__active-items">
+					<a href="./bmw.html">
 						<div class="cars__active-item car-item">
 							<div class="car-item__img">
 								<img src="pages/products/images/1.jpeg" alt="Mazda 6">
 							</div>
 							<div class="cars__active-item-title">
 								BMW 318d</div>
-							<div class="cars__active-item-dscr">
+							<div class="cars__active-item-dscr" id="lng-carsWaiting-carItem-1">
 								2012, 241 300 km, Автомат,
 								2.0 TDI, BP-017 </div>
 							<div class="cars__active-item-price">
 								13 300 EUR
 							</div>
 						</div>
-					</a></div>
-
-
-
+					</a>
+				</div>
 			</div>
 		</div>
 
@@ -222,9 +224,9 @@
 		<div class="container">
 			<div class="sold__cars-wrapper">
 				<div class="sold__cars-text text__wrapper">
-					<div class="sold__cars-title title">
+					<div class="sold__cars-title title" id="lng-carsSold-carsTitle">
 						Проданные Авто </div>
-					<div class="sold__cars-dscr dscr">
+					<div class="sold__cars-dscr dscr" id="lng-carsSold-carsDesc">
 						Все машины, которые уже проданы. Если какие-то модели из них были интересны вам, закажите их у
 						нас. Контактная информация есть на сайте. </div>
 				</div>
@@ -240,7 +242,8 @@
 										<div class="cars__active-item-title">
 											VW Jetta 1.4 TSI/Hybrid </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2013, Автомат,1.4 TSI/Hybrid,BP-014<br>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-1">2013,
+												Автомат,1.4 TSI/Hybrid,BP-014<br>
 											</div>
 											<div class="cars__active-item-price"></div>
 										</div>
@@ -255,7 +258,8 @@
 										<div class="cars__active-item-title">
 											VW Passat CC 2.0 TDI </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2009, Автомат,2.0 TDI,BP-013<br></div>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-2">2009,
+												Автомат,2.0 TDI,BP-013<br></div>
 											<div class="cars__active-item-price"></div>
 										</div>
 									</div>
@@ -269,7 +273,8 @@
 										<div class="cars__active-item-title">
 											MB E250 (W212) </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2011, Автомат,1.8 t,BP-012<br></div>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-3">2011,
+												Автомат,1.8 t,BP-012<br></div>
 											<div class="cars__active-item-price"></div>
 										</div>
 									</div>
@@ -283,7 +288,8 @@
 										<div class="cars__active-item-title">
 											VW Golf 1.6 TDI </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2011, Автомат,1.6 TDI,BP-011<br></div>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-4">2011,
+												Автомат,1.6 TDI,BP-011<br></div>
 											<div class="cars__active-item-price"></div>
 										</div>
 									</div>
@@ -297,7 +303,8 @@
 										<div class="cars__active-item-title">
 											BMW X5 (E70) 3.0 TDI </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2008, Автомат,3.0 TDI,BP-010<br></div>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-5">2008,
+												Автомат,3.0 TDI,BP-010<br></div>
 											<div class="cars__active-item-price"></div>
 										</div>
 									</div>
@@ -311,7 +318,8 @@
 										<div class="cars__active-item-title">
 											Lexus RX 400h </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2006, Автомат,3.3/Hybrid,BP-009<br>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-6">2006,
+												Автомат,3.3/Hybrid,BP-009<br>
 											</div>
 											<div class="cars__active-item-price"></div>
 										</div>
@@ -326,7 +334,8 @@
 										<div class="cars__active-item-title">
 											BMW X5 (E70) 3.0 TDI </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2008, Автомат,3.0 TDI,BP-008<br></div>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-7">2008,
+												Автомат,3.0 TDI,BP-008<br></div>
 											<div class="cars__active-item-price"></div>
 										</div>
 									</div>
@@ -340,7 +349,8 @@
 										<div class="cars__active-item-title">
 											BMW 320D (F30) </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2014, Автомат,2.0 TDI,BP-007<br></div>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-8">2014,
+												Автомат,2.0 TDI,BP-007<br></div>
 											<div class="cars__active-item-price"></div>
 										</div>
 									</div>
@@ -354,7 +364,8 @@
 										<div class="cars__active-item-title">
 											BMW 320D (E90) </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2008, Автомат,2.0 TDI,BP-006<br></div>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-9">2008,
+												Автомат,2.0 TDI,BP-006<br></div>
 											<div class="cars__active-item-price"></div>
 										</div>
 									</div>
@@ -368,7 +379,8 @@
 										<div class="cars__active-item-title">
 											Opel Insignia 2.0 TDI </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2009, Автомат,2.0 TDI,BP-005<br></div>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-10">2009,
+												Автомат,2.0 TDI,BP-005<br></div>
 											<div class="cars__active-item-price"></div>
 										</div>
 									</div>
@@ -382,7 +394,8 @@
 										<div class="cars__active-item-title">
 											BMW 730D </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2007, Автомат,3.0 TDI,BP-004<br></div>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-11">2007,
+												Автомат,3.0 TDI,BP-004<br></div>
 											<div class="cars__active-item-price"></div>
 										</div>
 									</div>
@@ -396,7 +409,8 @@
 										<div class="cars__active-item-title">
 											BMW 320D (F30) </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2012, Автомат,2.0 TDI,BP-003<br></div>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-12">2012,
+												Автомат,2.0 TDI,BP-003<br></div>
 											<div class="cars__active-item-price"></div>
 										</div>
 									</div>
@@ -410,7 +424,8 @@
 										<div class="cars__active-item-title">
 											BMW 530D (E60) </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2008, Автомат,3.0 TDI,BP-002<br></div>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-13">2008,
+												Автомат,3.0 TDI,BP-002<br></div>
 											<div class="cars__active-item-price"></div>
 										</div>
 									</div>
@@ -425,7 +440,8 @@
 										<div class="cars__active-item-title">
 											MB C-klass 220 cdi (W204) </div>
 										<div class="cars__active-item-dscr">
-											<div class="cars__active-item-dscr">2011, Автомат,2.2 TDI,BP-001<br></div>
+											<div class="cars__active-item-dscr" id="lng-carsSold-carItem-14">2011,
+												Автомат,2.2 TDI,BP-001<br></div>
 											<div class="cars__active-item-price"></div>
 										</div>
 									</div>
@@ -439,7 +455,7 @@
 						<div class="sold__cars-slider-arrows">
 						</div>
 					</div>
-					<button class="sold__start-btn">В начало</button>
+					<button class="sold__start-btn" id="lng-carsSold-carsBtn">В начало</button>
 				</div>
 				<!-- <div class="slider">
 					<div class="slider-js">
@@ -473,16 +489,16 @@
 		<div class="container">
 			<div class="about__us-wrapper">
 				<div class="about__us-text text__wrapper">
-					<div class="about__us-title title">
+					<div class="about__us-title title" id="lng-carsOrder-carsTitle">
 						Авто под заказ </div>
-					<div class="sold__cars-dscr dscr">
+					<div class="sold__cars-dscr dscr" id="lng-carsOrder-carsDesc">
 						Не можешь найти нужный авто в Латвии, закажи его у нас из Европы. </div>
 				</div>
-				<div class="about__us-dscr">
+				<div class="about__us-dscr" id="lng-carsOrder-carsDesc-1">
 					Мы единственная компания на рынке, которая делает физический осмотр автомобилей перед покупкой в
 					Литве, Латвии, Эстонии. Также по своей отработанной методике проверяем и покупаем автомобили в
 					Германии и др. странах ЕС. </div>
-				<div class="about__us-dscr">
+				<div class="about__us-dscr" id="lng-carsOrder-carsDesc-2">
 					Выбрать автомобиль вы можете сами на сайтах, которые указаны ниже, на <span> эл. почту или whats app
 					</span> выслать ссылку на него, после наш менеджер с вами свяжется и предложит всевозможные варианты
 					по стране, где находится автомобиль. </div>
@@ -494,13 +510,15 @@
 		<div class="container">
 			<div class="find__car__wrapper">
 				<div class="find__car-text text__wrapper">
-					<div class="find__car-title title">
-						Где искать авто </div>
+					<div class="find__car-title title" id="lng-carsFind-carsTitle">
+						Где искать авто
+					</div>
 				</div>
 				<div class="find__car-items">
 					<div class="find__car-item">
-						<div class="find__car-item-title">
-							В Латвии </div>
+						<div class="find__car-item-title" id="lng-carsFind-carsGeo-1">
+							В Латвии
+						</div>
 						<div class="find__car-item-body">
 							<a target="_blank" href="https://www.ss.lv/">
 								<img src="assets/images/sslv_logo.svg" alt="">
@@ -508,8 +526,9 @@
 						</div>
 					</div>
 					<div class="find__car-item">
-						<div class="find__car-item-title">
-							В Эстонии </div>
+						<div class="find__car-item-title" id="lng-carsFind-carsGeo-2">
+							В Эстонии
+						</div>
 						<div class="find__car-item-body">
 							<a target="_blank" href="https://rus.auto24.ee/main/mainindex.php">
 								<img src="assets/images/auto24.ee_logo.svg" alt="">
@@ -517,8 +536,9 @@
 						</div>
 					</div>
 					<div class="find__car-item">
-						<div class="find__car-item-title">
-							В Литве </div>
+						<div class="find__car-item-title" id="lng-carsFind-carsGeo-3">
+							В Литве
+						</div>
 						<div class="find__car-item-body">
 							<a target="_blank" href="https://ru.autoplius.lt/">
 								<img src="assets/images/autoplius-logo1.svg" alt="">
@@ -526,8 +546,9 @@
 						</div>
 					</div>
 					<div class="find__car-item">
-						<div class="find__car-item-title">
-							в Европе </div>
+						<div class="find__car-item-title" id="lng-carsFind-carsGeo-4">
+							в Европе
+						</div>
 						<div class="find__car-item-body-wrapper">
 							<div class="find__car-item-body">
 								<a target="_blank" href="https://www.mobile.de/">
@@ -571,31 +592,34 @@
 		<div class="container">
 			<div class="about__dscr-wrapper">
 				<div class="about__dscr-text text__wrapper">
-					<div class="about__dscr-title title">
+					<div class="about__dscr-title title" id="lng-about-aboutTitle">
 						О нас </div>
 				</div>
-				<div class="about__dscr-content">
+				<div class="about__dscr-content" id="lng-about-aboutDesc">
 					BP Auto - компания, которая занимается продажей авто, ремонтом, проверкой перед покупкой и
 					доставкой. На рынке работаем с 2014 года. Наш опыт покрывает практически все сегменты рынка, то есть
 					если у вас есть любые вопросы связанные с авто, звоните нам, мы всегда поможем вам найти нужные
 					ответы. </div>
-				<div class="about__dscr-content">
+				<div class="about__dscr-content" id="lng-about-aboutInvite">
 					Приглашаем всех к сотрудничеству. Со всеми направлениями нашей компании, вы можете ознакомиться ниже
 				</div>
 				<div class="about__dscr-items">
 					<div class="about__dscr-item">
 						<img src="./assets/images/about__dscr-item-1.svg" alt="">
-						<a href="https://bpauto.lv/avtopodbor/index.php" target="_blank" class="about__us-item-text">
+						<a href="https://bpauto.lv/avtopodbor/index.php" target="_blank" class="about__us-item-text"
+							id="lng-about-aboutSelection-1">
 							Проверка авто и подбор </a>
 					</div>
 					<div class="about__dscr-item">
 						<img src="./assets/images/about__dscr-item-2.svg" alt="">
-						<a href="https://bpauto.lv/" target="_blank" class="about__us-item-text">
+						<a href="https://bpauto.lv/" target="_blank" class="about__us-item-text"
+							id="lng-about-aboutSelection-2">
 							Автосервис </a>
 					</div>
 					<div class="about__dscr-item">
 						<img src="./assets/images/about__dscr-item-3.svg" alt="">
-						<a href="https://bpauto.lv/cardelivery/index.php" target="_blank" class="about__us-item-text">
+						<a href="https://bpauto.lv/cardelivery/index.php" target="_blank" class="about__us-item-text"
+							id="lng-about-aboutSelection-3">
 							Доставка авто </a>
 					</div>
 				</div>
@@ -605,7 +629,7 @@
 	<section class="contact" id="contact">
 		<div class="container">
 			<div class="contact__info">
-				<div class="contact__info-title">
+				<div class="contact__info-title" id="lng-contact-title">
 					Контакты </div>
 				<div class="contact__info-nexttitle">
 					BP Auto | SIA «Next Baltic»
@@ -628,7 +652,8 @@
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d769.2331039729058!2d24.062379168537777!3d56.95360217426438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecffd5268be5f%3A0xc439fb05a5f73f44!2zU2xva2FzIGllbGEgNTIsIEt1cnplbWVzIHJham9ucywgUsSrZ2EsIExWLTEwMDcsINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2slt!4v1669546637968!5m2!1sru!2slt"
 				width="100%" height="568" style="border:0;" allowfullscreen="" loading="lazy"
-				referrerpolicy="no-referrer-when-downgrade"></iframe>
+				referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
 		</div>
 	</section>
 
