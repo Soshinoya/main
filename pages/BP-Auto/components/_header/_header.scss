@@ -1,0 +1,325 @@
+.header {
+    background-color: $secondary-color;
+    padding-bottom: 15px;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+    }
+
+    &__logo {
+        height: 3.5vw;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__list-item--home {
+        margin-right: 55px;
+    }
+
+    &__list-item:not(:nth-child(2)) {
+        margin-left: 45px;
+    }
+
+    &__list-item--social {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 35px;
+    }
+
+    &__list-link {
+        @extend %gotham-pro-700;
+        line-height: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: $white-color;
+        transition: color .5s ease;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}
+
+.menu-top {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 10px 0 5px 0;
+    order: -1;
+
+    &__tel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__languages {
+        display: flex;
+        align-items: center;
+    }
+
+    &__lang {
+        padding: 0 5px;
+        @extend %gotham-pro-400;
+        line-height: 17px;
+        color: $white-color;
+
+        &--active {
+            color: $accent-color;
+
+            &:hover {
+                color: $accent-color;
+            }
+        }
+
+        svg {
+            display: none;
+        }
+    }
+
+    &__lang:not(:first-child) {
+        padding: 0 5px;
+        border-left: 1px solid $gray-color;
+    }
+
+    &__service {
+        @extend %gotham-pro-400;
+        line-height: 17px;
+        color: $white-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__tel {
+        @extend %gotham-pro-400;
+        color: $white-color;
+        line-height: 16px;
+    }
+}
+
+.hamb {
+    display: none;
+}
+
+.header-popup {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .header {
+        &__logo {
+            height: 50px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .menu {
+        &__list {
+            display: none;
+        }
+    }
+
+    .menu-top {
+        &__languages {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .hamb {
+        z-index: 101;
+        display: flex;
+        align-items: center;
+        top: 0;
+        right: 0;
+
+        &__field {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    }
+
+    .bar {
+        display: block;
+        width: 35px;
+        height: 3px;
+        margin: 6px auto;
+        background-color: $white-color;
+        transition: 0.2s;
+    }
+
+    .header-popup {
+        position: fixed;
+        right: -100%;
+        width: 100%;
+        height: min-content;
+        padding-bottom: 25px;
+        background-color: $secondary-menu-color;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s ease;
+
+        &--open {
+            top: 0;
+            width: 280px;
+            right: 0;
+            overflow-y: scroll;
+        }
+
+        .menu {
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                margin: 35px 0 40px;
+            }
+
+            &__list-item:not(:nth-child(2)) {
+                margin: 0;
+            }
+
+            &__list-item:first-child {
+                display: none;
+            }
+
+            &__list-item--social {
+                display: none;
+            }
+        }
+
+        .menu-top {
+            order: 0;
+            margin: 0;
+            background-color: transparent;
+            flex-direction: column;
+
+            &__service {
+                display: none;
+            }
+
+            &__tel {
+                font-weight: 700;
+                font-size: 18px;
+            }
+
+            &__languages {
+                display: flex;
+                margin-top: 40px;
+            }
+
+            &__lang {
+                p {
+                    display: none;
+                }
+
+                svg {
+                    display: block;
+                }
+            }
+        }
+
+        .header {
+            &__logo {
+                margin-top: 80px;
+                width: 110px;
+            }
+        }
+    }
+
+    .hamb__field.hamb__field--active .bar {
+        margin: 5px auto;
+    }
+
+    .hamb__field.hamb__field--active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamb__field.hamb__field--active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamb__field.hamb__field--active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    body.noscroll {
+        overflow: hidden;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .menu-top {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        &__logo {
+            height: 45px;
+        }
+
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    .menu-top {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: $secondary-contrast-color;
+        padding: 5px 25px;
+        border-radius: 5px;
+
+        &__tel {
+            svg {
+                g {
+                    path {
+                        fill: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .menu-top {
+        flex-direction: column;
+    }
+}

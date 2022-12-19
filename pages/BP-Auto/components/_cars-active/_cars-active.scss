@@ -1,0 +1,17 @@
+.cars-active {
+    padding: 55px 0 55px;
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cars-active {
+        &__cards {
+            justify-content: center;
+        }
+    }
+}

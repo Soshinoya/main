@@ -1,0 +1,18 @@
+{
+    "carsActive": [
+        {
+            "id": 0,
+            "imgPath": "./images/cars/cars-active/seat-leon-fr.jpg",
+            "title": "Seat Leon FR",
+            "text": "2020 г. в., 156 782км, Внедорожник, МКПП",
+            "price": 9900
+        },
+        {
+            "id": 1,
+            "imgPath": "./images/cars/cars-active/mb-c-klass.jpg",
+            "title": "MB C-klass 200 cdi AMG",
+            "text": "2020 г. в., 156 782км, Внедорожник, МКПП",
+            "price": 9900
+        }
+    ]
+}
